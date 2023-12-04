@@ -1,0 +1,14 @@
+---
+title: "Generating Synthetic Microdata from Aggregated Count Data Using `synthpop` in R"
+image: images/synthetic-data-crop.jpeg
+author: "Jeff Jacobs"
+institute: "<a href='mailto:jj1088@georgetown.edu' target='_blank'>`jj1088@georgetown.edu`</a>"
+date: last-modified
+format:
+  html:
+    df-print: kable
+categories:
+  - "General"
+---
+
+Say you have a dataset that looks like the following, for example, obtained from the OECD website:

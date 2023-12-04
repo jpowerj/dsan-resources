@@ -1,10 +1,10 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Resources for DSAN Students",
     "section": "",
-    "text": "A page with general resources for DSAN students, which I hope can be useful across multiple different DSAN courses!"
+    "text": "This page contains some general resources for DSAN students, which I hope can be useful across multiple different DSAN courses and/or in your future careers! 🤩\n\n\n\n\n\n\n\n\n  \n\n\n\n\nGenerating Synthetic Microdata from Aggregated Count Data Using synthpop in R\n\n\n\n\n\n\n\nGeneral\n\n\n\n\n\n\n\n\n\n\n\nDec 4, 2023\n\n\nJeff Jacobs\n\n\n\n\n\n\n  \n\n\n\n\nUsing LIWC for Document-Level Sentiment Analysis\n\n\n\n\n\n\n\nText Analysis\n\n\n\n\n\n\n\n\n\n\n\nDec 4, 2023\n\n\nJeff Jacobs\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/liwc/index.html",
@@ -49,10 +49,10 @@
     "text": "Footnotes\n\n\nAnd, in case you want to use it in the future, you can download the entire set of word lists as a zip file here↩︎"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Resources for DSAN Students",
+    "objectID": "posts/synthetic-data/index.html",
+    "href": "posts/synthetic-data/index.html",
+    "title": "Generating Synthetic Microdata from Aggregated Count Data Using synthpop in R",
     "section": "",
-    "text": "Using LIWC for Document-Level Sentiment Analysis\n\n\n\n\n\n\n\nText Analysis\n\n\n\n\n\n\n\n\n\n\n\nDec 4, 2023\n\n\nJeff Jacobs\n\n\n\n\n\n\nNo matching items"
+    "text": "Say you have a dataset that looks like the following, for example, obtained from the OECD website:"
   }
 ]

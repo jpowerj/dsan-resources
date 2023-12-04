@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/synthetic-data/index.html",
       "/posts/liwc/index.html"
     ]
   }

@@ -146,12 +146,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text"><i class="bi bi-house pe-1"></i>Home</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../about.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">About</span></a>
-  </div>
-</li>
     </ul>
     </div>
 </nav>
@@ -324,7 +318,7 @@ Python is ok, Python is mid, I guess I can do Python maybe
 <span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">'text'</span>: [neg_test_str, pos_test_str, neutral_test_str]</span>
 <span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>})</span>
 <span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>text_df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div id="create-df" class="cell-output cell-output-display" data-execution_count="11">
+<div id="create-df" class="cell-output cell-output-display" data-execution_count="5">
 <div>
 
 
@@ -361,7 +355,7 @@ Python is ok, Python is mid, I guess I can do Python maybe
 <div class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>text_df[<span class="st">'sentiment'</span>] <span class="op">=</span> text_df[<span class="st">'text'</span>].<span class="bu">apply</span>(compute_sentiment)</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>text_df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div id="sentiment-on-df" class="cell-output cell-output-display" data-execution_count="12">
+<div id="sentiment-on-df" class="cell-output cell-output-display" data-execution_count="6">
 <div>
 
 

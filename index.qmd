@@ -11,4 +11,5 @@ listing:
 # title-block-banner: true
 ---
 
+This page contains some general resources for DSAN students, which I hope can be useful across multiple different DSAN courses and/or in your future careers! 🤩
 
