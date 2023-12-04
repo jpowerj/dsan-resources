@@ -1,7 +1,8 @@
 ---
 title: "Using LIWC for Document-Level Sentiment Analysis"
 image: images/liwc.jpg
-author: "Jeff Jacobs<br><a href='mailto:jj1088@georgetown.edu' target='_blank'>`jj1088@georgetown.edu`</a>"
+author: "Jeff Jacobs"
+institute: "<a href='mailto:jj1088@georgetown.edu' target='_blank'>`jj1088@georgetown.edu`</a>"
 date: last-modified
 categories:
   - "Text Analysis"
