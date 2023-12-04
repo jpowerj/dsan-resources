@@ -98,6 +98,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 <script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+<script src="../../jjcustom.js"></script>
 
 
 <link rel="stylesheet" href="../../styles.css">
@@ -323,7 +324,7 @@ Python is ok, Python is mid, I guess I can do Python maybe
 <span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">'text'</span>: [neg_test_str, pos_test_str, neutral_test_str]</span>
 <span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>})</span>
 <span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>text_df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div id="create-df" class="cell-output cell-output-display" data-execution_count="35">
+<div id="create-df" class="cell-output cell-output-display" data-execution_count="11">
 <div>
 
 
@@ -360,7 +361,7 @@ Python is ok, Python is mid, I guess I can do Python maybe
 <div class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>text_df[<span class="st">'sentiment'</span>] <span class="op">=</span> text_df[<span class="st">'text'</span>].<span class="bu">apply</span>(compute_sentiment)</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>text_df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div id="sentiment-on-df" class="cell-output cell-output-display" data-execution_count="36">
+<div id="sentiment-on-df" class="cell-output cell-output-display" data-execution_count="12">
 <div>
 
 

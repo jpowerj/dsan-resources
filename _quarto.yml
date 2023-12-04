@@ -14,4 +14,6 @@ format:
     theme: default
     css: styles.css
     toc: true
+    include-in-header:
+      text: "<script src='/jjcustom.js'></script>"
 
