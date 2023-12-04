@@ -199,11 +199,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
+<section id="the-text-files" class="level2">
+<h2 class="anchored" data-anchor-id="the-text-files">The Text Files</h2>
 <p>You can download the .txt files for positive and negative sentiment at the following links (click them to view the contents, or right click and choose “Save Link As…” to download)<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>:</p>
 <ul>
 <li><a href="assets/liwc/031-posemo.txt" target="_blank"><code>031-posemo.txt</code></a></li>
 <li><a href="assets/liwc/032-negemo.txt" target="_blank"><code>032-negemo.txt</code></a></li>
 </ul>
+</section>
+<section id="converting-into-python-regular-expressions" class="level2">
+<h2 class="anchored" data-anchor-id="converting-into-python-regular-expressions">Converting Into Python Regular Expressions</h2>
 <p>Using them in this raw format is a bit tricky, however, since they are formatted not as individual words but as <em>regular expressions</em>, which will match entire <em>families</em> of positive and negative words. For example, <code>032-negemo.txt</code> contains the entry <code>troubl*</code>, which will therefore match the words <code>trouble</code>, <code>troubles</code>, <code>troubling</code>, and so on.</p>
 <p>So, to work with these files in Python, we’ll need to load the .txt files but then convert each entry into a <strong>regular expression object</strong>. This can be done using the following collection of functions:</p>
 <div id="sentiment-on-strings" class="cell" data-execution_count="1">
@@ -253,6 +258,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 rauma[^\s]*|abandon[^\s]*|diss|ignored|poorness[^\s]*|trembl[^\s]*|abu</code></pre>
 </div>
 </div>
+</section>
+<section id="using-the-regular-expressions-to-generate-sentiment-scores" class="level2">
+<h2 class="anchored" data-anchor-id="using-the-regular-expressions-to-generate-sentiment-scores">Using the Regular Expressions to Generate Sentiment Scores</h2>
 <p>And now we can use these generated regular expressions to count the number of times “positive” and “negative” words appear in our string! Here we provide two final helper functions for accomplishing this:</p>
 <div id="count-pos-neg" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> extract_sentiment_data(text):</span>
@@ -293,6 +301,9 @@ Python is ok, Python is mid, I guess I can do Python maybe
 {'pos': 1, 'neg': 0, 'sentiment': 1}</code></pre>
 </div>
 </div>
+</section>
+<section id="computing-sentiment-scores-for-a-dataframe-column" class="level2">
+<h2 class="anchored" data-anchor-id="computing-sentiment-scores-for-a-dataframe-column">Computing Sentiment Scores for a DataFrame Column</h2>
 <p>Even though above we printed out the full results of each sentiment computation (by calling <code>extract_sentiment_data()</code>, which returns a dictionary containing the results), if you have a <strong>DataFrame</strong> with a text column that you’d like to perform sentiment analysis on, you can just use the simpler <code>compute_sentiment()</code> function to obtain a single number, like in the following code:</p>
 <div class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -301,7 +312,7 @@ Python is ok, Python is mid, I guess I can do Python maybe
 <span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">'text'</span>: [neg_test_str, pos_test_str, neutral_test_str]</span>
 <span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>})</span>
 <span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>text_df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div id="create-df" class="cell-output cell-output-display" data-execution_count="17">
+<div id="create-df" class="cell-output cell-output-display" data-execution_count="29">
 <div>
 
 
@@ -338,7 +349,7 @@ Python is ok, Python is mid, I guess I can do Python maybe
 <div class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>text_df[<span class="st">'sentiment'</span>] <span class="op">=</span> text_df[<span class="st">'text'</span>].<span class="bu">apply</span>(compute_sentiment)</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>text_df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div id="sentiment-on-df" class="cell-output cell-output-display" data-execution_count="18">
+<div id="sentiment-on-df" class="cell-output cell-output-display" data-execution_count="30">
 <div>
 
 
@@ -378,6 +389,7 @@ Python is ok, Python is mid, I guess I can do Python maybe
 </div>
 
 
+</section>
 
 
 <div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>

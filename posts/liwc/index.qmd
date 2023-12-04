@@ -4,14 +4,21 @@ image: images/liwc.jpg
 author: "Jeff Jacobs"
 institute: "<a href='mailto:jj1088@georgetown.edu' target='_blank'>`jj1088@georgetown.edu`</a>"
 date: last-modified
+format:
+  html:
+    df-print: kable
 categories:
   - "Text Analysis"
 ---
+
+## The Text Files
 
 You can download the .txt files for positive and negative sentiment at the following links (click them to view the contents, or right click and choose "Save Link As..." to download)^[And, in case you want to use it in the future, you can download the entire set of word lists as a zip file <a href='assets/liwc.zip' target='_blank' class='pe-1'>here</a>]:
 
 * <a href='assets/liwc/031-posemo.txt' target='_blank'>`031-posemo.txt`</a>
 * <a href='assets/liwc/032-negemo.txt' target='_blank'>`032-negemo.txt`</a>
+
+## Converting Into Python Regular Expressions
 
 Using them in this raw format is a bit tricky, however, since they are formatted not as individual words but as *regular expressions*, which will match entire *families* of positive and negative words. For example, `032-negemo.txt` contains the entry `troubl*`, which will therefore match the words `trouble`, `troubles`, `troubling`, and so on.
 
@@ -65,6 +72,8 @@ neg_regex = file_to_regex(neg_fpath)
 print_regex(neg_regex[:140])
 ```
 
+## Using the Regular Expressions to Generate Sentiment Scores
+
 And now we can use these generated regular expressions to count the number of times "positive" and "negative" words appear in our string! Here we provide two final helper functions for accomplishing this:
 
 ```{python}
@@ -102,6 +111,8 @@ neutral_test_str = "Python is ok, Python is mid, I guess I can do Python maybe"
 neutral_str_results = extract_sentiment_data(neutral_test_str)
 print(f"{neutral_test_str}\n{neutral_str_results}")
 ```
+
+## Computing Sentiment Scores for a DataFrame Column
 
 Even though above we printed out the full results of each sentiment computation (by calling `extract_sentiment_data()`, which returns a dictionary containing the results), if you have a **DataFrame** with a text column that you'd like to perform sentiment analysis on, you can just use the simpler `compute_sentiment()` function to obtain a single number, like in the following code:
 
