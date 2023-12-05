@@ -9,7 +9,7 @@
 <meta name="author" content="Jeff Jacobs">
 <meta name="dcterms.date" content="2023-12-04">
 
-<title>DSAN Resources - Generating Synthetic Microdata from Aggregated Count Data Using synthpop in R</title>
+<title>DSAN Resources - Generating Synthetic Microdata from Aggregated Count Data</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -63,6 +97,8 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <script src="../../jjcustom.js"></script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -115,14 +151,22 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#macro-level-vs.-micro-level-data" id="toc-macro-level-vs.-micro-level-data" class="nav-link active" data-scroll-target="#macro-level-vs.-micro-level-data">Macro-Level vs.&nbsp;Micro-Level Data</a></li>
+  <li><a href="#macro-level-count-data" id="toc-macro-level-count-data" class="nav-link" data-scroll-target="#macro-level-count-data">Macro-Level Count Data</a></li>
+  <li><a href="#approximating-the-micro-level-data" id="toc-approximating-the-micro-level-data" class="nav-link" data-scroll-target="#approximating-the-micro-level-data">Approximating the Micro-Level Data</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Generating Synthetic Microdata from Aggregated Count Data Using <code>synthpop</code> in R</h1>
+<h1 class="title">Generating Synthetic Microdata from Aggregated Count Data</h1>
   <div class="quarto-categories">
     <div class="quarto-category">General</div>
   </div>
@@ -159,11 +203,916 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Say you have a dataset that looks like the following, for example, obtained from the OECD website:</p>
+<section id="macro-level-vs.-micro-level-data" class="level2">
+<h2 class="anchored" data-anchor-id="macro-level-vs.-micro-level-data">Macro-Level vs.&nbsp;Micro-Level Data</h2>
+<div class="hidden">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"../../_globals.r"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<p>Before we look at how to “decompose” the macro-level OECD dataset we have into micro-level data on individual animal types, let’s motivate why we have to do all this work in the first place!</p>
+<p>Imagine that you are the prime minister of a tiny country, which has only 10 citizens, who are split across two provinces (3 citizens live in Province A, 4 live in Province B, and the remaining 3 live in Province C). You’re hoping to study the <strong>healthiness</strong> of the people in your country. You would <em>like</em> to have a dataset containing 10 observations, one for each citizen in your country, but the data was collected <em>anonymously</em>, to protect each citizen’s privacy.</p>
+<p>This means that, instead of having a dataset with 10 rows, one for each citizen, instead you have the following dataset which contains <strong>counts</strong> of various features across the three provinces:</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>sick_df <span class="ot">&lt;-</span> <span class="fu">tribble</span>(</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="sc">~</span>Province, <span class="sc">~</span>Total_Population, <span class="sc">~</span>Fever, <span class="sc">~</span>High_Fever, <span class="sc">~</span>Cough,</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"A"</span>, <span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">1</span>, <span class="dv">1</span>,</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"B"</span>, <span class="dv">4</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">2</span>,</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"C"</span>, <span class="dv">3</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">3</span>,</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>sick_df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Province</th>
+<th style="text-align: right;">Total_Population</th>
+<th style="text-align: right;">Fever</th>
+<th style="text-align: right;">High_Fever</th>
+<th style="text-align: right;">Cough</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">A</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">B</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>Now, think about whether (or how) you could potentially <strong>decompose</strong> this aggregated count data down into <strong>individual observations</strong> of each citizen…</p>
+<p>The issue in trying to do this is: we don’t have any information on whether individual people in each province might have <strong>multiple</strong> conditions! For example, we know that <code>High_Fever</code> is a more severe version of <code>Fever</code>, so that all citizens who have a <strong>high</strong> fever also have a fever, but not all citizens who have a fever have a <strong>high</strong> fever.</p>
+<p>Separately, a citizen might have <strong>both</strong> a cough and a fever, or just a cough, or just a fever, or none of these (they may be perfectly healthy).</p>
+<p>Because we don’t have this info, sadly, there are many possible datasets which could have <strong>produced</strong> this aggregate data. For example, the following individual data could have produced it:</p>
+<div class="cell" data-layout-align="center">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>micro_df_1 <span class="ot">&lt;-</span> <span class="fu">tribble</span>(</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="sc">~</span>citizen_id, <span class="sc">~</span>Province, <span class="sc">~</span>Fever, <span class="sc">~</span>High_Fever, <span class="sc">~</span>Cough,</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="dv">1</span>, <span class="st">'A'</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>,</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="dv">2</span>, <span class="st">'A'</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">0</span>,</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="dv">3</span>, <span class="st">'A'</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>,</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="dv">4</span>, <span class="st">'B'</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>,</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="dv">5</span>, <span class="st">'B'</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>,</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="dv">6</span>, <span class="st">'B'</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>,</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="dv">7</span>, <span class="st">'B'</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>,</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    <span class="dv">8</span>, <span class="st">'C'</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>,</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    <span class="dv">9</span>, <span class="st">'C'</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>,</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    <span class="dv">10</span>, <span class="st">'C'</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>micro_df_1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="table table-sm table-striped small">
+<caption><strong>Micro-Level Dataset #1</strong> </caption>
+<thead>
+<tr class="header">
+<th style="text-align: right;">citizen_id</th>
+<th style="text-align: left;">Province</th>
+<th style="text-align: right;">Fever</th>
+<th style="text-align: right;">High_Fever</th>
+<th style="text-align: right;">Cough</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">A</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">A</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">A</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">B</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">B</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">B</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">B</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">C</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">C</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">C</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>Which we can see by grouping and summing:</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>micro_df_1 <span class="sc">|&gt;</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Province) <span class="sc">|&gt;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">n</span>(), <span class="fu">sum</span>(Fever), <span class="fu">sum</span>(High_Fever), <span class="fu">sum</span>(Cough)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="table table-sm table-striped small">
+<caption><strong>Micro-Level Dataset #1, Aggregated by Province</strong> </caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Province</th>
+<th style="text-align: right;">n()</th>
+<th style="text-align: right;">sum(Fever)</th>
+<th style="text-align: right;">sum(High_Fever)</th>
+<th style="text-align: right;">sum(Cough)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">A</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">B</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>(This is exactly the macro-level dataset was saw above)</p>
+<p>But this totally different micro-level dataset could also have generated the exact same macro-level count dataset:</p>
+<div class="cell" data-layout-align="center">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>micro_df_2 <span class="ot">&lt;-</span> <span class="fu">tribble</span>(</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="sc">~</span>citizen_id, <span class="sc">~</span>Province, <span class="sc">~</span>Fever, <span class="sc">~</span>High_Fever, <span class="sc">~</span>Cough,</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="dv">1</span>, <span class="st">'A'</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">0</span>,</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    <span class="dv">2</span>, <span class="st">'A'</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">0</span>,</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="dv">3</span>, <span class="st">'A'</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>,</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="dv">4</span>, <span class="st">'B'</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">0</span>,</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    <span class="dv">5</span>, <span class="st">'B'</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>,</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    <span class="dv">6</span>, <span class="st">'B'</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>,</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    <span class="dv">7</span>, <span class="st">'B'</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>,</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    <span class="dv">8</span>, <span class="st">'C'</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>,</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    <span class="dv">9</span>, <span class="st">'C'</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>,</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    <span class="dv">10</span>, <span class="st">'C'</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>micro_df_2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="table table-sm table-striped small">
+<caption><strong>Micro-Level Dataset #2</strong> </caption>
+<thead>
+<tr class="header">
+<th style="text-align: right;">citizen_id</th>
+<th style="text-align: left;">Province</th>
+<th style="text-align: right;">Fever</th>
+<th style="text-align: right;">High_Fever</th>
+<th style="text-align: right;">Cough</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">A</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">A</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">A</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">B</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">B</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">B</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">B</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">C</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">C</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">C</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>Which we can see generates the same data, by applying the same aggregation we applied to Micro-Level Dataset #1:</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>micro_df_2 <span class="sc">|&gt;</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Province) <span class="sc">|&gt;</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">n</span>(), <span class="fu">sum</span>(Fever), <span class="fu">sum</span>(High_Fever), <span class="fu">sum</span>(Cough)</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="table table-sm table-striped small">
+<caption><strong>Micro-Level Dataset #2, Aggregated by Province</strong> </caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Province</th>
+<th style="text-align: right;">n()</th>
+<th style="text-align: right;">sum(Fever)</th>
+<th style="text-align: right;">sum(High_Fever)</th>
+<th style="text-align: right;">sum(Cough)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">A</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">B</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>Hopefully that helps to indicate the issue! Without knowing the specific <strong>joint</strong> or <strong>conditional</strong> probabilities, we don’t have enough information to <strong>fully know</strong> the underlying micro-level data.</p>
+<p>Also, notice how the two micro-datasets are <strong>not equivalent</strong> in the context of knowing how healthy the population is 😱 in Micro-Level Dataset #2, <strong>9 out of 10 citizens</strong> have an illness (only one person, the citizen with id 7, is fully healthy), whereas in Micro-Level Dataset #1 only <strong>7 out of 10 citizens</strong> have an illness (the citizens with ids 3, 6, and 7 are fully healthy). We can see this using a bit of code, to extract just the fully-healthy citizens from each dataset:</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>healthy_1 <span class="ot">&lt;-</span> micro_df_1 <span class="sc">|&gt;</span> <span class="fu">filter</span>(</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    (Fever <span class="sc">==</span> <span class="dv">0</span>) <span class="sc">&amp;</span> (High_Fever <span class="sc">==</span> <span class="dv">0</span>) <span class="sc">&amp;</span> (Cough <span class="sc">==</span> <span class="dv">0</span>)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>healthy_1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: right;">citizen_id</th>
+<th style="text-align: left;">Province</th>
+<th style="text-align: right;">Fever</th>
+<th style="text-align: right;">High_Fever</th>
+<th style="text-align: right;">Cough</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">A</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">B</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">B</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>healthy_2 <span class="ot">&lt;-</span> micro_df_2 <span class="sc">|&gt;</span> <span class="fu">filter</span>(</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    (Fever <span class="sc">==</span> <span class="dv">0</span>) <span class="sc">&amp;</span> (High_Fever <span class="sc">==</span> <span class="dv">0</span>) <span class="sc">&amp;</span> (Cough <span class="sc">==</span> <span class="dv">0</span>)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>healthy_2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: right;">citizen_id</th>
+<th style="text-align: left;">Province</th>
+<th style="text-align: right;">Fever</th>
+<th style="text-align: right;">High_Fever</th>
+<th style="text-align: right;">Cough</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">B</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>However, if we run into this problem in the real world, all hope is not lost! We know that <strong>some</strong> micro-level datasets are impossible: for example, we know that a dataset where everyone has all the illnesses would <strong>not</strong> aggregate to our macro-level data. So, we could construct a <strong>synthetic dataset</strong> as something like an <strong>average</strong> over all of the possible micro-level datasets that could be “underneath” the macro-level dataset we actually observed. I’ll call this the <em>statistically-principled-and-possible-but-brutally-difficult approach</em>, though, because this gets us into the territory of what is called <strong>Ecological Inference</strong>, and statistical models for doing this get very complicated very quickly (requiring <a href="https://www.google.com/books/edition/Ecological_Inference/g0G4Gx_kx6gC?hl=en&amp;gbpv=0" target="_blank">big scary-looking textbooks</a>).</p>
+<p>So instead, in the rest of the writeup, we’ll just look at how to construct <strong>one</strong> such “possible” synthetic dataset, in a way that is smarter than the <strong>greedy</strong> approach we used to construct Micro-Level Dataset #1 above, but not as smart as the full-on statistically-principled approach.</p>
+</section>
+<section id="macro-level-count-data" class="level2">
+<h2 class="anchored" data-anchor-id="macro-level-count-data">Macro-Level Count Data</h2>
+<p>So, say you have a dataset that looks like the following, for example, obtained from the OECD’s <a href="https://data-explorer.oecd.org/" target="_blank">Data Explorer</a> portal<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>:</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>macro_df <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"assets/wild_life_cleaned.csv"</span>)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>macro_df <span class="sc">|&gt;</span> <span class="fu">head</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 46%">
+<col style="width: 8%">
+<col style="width: 9%">
+<col style="width: 4%">
+<col style="width: 11%">
+<col style="width: 6%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">IUCN</th>
+<th style="text-align: left;">IUCN Category</th>
+<th style="text-align: left;">SPEC</th>
+<th style="text-align: left;">Species</th>
+<th style="text-align: left;">COU</th>
+<th style="text-align: left;">Country</th>
+<th style="text-align: right;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">TOT_KNOWN</td>
+<td style="text-align: left;">Total number of known species</td>
+<td style="text-align: left;">MAMMAL</td>
+<td style="text-align: left;">Mammals</td>
+<td style="text-align: left;">AUS</td>
+<td style="text-align: left;">Australia</td>
+<td style="text-align: right;">377</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ENDANGERED</td>
+<td style="text-align: left;">Number of endangered species</td>
+<td style="text-align: left;">MAMMAL</td>
+<td style="text-align: left;">Mammals</td>
+<td style="text-align: left;">AUS</td>
+<td style="text-align: left;">Australia</td>
+<td style="text-align: right;">41</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">CRITICAL</td>
+<td style="text-align: left;">Number of critically endangered species</td>
+<td style="text-align: left;">MAMMAL</td>
+<td style="text-align: left;">Mammals</td>
+<td style="text-align: left;">AUS</td>
+<td style="text-align: left;">Australia</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">VULNERABLE</td>
+<td style="text-align: left;">Number of vulnerable species</td>
+<td style="text-align: left;">MAMMAL</td>
+<td style="text-align: left;">Mammals</td>
+<td style="text-align: left;">AUS</td>
+<td style="text-align: left;">Australia</td>
+<td style="text-align: right;">57</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">THREATENED</td>
+<td style="text-align: left;">Total number of threatened species</td>
+<td style="text-align: left;">MAMMAL</td>
+<td style="text-align: left;">Mammals</td>
+<td style="text-align: left;">AUS</td>
+<td style="text-align: left;">Australia</td>
+<td style="text-align: right;">107</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">TOT_KNOWN</td>
+<td style="text-align: left;">Total number of known species</td>
+<td style="text-align: left;">MAMMAL</td>
+<td style="text-align: left;">Mammals</td>
+<td style="text-align: left;">AUT</td>
+<td style="text-align: left;">Austria</td>
+<td style="text-align: right;">104</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>Once we transform it from long to wide format, we’ll be able to see how this dataset provides data on <strong>(country-species) pairs</strong> (e.g., Mammals in Australia), <em>not</em> on <strong>individual types of animals</strong> (e.g., Kangaroos in Australia):</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>wide_df <span class="ot">&lt;-</span> macro_df <span class="sc">|&gt;</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span><span class="fu">c</span>(<span class="st">`</span><span class="at">IUCN Category</span><span class="st">`</span>, COU, SPEC)) <span class="sc">|&gt;</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_wider</span>(</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">names_from =</span> IUCN,</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">values_from =</span> Value</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span><span class="fu">c</span>(THREAT_PERCENT))</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>wide_df <span class="sc">|&gt;</span> <span class="fu">head</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 10%">
+<col style="width: 20%">
+<col style="width: 13%">
+<col style="width: 14%">
+<col style="width: 12%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Species</th>
+<th style="text-align: left;">Country</th>
+<th style="text-align: right;">TOT_KNOWN</th>
+<th style="text-align: right;">ENDANGERED</th>
+<th style="text-align: right;">CRITICAL</th>
+<th style="text-align: right;">VULNERABLE</th>
+<th style="text-align: right;">THREATENED</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Mammals</td>
+<td style="text-align: left;">Australia</td>
+<td style="text-align: right;">377</td>
+<td style="text-align: right;">41</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">57</td>
+<td style="text-align: right;">107</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Mammals</td>
+<td style="text-align: left;">Austria</td>
+<td style="text-align: right;">104</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">27</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Mammals</td>
+<td style="text-align: left;">Belgium</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">18</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Mammals</td>
+<td style="text-align: left;">Canada</td>
+<td style="text-align: right;">222</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">33</td>
+<td style="text-align: right;">55</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Mammals</td>
+<td style="text-align: left;">Czech Republic</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Mammals</td>
+<td style="text-align: left;">Denmark</td>
+<td style="text-align: right;">71</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">9</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>Although some methods like Decision Trees can handle both classification and regression tasks, there are other methods like ARM where using this type of <em>count</em> data can be difficult, since most of the methods and libraries only support 0/1 binary matrices.</p>
+<p><strong>But</strong>, if you think about it for long enough, you’ll realize that we could <em>use</em> this aggregated count data to generate <strong>simulated versions</strong> of the underlying microdata.</p>
+<p>For example: notice how this dataset tells us that there are 377 known mammals in Australia, and that of these 377,</p>
+<ul>
+<li>41 are Endangered</li>
+<li>9 are Critical,</li>
+<li>57 are Vulnerable, and</li>
+<li>107 are Threatened.</li>
+</ul>
+<p>It relates back to exercises we did early in DSAN 5100, actually: our dataset here provides us with <strong>marginal frequencies</strong>, but does not give us <strong>joint frequencies</strong> or <strong>conditional frequencies</strong>. For example, we don’t know how many mammals in Australia are <strong>both</strong> threatened <strong>and</strong> critical, even though it seems like the number of threatened species is greater than the number of critical species, at least in the rows we can see above.</p>
+<p>If we <em>did</em> have all of this data, then we could just mathematically derive the number of animals in each possible combination of categories: for example, the exact number of mammals in Canada which are threatened and vulnerable but not endangered or critical. However, since we <strong>don’t</strong> know the number of animals in all possible categories (combinations of the four features), we’re in the same situation as in the simplified example above. So, we’ll have to construct a <strong>synthetic dataset</strong>, in this case a <strong>micro-level</strong> dataset of <strong>individual animal types</strong> which matches the count data in the existing macro-level dataset as best as possible.</p>
+</section>
+<section id="approximating-the-micro-level-data" class="level2">
+<h2 class="anchored" data-anchor-id="approximating-the-micro-level-data">Approximating the Micro-Level Data</h2>
+<p>The key insight is just recognizing that, since we have <strong>counts</strong> as well as <strong>totals</strong> in each row, we can construct <strong>probabilities</strong> of a given animal type having a given property (using the naïve definition of probability, and assuming that each property is <em>independent</em>, which is a terrible assumption in this case, but getting rid of this assumption brings us back into scary math world).</p>
+<p>For example: looking at the four bullet points above, relative to the fact that there are 377 total types of mammals in Australia, we can generate a set of probabilities that a <strong>given</strong> (arbitrarily-chosen) animal type in Australia has each of these properties. Letting <span class="math inline">\(S\)</span> be a Random Variable representing an animal’s Species and <span class="math inline">\(C\)</span> a Random Variable representing an animal’s Country, and then letting <span class="math inline">\(\texttt{M}\)</span> stand for “Mammals” and <span class="math inline">\(\texttt{A}\)</span> stand for “Australia”:</p>
+<p><span class="math display">\[
+\begin{align*}
+\Pr(\text{Endangered} \mid S = \texttt{M}, C = \texttt{A}) = \frac{41}{377} &amp;\approx 0.109 \\
+\Pr(\text{Critical} \mid S = \texttt{M}, C = \texttt{A}) = \frac{9}{377} &amp;\approx 0.024 \\
+\Pr(\text{Vulnerable} \mid S = \texttt{M}, C = \texttt{A}) = \frac{57}{377} &amp;\approx 0.151 \\
+\Pr(\text{Threatened} \mid S = \texttt{M}, C = \texttt{A}) = \frac{107}{377} &amp;\approx 0.284
+\end{align*}
+\]</span></p>
+<p>Which means that we could now generate a dataset of <strong>individual animals</strong> which would <strong>approximate</strong> (under our very questionable assumptions of independence, at least) the aggregate information we have. For this specific example of mammals in Australia, then, we could write code to generate data for mammals in Australia like the following:</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(Rlab)</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>N <span class="ot">&lt;-</span> <span class="dv">377</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>p_endangered <span class="ot">&lt;-</span> <span class="fl">0.109</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>p_critical <span class="ot">&lt;-</span> <span class="fl">0.024</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>p_vulnerable <span class="ot">&lt;-</span> <span class="fl">0.151</span></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>p_threat <span class="ot">&lt;-</span> <span class="fl">0.284</span></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>synth_animals <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">animal_id =</span> <span class="fu">seq</span>(<span class="dv">1</span>, N),</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">endangered =</span> <span class="fu">rbern</span>(N, p_endangered),</span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">critical =</span> <span class="fu">rbern</span>(N, p_critical),</span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">vulnerable =</span> <span class="fu">rbern</span>(N, p_vulnerable),</span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">threat =</span> <span class="fu">rbern</span>(N, p_threat)</span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>synth_animals <span class="sc">|&gt;</span> <span class="fu">head</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: right;">animal_id</th>
+<th style="text-align: right;">endangered</th>
+<th style="text-align: right;">critical</th>
+<th style="text-align: right;">vulnerable</th>
+<th style="text-align: right;">threat</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>And now we can aggregate these individual “coin flips” to obtain counts:</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>agg_animals <span class="ot">&lt;-</span> synth_animals <span class="sc">|&gt;</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">ENDANGERED =</span> <span class="fu">sum</span>(endangered),</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">CRITICAL =</span> <span class="fu">sum</span>(critical),</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">VULNERABLE =</span> <span class="fu">sum</span>(vulnerable),</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">THREATENED =</span> <span class="fu">sum</span>(threat)</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">Source =</span> <span class="st">"Synthetic"</span>,</span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">Country =</span> <span class="st">"Australia"</span>,</span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">Species =</span> <span class="st">"Mammals"</span></span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>agg_animals</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 12%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 11%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">ENDANGERED</th>
+<th style="text-align: right;">CRITICAL</th>
+<th style="text-align: right;">VULNERABLE</th>
+<th style="text-align: right;">THREATENED</th>
+<th style="text-align: left;">Source</th>
+<th style="text-align: left;">Country</th>
+<th style="text-align: left;">Species</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">37</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">65</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: left;">Synthetic</td>
+<td style="text-align: left;">Australia</td>
+<td style="text-align: left;">Mammals</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>And we can check how closely they match the macro-level count data:</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># First the synthetic data</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>agg_animals_long <span class="ot">&lt;-</span> agg_animals <span class="sc">|&gt;</span> <span class="fu">pivot_longer</span>(</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span><span class="fu">c</span>(Source, Species, Country),</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">names_to =</span> <span class="st">"var"</span>,</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">values_to =</span> <span class="st">"value"</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Now the actual counts</span></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>am_counts_long <span class="ot">&lt;-</span> wide_df <span class="sc">|&gt;</span></span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(</span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>    (Species <span class="sc">==</span> <span class="st">"Mammals"</span>) <span class="sc">&amp;</span> (Country <span class="sc">==</span> <span class="st">"Australia"</span>)</span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>TOT_KNOWN) <span class="sc">|&gt;</span></span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Source =</span> <span class="st">"OECD"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(</span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span><span class="fu">c</span>(Source, Species, Country),</span>
+<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">names_to =</span> <span class="st">"var"</span>,</span>
+<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">values_to =</span> <span class="st">"value"</span></span>
+<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb13-19"><a href="#cb13-19" aria-hidden="true" tabindex="-1"></a><span class="co"># And combine</span></span>
+<span id="cb13-20"><a href="#cb13-20" aria-hidden="true" tabindex="-1"></a>agg_df <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(agg_animals_long, am_counts_long)</span>
+<span id="cb13-21"><a href="#cb13-21" aria-hidden="true" tabindex="-1"></a>agg_df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Source</th>
+<th style="text-align: left;">Country</th>
+<th style="text-align: left;">Species</th>
+<th style="text-align: left;">var</th>
+<th style="text-align: right;">value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Synthetic</td>
+<td style="text-align: left;">Australia</td>
+<td style="text-align: left;">Mammals</td>
+<td style="text-align: left;">ENDANGERED</td>
+<td style="text-align: right;">37</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Synthetic</td>
+<td style="text-align: left;">Australia</td>
+<td style="text-align: left;">Mammals</td>
+<td style="text-align: left;">CRITICAL</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Synthetic</td>
+<td style="text-align: left;">Australia</td>
+<td style="text-align: left;">Mammals</td>
+<td style="text-align: left;">VULNERABLE</td>
+<td style="text-align: right;">65</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Synthetic</td>
+<td style="text-align: left;">Australia</td>
+<td style="text-align: left;">Mammals</td>
+<td style="text-align: left;">THREATENED</td>
+<td style="text-align: right;">92</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">OECD</td>
+<td style="text-align: left;">Australia</td>
+<td style="text-align: left;">Mammals</td>
+<td style="text-align: left;">ENDANGERED</td>
+<td style="text-align: right;">41</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">OECD</td>
+<td style="text-align: left;">Australia</td>
+<td style="text-align: left;">Mammals</td>
+<td style="text-align: left;">CRITICAL</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">OECD</td>
+<td style="text-align: left;">Australia</td>
+<td style="text-align: left;">Mammals</td>
+<td style="text-align: left;">VULNERABLE</td>
+<td style="text-align: right;">57</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">OECD</td>
+<td style="text-align: left;">Australia</td>
+<td style="text-align: left;">Mammals</td>
+<td style="text-align: left;">THREATENED</td>
+<td style="text-align: right;">107</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>And visualize this closeness:</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(agg_df, <span class="fu">aes</span>(<span class="at">x=</span>var, <span class="at">y=</span>value, <span class="at">fill=</span>Source)) <span class="sc">+</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">'identity'</span>, <span class="at">position=</span><span class="st">'dodge'</span>) <span class="sc">+</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">dsan_theme</span>() <span class="sc">+</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">vjust =</span> <span class="dv">1</span>, <span class="at">hjust=</span><span class="dv">1</span>)</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Not bad! If we repeat this procedure for all (country, species) pairs, we’ll get an <strong>individual animal-level (micro-level) dataset</strong>! There are several efficient ways to do this, but for the sake of getting it done easily we can just use a loop. However, we’ll have to be careful about missing values.</p>
 
 
+</section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>The thumbnail image for this post is from MIT Sloan’s <a href="https://mitsloan.mit.edu/ideas-made-to-matter/what-synthetic-data-and-how-can-it-help-you-competitively" target="_blank">primer on synthetic data</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

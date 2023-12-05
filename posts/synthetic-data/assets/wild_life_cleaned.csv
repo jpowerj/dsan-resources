@@ -1,0 +1,2002 @@
+IUCN,IUCN Category,SPEC,Species,COU,Country,Value
+TOT_KNOWN,Total number of known species,MAMMAL,Mammals,AUS,Australia,377.0
+ENDANGERED,Number of endangered species,MAMMAL,Mammals,AUS,Australia,41.0
+CRITICAL,Number of critically endangered species,MAMMAL,Mammals,AUS,Australia,9.0
+VULNERABLE,Number of vulnerable species,MAMMAL,Mammals,AUS,Australia,57.0
+THREATENED,Total number of threatened species,MAMMAL,Mammals,AUS,Australia,107.0
+TOT_KNOWN,Total number of known species,MAMMAL,Mammals,AUT,Austria,104.0
+ENDANGERED,Number of endangered species,MAMMAL,Mammals,AUT,Austria,6.0
+CRITICAL,Number of critically endangered species,MAMMAL,Mammals,AUT,Austria,4.0
+VULNERABLE,Number of vulnerable species,MAMMAL,Mammals,AUT,Austria,17.0
+THREATENED,Total number of threatened species,MAMMAL,Mammals,AUT,Austria,27.0
+TOT_KNOWN,Total number of known species,MAMMAL,Mammals,BEL,Belgium,84.0
+ENDANGERED,Number of endangered species,MAMMAL,Mammals,BEL,Belgium,2.0
+CRITICAL,Number of critically endangered species,MAMMAL,Mammals,BEL,Belgium,4.0
+VULNERABLE,Number of vulnerable species,MAMMAL,Mammals,BEL,Belgium,12.0
+THREATENED,Total number of threatened species,MAMMAL,Mammals,BEL,Belgium,18.0
+TOT_KNOWN,Total number of known species,MAMMAL,Mammals,CAN,Canada,222.0
+ENDANGERED,Number of endangered species,MAMMAL,Mammals,CAN,Canada,11.0
+VULNERABLE,Number of vulnerable species,MAMMAL,Mammals,CAN,Canada,33.0
+THREATENED,Total number of threatened species,MAMMAL,Mammals,CAN,Canada,55.0
+TOT_KNOWN,Total number of known species,MAMMAL,Mammals,CZE,Czech Republic,92.0
+ENDANGERED,Number of endangered species,MAMMAL,Mammals,CZE,Czech Republic,1.0
+CRITICAL,Number of critically endangered species,MAMMAL,Mammals,CZE,Czech Republic,10.0
+VULNERABLE,Number of vulnerable species,MAMMAL,Mammals,CZE,Czech Republic,4.0
+THREATENED,Total number of threatened species,MAMMAL,Mammals,CZE,Czech Republic,15.0
+TOT_KNOWN,Total number of known species,MAMMAL,Mammals,DNK,Denmark,71.0
+ENDANGERED,Number of endangered species,MAMMAL,Mammals,DNK,Denmark,2.0
+CRITICAL,Number of critically endangered species,MAMMAL,Mammals,DNK,Denmark,1.0
+VULNERABLE,Number of vulnerable species,MAMMAL,Mammals,DNK,Denmark,6.0
+THREATENED,Total number of threatened species,MAMMAL,Mammals,DNK,Denmark,9.0
+TOT_KNOWN,Total number of known species,MAMMAL,Mammals,FIN,Finland,71.0
+ENDANGERED,Number of endangered species,MAMMAL,Mammals,FIN,Finland,4.0
+CRITICAL,Number of critically endangered species,MAMMAL,Mammals,FIN,Finland,1.0
+VULNERABLE,Number of vulnerable species,MAMMAL,Mammals,FIN,Finland,3.0
+THREATENED,Total number of threatened species,MAMMAL,Mammals,FIN,Finland,8.0
+TOT_KNOWN,Total number of known species,MAMMAL,Mammals,FRA,France,125.0
+ENDANGERED,Number of endangered species,MAMMAL,Mammals,FRA,France,4.0
+CRITICAL,Number of critically endangered species,MAMMAL,Mammals,FRA,France,3.0
+VULNERABLE,Number of vulnerable species,MAMMAL,Mammals,FRA,France,10.0
+THREATENED,Total number of threatened species,MAMMAL,Mammals,FRA,France,17.0
+TOT_KNOWN,Total number of known species,MAMMAL,Mammals,DEU,Germany,107.0
+ENDANGERED,Number of endangered species,MAMMAL,Mammals,DEU,Germany,10.0
+CRITICAL,Number of critically endangered species,MAMMAL,Mammals,DEU,Germany,7.0
+VULNERABLE,Number of vulnerable species,MAMMAL,Mammals,DEU,Germany,22.0
+THREATENED,Total number of threatened species,MAMMAL,Mammals,DEU,Germany,39.0
+TOT_KNOWN,Total number of known species,MAMMAL,Mammals,GRC,Greece,115.0
+ENDANGERED,Number of endangered species,MAMMAL,Mammals,GRC,Greece,13.0
+CRITICAL,Number of critically endangered species,MAMMAL,Mammals,GRC,Greece,3.0
+VULNERABLE,Number of vulnerable species,MAMMAL,Mammals,GRC,Greece,13.0
+THREATENED,Total number of threatened species,MAMMAL,Mammals,GRC,Greece,29.0
+TOT_KNOWN,Total number of known species,MAMMAL,Mammals,HUN,Hungary,87.0
+ENDANGERED,Number of endangered species,MAMMAL,Mammals,HUN,Hungary,3.0
+CRITICAL,Number of critically endangered species,MAMMAL,Mammals,HUN,Hungary,5.0
+VULNERABLE,Number of vulnerable species,MAMMAL,Mammals,HUN,Hungary,6.0
+THREATENED,Total number of threatened species,MAMMAL,Mammals,HUN,Hungary,14.0
+TOT_KNOWN,Total number of known species,MAMMAL,Mammals,ISL,Iceland,4.0
+TOT_KNOWN,Total number of known species,MAMMAL,Mammals,IRL,Ireland,57.0
+VULNERABLE,Number of vulnerable species,MAMMAL,Mammals,IRL,Ireland,1.0
+THREATENED,Total number of threatened species,MAMMAL,Mammals,IRL,Ireland,1.0
+TOT_KNOWN,Total number of known species,MAMMAL,Mammals,ITA,Italy,126.0
+ENDANGERED,Number of endangered species,MAMMAL,Mammals,ITA,Italy,8.0
+CRITICAL,Number of critically endangered species,MAMMAL,Mammals,ITA,Italy,2.0
+VULNERABLE,Number of vulnerable species,MAMMAL,Mammals,ITA,Italy,13.0
+THREATENED,Total number of threatened species,MAMMAL,Mammals,ITA,Italy,23.0
+TOT_KNOWN,Total number of known species,MAMMAL,Mammals,JPN,Japan,160.0
+ENDANGERED,Number of endangered species,MAMMAL,Mammals,JPN,Japan,13.0
+CRITICAL,Number of critically endangered species,MAMMAL,Mammals,JPN,Japan,12.0
+VULNERABLE,Number of vulnerable species,MAMMAL,Mammals,JPN,Japan,9.0
+THREATENED,Total number of threatened species,MAMMAL,Mammals,JPN,Japan,34.0
+TOT_KNOWN,Total number of known species,MAMMAL,Mammals,KOR,Korea,125.0
+ENDANGERED,Number of endangered species,MAMMAL,Mammals,KOR,Korea,5.0
+CRITICAL,Number of critically endangered species,MAMMAL,Mammals,KOR,Korea,2.0
+VULNERABLE,Number of vulnerable species,MAMMAL,Mammals,KOR,Korea,7.0
+THREATENED,Total number of threatened species,MAMMAL,Mammals,KOR,Korea,14.0
+TOT_KNOWN,Total number of known species,MAMMAL,Mammals,MEX,Mexico,564.0
+ENDANGERED,Number of endangered species,MAMMAL,Mammals,MEX,Mexico,49.0
+CRITICAL,Number of critically endangered species,MAMMAL,Mammals,MEX,Mexico,9.0
+VULNERABLE,Number of vulnerable species,MAMMAL,Mammals,MEX,Mexico,90.0
+THREATENED,Total number of threatened species,MAMMAL,Mammals,MEX,Mexico,148.0
+TOT_KNOWN,Total number of known species,MAMMAL,Mammals,NLD,Netherlands,53.0
+ENDANGERED,Number of endangered species,MAMMAL,Mammals,NLD,Netherlands,0.0
+CRITICAL,Number of critically endangered species,MAMMAL,Mammals,NLD,Netherlands,2.0
+VULNERABLE,Number of vulnerable species,MAMMAL,Mammals,NLD,Netherlands,8.0
+THREATENED,Total number of threatened species,MAMMAL,Mammals,NLD,Netherlands,10.0
+TOT_KNOWN,Total number of known species,MAMMAL,Mammals,NZL,New Zealand,50.0
+TOT_KNOWN,Total number of known species,MAMMAL,Mammals,NOR,Norway,71.0
+ENDANGERED,Number of endangered species,MAMMAL,Mammals,NOR,Norway,8.0
+CRITICAL,Number of critically endangered species,MAMMAL,Mammals,NOR,Norway,3.0
+VULNERABLE,Number of vulnerable species,MAMMAL,Mammals,NOR,Norway,6.0
+THREATENED,Total number of threatened species,MAMMAL,Mammals,NOR,Norway,17.0
+TOT_KNOWN,Total number of known species,MAMMAL,Mammals,POL,Poland,112.0
+ENDANGERED,Number of endangered species,MAMMAL,Mammals,POL,Poland,10.0
+CRITICAL,Number of critically endangered species,MAMMAL,Mammals,POL,Poland,2.0
+VULNERABLE,Number of vulnerable species,MAMMAL,Mammals,POL,Poland,1.0
+THREATENED,Total number of threatened species,MAMMAL,Mammals,POL,Poland,13.0
+TOT_KNOWN,Total number of known species,MAMMAL,Mammals,PRT,Portugal,158.0
+ENDANGERED,Number of endangered species,MAMMAL,Mammals,PRT,Portugal,7.0
+CRITICAL,Number of critically endangered species,MAMMAL,Mammals,PRT,Portugal,11.0
+VULNERABLE,Number of vulnerable species,MAMMAL,Mammals,PRT,Portugal,13.0
+THREATENED,Total number of threatened species,MAMMAL,Mammals,PRT,Portugal,31.0
+TOT_KNOWN,Total number of known species,MAMMAL,Mammals,SVK,Slovak Republic,90.0
+ENDANGERED,Number of endangered species,MAMMAL,Mammals,SVK,Slovak Republic,6.0
+CRITICAL,Number of critically endangered species,MAMMAL,Mammals,SVK,Slovak Republic,2.0
+VULNERABLE,Number of vulnerable species,MAMMAL,Mammals,SVK,Slovak Republic,12.0
+THREATENED,Total number of threatened species,MAMMAL,Mammals,SVK,Slovak Republic,20.0
+TOT_KNOWN,Total number of known species,MAMMAL,Mammals,ESP,Spain,172.0
+ENDANGERED,Number of endangered species,MAMMAL,Mammals,ESP,Spain,6.0
+CRITICAL,Number of critically endangered species,MAMMAL,Mammals,ESP,Spain,2.0
+VULNERABLE,Number of vulnerable species,MAMMAL,Mammals,ESP,Spain,18.0
+THREATENED,Total number of threatened species,MAMMAL,Mammals,ESP,Spain,26.0
+TOT_KNOWN,Total number of known species,MAMMAL,Mammals,SWE,Sweden,65.0
+ENDANGERED,Number of endangered species,MAMMAL,Mammals,SWE,Sweden,4.0
+CRITICAL,Number of critically endangered species,MAMMAL,Mammals,SWE,Sweden,1.0
+VULNERABLE,Number of vulnerable species,MAMMAL,Mammals,SWE,Sweden,4.0
+THREATENED,Total number of threatened species,MAMMAL,Mammals,SWE,Sweden,9.0
+TOT_KNOWN,Total number of known species,MAMMAL,Mammals,CHE,Switzerland,97.0
+ENDANGERED,Number of endangered species,MAMMAL,Mammals,CHE,Switzerland,12.0
+CRITICAL,Number of critically endangered species,MAMMAL,Mammals,CHE,Switzerland,5.0
+VULNERABLE,Number of vulnerable species,MAMMAL,Mammals,CHE,Switzerland,16.0
+THREATENED,Total number of threatened species,MAMMAL,Mammals,CHE,Switzerland,33.0
+TOT_KNOWN,Total number of known species,MAMMAL,Mammals,TUR,Türkiye,175.0
+ENDANGERED,Number of endangered species,MAMMAL,Mammals,TUR,Türkiye,5.0
+CRITICAL,Number of critically endangered species,MAMMAL,Mammals,TUR,Türkiye,3.0
+VULNERABLE,Number of vulnerable species,MAMMAL,Mammals,TUR,Türkiye,15.0
+THREATENED,Total number of threatened species,MAMMAL,Mammals,TUR,Türkiye,23.0
+TOT_KNOWN,Total number of known species,MAMMAL,Mammals,GBR,United Kingdom,107.0
+ENDANGERED,Number of endangered species,MAMMAL,Mammals,GBR,United Kingdom,4.0
+CRITICAL,Number of critically endangered species,MAMMAL,Mammals,GBR,United Kingdom,2.0
+VULNERABLE,Number of vulnerable species,MAMMAL,Mammals,GBR,United Kingdom,5.0
+THREATENED,Total number of threatened species,MAMMAL,Mammals,GBR,United Kingdom,11.0
+TOT_KNOWN,Total number of known species,MAMMAL,Mammals,CHL,Chile,185.0
+ENDANGERED,Number of endangered species,MAMMAL,Mammals,CHL,Chile,13.0
+VULNERABLE,Number of vulnerable species,MAMMAL,Mammals,CHL,Chile,20.0
+THREATENED,Total number of threatened species,MAMMAL,Mammals,CHL,Chile,36.0
+TOT_KNOWN,Total number of known species,MAMMAL,Mammals,EST,Estonia,66.0
+ENDANGERED,Number of endangered species,MAMMAL,Mammals,EST,Estonia,1.0
+THREATENED,Total number of threatened species,MAMMAL,Mammals,EST,Estonia,3.0
+THREATENED,Total number of threatened species,MAMMAL,Mammals,RUS,Russia,34.0
+TOT_KNOWN,Total number of known species,MAMMAL,Mammals,SVN,Slovenia,89.0
+ENDANGERED,Number of endangered species,MAMMAL,Mammals,SVN,Slovenia,19.0
+VULNERABLE,Number of vulnerable species,MAMMAL,Mammals,SVN,Slovenia,15.0
+THREATENED,Total number of threatened species,MAMMAL,Mammals,SVN,Slovenia,34.0
+TOT_KNOWN,Total number of known species,BIRD,Birds,AUS,Australia,798.0
+ENDANGERED,Number of endangered species,BIRD,Birds,AUS,Australia,55.0
+CRITICAL,Number of critically endangered species,BIRD,Birds,AUS,Australia,17.0
+VULNERABLE,Number of vulnerable species,BIRD,Birds,AUS,Australia,63.0
+THREATENED,Total number of threatened species,BIRD,Birds,AUS,Australia,135.0
+TOT_KNOWN,Total number of known species,BIRD,Birds,AUT,Austria,229.0
+ENDANGERED,Number of endangered species,BIRD,Birds,AUT,Austria,24.0
+CRITICAL,Number of critically endangered species,BIRD,Birds,AUT,Austria,14.0
+VULNERABLE,Number of vulnerable species,BIRD,Birds,AUT,Austria,28.0
+THREATENED,Total number of threatened species,BIRD,Birds,AUT,Austria,66.0
+TOT_KNOWN,Total number of known species,BIRD,Birds,BEL,Belgium,198.0
+ENDANGERED,Number of endangered species,BIRD,Birds,BEL,Belgium,15.0
+CRITICAL,Number of critically endangered species,BIRD,Birds,BEL,Belgium,20.0
+VULNERABLE,Number of vulnerable species,BIRD,Birds,BEL,Belgium,20.0
+THREATENED,Total number of threatened species,BIRD,Birds,BEL,Belgium,55.0
+TOT_KNOWN,Total number of known species,BIRD,Birds,CAN,Canada,691.0
+ENDANGERED,Number of endangered species,BIRD,Birds,CAN,Canada,22.0
+VULNERABLE,Number of vulnerable species,BIRD,Birds,CAN,Canada,52.0
+THREATENED,Total number of threatened species,BIRD,Birds,CAN,Canada,97.0
+TOT_KNOWN,Total number of known species,BIRD,Birds,CZE,Czech Republic,221.0
+ENDANGERED,Number of endangered species,BIRD,Birds,CZE,Czech Republic,28.0
+CRITICAL,Number of critically endangered species,BIRD,Birds,CZE,Czech Republic,35.0
+VULNERABLE,Number of vulnerable species,BIRD,Birds,CZE,Czech Republic,36.0
+THREATENED,Total number of threatened species,BIRD,Birds,CZE,Czech Republic,99.0
+TOT_KNOWN,Total number of known species,BIRD,Birds,DNK,Denmark,241.0
+ENDANGERED,Number of endangered species,BIRD,Birds,DNK,Denmark,15.0
+CRITICAL,Number of critically endangered species,BIRD,Birds,DNK,Denmark,24.0
+VULNERABLE,Number of vulnerable species,BIRD,Birds,DNK,Denmark,45.0
+THREATENED,Total number of threatened species,BIRD,Birds,DNK,Denmark,84.0
+TOT_KNOWN,Total number of known species,BIRD,Birds,FIN,Finland,253.0
+ENDANGERED,Number of endangered species,BIRD,Birds,FIN,Finland,33.0
+CRITICAL,Number of critically endangered species,BIRD,Birds,FIN,Finland,18.0
+VULNERABLE,Number of vulnerable species,BIRD,Birds,FIN,Finland,35.0
+THREATENED,Total number of threatened species,BIRD,Birds,FIN,Finland,86.0
+TOT_KNOWN,Total number of known species,BIRD,Birds,FRA,France,396.0
+ENDANGERED,Number of endangered species,BIRD,Birds,FRA,France,33.0
+CRITICAL,Number of critically endangered species,BIRD,Birds,FRA,France,16.0
+VULNERABLE,Number of vulnerable species,BIRD,Birds,FRA,France,58.0
+THREATENED,Total number of threatened species,BIRD,Birds,FRA,France,107.0
+TOT_KNOWN,Total number of known species,BIRD,Birds,DEU,Germany,280.0
+ENDANGERED,Number of endangered species,BIRD,Birds,DEU,Germany,24.0
+CRITICAL,Number of critically endangered species,BIRD,Birds,DEU,Germany,30.0
+VULNERABLE,Number of vulnerable species,BIRD,Birds,DEU,Germany,40.0
+THREATENED,Total number of threatened species,BIRD,Birds,DEU,Germany,94.0
+TOT_KNOWN,Total number of known species,BIRD,Birds,GRC,Greece,440.0
+ENDANGERED,Number of endangered species,BIRD,Birds,GRC,Greece,17.0
+CRITICAL,Number of critically endangered species,BIRD,Birds,GRC,Greece,14.0
+VULNERABLE,Number of vulnerable species,BIRD,Birds,GRC,Greece,31.0
+THREATENED,Total number of threatened species,BIRD,Birds,GRC,Greece,62.0
+TOT_KNOWN,Total number of known species,BIRD,Birds,HUN,Hungary,238.0
+ENDANGERED,Number of endangered species,BIRD,Birds,HUN,Hungary,20.0
+CRITICAL,Number of critically endangered species,BIRD,Birds,HUN,Hungary,23.0
+VULNERABLE,Number of vulnerable species,BIRD,Birds,HUN,Hungary,35.0
+THREATENED,Total number of threatened species,BIRD,Birds,HUN,Hungary,78.0
+TOT_KNOWN,Total number of known species,BIRD,Birds,ISL,Iceland,75.0
+ENDANGERED,Number of endangered species,BIRD,Birds,ISL,Iceland,11.0
+CRITICAL,Number of critically endangered species,BIRD,Birds,ISL,Iceland,6.0
+VULNERABLE,Number of vulnerable species,BIRD,Birds,ISL,Iceland,16.0
+THREATENED,Total number of threatened species,BIRD,Birds,ISL,Iceland,33.0
+TOT_KNOWN,Total number of known species,BIRD,Birds,IRL,Ireland,489.0
+ENDANGERED,Number of endangered species,BIRD,Birds,IRL,Ireland,54.0
+VULNERABLE,Number of vulnerable species,BIRD,Birds,IRL,Ireland,79.0
+THREATENED,Total number of threatened species,BIRD,Birds,IRL,Ireland,133.0
+TOT_KNOWN,Total number of known species,BIRD,Birds,ITA,Italy,278.0
+ENDANGERED,Number of endangered species,BIRD,Birds,ITA,Italy,36.0
+CRITICAL,Number of critically endangered species,BIRD,Birds,ITA,Italy,10.0
+VULNERABLE,Number of vulnerable species,BIRD,Birds,ITA,Italy,21.0
+THREATENED,Total number of threatened species,BIRD,Birds,ITA,Italy,67.0
+TOT_KNOWN,Total number of known species,BIRD,Birds,JPN,Japan,700.0
+ENDANGERED,Number of endangered species,BIRD,Birds,JPN,Japan,31.0
+CRITICAL,Number of critically endangered species,BIRD,Birds,JPN,Japan,24.0
+VULNERABLE,Number of vulnerable species,BIRD,Birds,JPN,Japan,43.0
+THREATENED,Total number of threatened species,BIRD,Birds,JPN,Japan,98.0
+TOT_KNOWN,Total number of known species,BIRD,Birds,KOR,Korea,548.0
+ENDANGERED,Number of endangered species,BIRD,Birds,KOR,Korea,18.0
+CRITICAL,Number of critically endangered species,BIRD,Birds,KOR,Korea,7.0
+VULNERABLE,Number of vulnerable species,BIRD,Birds,KOR,Korea,29.0
+THREATENED,Total number of threatened species,BIRD,Birds,KOR,Korea,54.0
+TOT_KNOWN,Total number of known species,BIRD,Birds,LUX,Luxembourg,131.0
+ENDANGERED,Number of endangered species,BIRD,Birds,LUX,Luxembourg,8.0
+CRITICAL,Number of critically endangered species,BIRD,Birds,LUX,Luxembourg,7.0
+VULNERABLE,Number of vulnerable species,BIRD,Birds,LUX,Luxembourg,11.0
+THREATENED,Total number of threatened species,BIRD,Birds,LUX,Luxembourg,26.0
+TOT_KNOWN,Total number of known species,BIRD,Birds,MEX,Mexico,1117.0
+ENDANGERED,Number of endangered species,BIRD,Birds,MEX,Mexico,98.0
+CRITICAL,Number of critically endangered species,BIRD,Birds,MEX,Mexico,18.0
+VULNERABLE,Number of vulnerable species,BIRD,Birds,MEX,Mexico,127.0
+THREATENED,Total number of threatened species,BIRD,Birds,MEX,Mexico,243.0
+TOT_KNOWN,Total number of known species,BIRD,Birds,NLD,Netherlands,168.0
+ENDANGERED,Number of endangered species,BIRD,Birds,NLD,Netherlands,11.0
+CRITICAL,Number of critically endangered species,BIRD,Birds,NLD,Netherlands,11.0
+VULNERABLE,Number of vulnerable species,BIRD,Birds,NLD,Netherlands,19.0
+THREATENED,Total number of threatened species,BIRD,Birds,NLD,Netherlands,41.0
+TOT_KNOWN,Total number of known species,BIRD,Birds,NZL,New Zealand,262.0
+TOT_KNOWN,Total number of known species,BIRD,Birds,NOR,Norway,234.0
+ENDANGERED,Number of endangered species,BIRD,Birds,NOR,Norway,18.0
+CRITICAL,Number of critically endangered species,BIRD,Birds,NOR,Norway,11.0
+VULNERABLE,Number of vulnerable species,BIRD,Birds,NOR,Norway,33.0
+THREATENED,Total number of threatened species,BIRD,Birds,NOR,Norway,62.0
+TOT_KNOWN,Total number of known species,BIRD,Birds,POL,Poland,456.0
+ENDANGERED,Number of endangered species,BIRD,Birds,POL,Poland,8.0
+CRITICAL,Number of critically endangered species,BIRD,Birds,POL,Poland,16.0
+VULNERABLE,Number of vulnerable species,BIRD,Birds,POL,Poland,10.0
+THREATENED,Total number of threatened species,BIRD,Birds,POL,Poland,34.0
+TOT_KNOWN,Total number of known species,BIRD,Birds,PRT,Portugal,393.0
+ENDANGERED,Number of endangered species,BIRD,Birds,PRT,Portugal,30.0
+CRITICAL,Number of critically endangered species,BIRD,Birds,PRT,Portugal,20.0
+VULNERABLE,Number of vulnerable species,BIRD,Birds,PRT,Portugal,61.0
+THREATENED,Total number of threatened species,BIRD,Birds,PRT,Portugal,111.0
+TOT_KNOWN,Total number of known species,BIRD,Birds,SVK,Slovak Republic,211.0
+ENDANGERED,Number of endangered species,BIRD,Birds,SVK,Slovak Republic,24.0
+CRITICAL,Number of critically endangered species,BIRD,Birds,SVK,Slovak Republic,10.0
+VULNERABLE,Number of vulnerable species,BIRD,Birds,SVK,Slovak Republic,17.0
+THREATENED,Total number of threatened species,BIRD,Birds,SVK,Slovak Republic,51.0
+TOT_KNOWN,Total number of known species,BIRD,Birds,ESP,Spain,640.0
+ENDANGERED,Number of endangered species,BIRD,Birds,ESP,Spain,22.0
+CRITICAL,Number of critically endangered species,BIRD,Birds,ESP,Spain,10.0
+VULNERABLE,Number of vulnerable species,BIRD,Birds,ESP,Spain,36.0
+THREATENED,Total number of threatened species,BIRD,Birds,ESP,Spain,68.0
+TOT_KNOWN,Total number of known species,BIRD,Birds,SWE,Sweden,253.0
+ENDANGERED,Number of endangered species,BIRD,Birds,SWE,Sweden,20.0
+CRITICAL,Number of critically endangered species,BIRD,Birds,SWE,Sweden,6.0
+VULNERABLE,Number of vulnerable species,BIRD,Birds,SWE,Sweden,28.0
+THREATENED,Total number of threatened species,BIRD,Birds,SWE,Sweden,54.0
+TOT_KNOWN,Total number of known species,BIRD,Birds,CHE,Switzerland,205.0
+ENDANGERED,Number of endangered species,BIRD,Birds,CHE,Switzerland,25.0
+CRITICAL,Number of critically endangered species,BIRD,Birds,CHE,Switzerland,9.0
+VULNERABLE,Number of vulnerable species,BIRD,Birds,CHE,Switzerland,42.0
+THREATENED,Total number of threatened species,BIRD,Birds,CHE,Switzerland,76.0
+TOT_KNOWN,Total number of known species,BIRD,Birds,TUR,Türkiye,500.0
+ENDANGERED,Number of endangered species,BIRD,Birds,TUR,Türkiye,12.0
+CRITICAL,Number of critically endangered species,BIRD,Birds,TUR,Türkiye,7.0
+VULNERABLE,Number of vulnerable species,BIRD,Birds,TUR,Türkiye,36.0
+THREATENED,Total number of threatened species,BIRD,Birds,TUR,Türkiye,55.0
+TOT_KNOWN,Total number of known species,BIRD,Birds,GBR,United Kingdom,590.0
+ENDANGERED,Number of endangered species,BIRD,Birds,GBR,United Kingdom,36.0
+CRITICAL,Number of critically endangered species,BIRD,Birds,GBR,United Kingdom,18.0
+VULNERABLE,Number of vulnerable species,BIRD,Birds,GBR,United Kingdom,47.0
+THREATENED,Total number of threatened species,BIRD,Birds,GBR,United Kingdom,101.0
+TOT_KNOWN,Total number of known species,BIRD,Birds,CHL,Chile,510.0
+ENDANGERED,Number of endangered species,BIRD,Birds,CHL,Chile,25.0
+VULNERABLE,Number of vulnerable species,BIRD,Birds,CHL,Chile,19.0
+THREATENED,Total number of threatened species,BIRD,Birds,CHL,Chile,46.0
+TOT_KNOWN,Total number of known species,BIRD,Birds,EST,Estonia,234.0
+ENDANGERED,Number of endangered species,BIRD,Birds,EST,Estonia,31.0
+CRITICAL,Number of critically endangered species,BIRD,Birds,EST,Estonia,23.0
+VULNERABLE,Number of vulnerable species,BIRD,Birds,EST,Estonia,41.0
+THREATENED,Total number of threatened species,BIRD,Birds,EST,Estonia,95.0
+THREATENED,Total number of threatened species,BIRD,Birds,RUS,Russia,57.0
+TOT_KNOWN,Total number of known species,BIRD,Birds,SVN,Slovenia,380.0
+ENDANGERED,Number of endangered species,BIRD,Birds,SVN,Slovenia,43.0
+CRITICAL,Number of critically endangered species,BIRD,Birds,SVN,Slovenia,17.0
+VULNERABLE,Number of vulnerable species,BIRD,Birds,SVN,Slovenia,45.0
+THREATENED,Total number of threatened species,BIRD,Birds,SVN,Slovenia,105.0
+TOT_KNOWN,Total number of known species,REPTILE,Reptiles,AUS,Australia,1085.0
+ENDANGERED,Number of endangered species,REPTILE,Reptiles,AUS,Australia,20.0
+CRITICAL,Number of critically endangered species,REPTILE,Reptiles,AUS,Australia,9.0
+VULNERABLE,Number of vulnerable species,REPTILE,Reptiles,AUS,Australia,31.0
+THREATENED,Total number of threatened species,REPTILE,Reptiles,AUS,Australia,60.0
+TOT_KNOWN,Total number of known species,REPTILE,Reptiles,AUT,Austria,14.0
+ENDANGERED,Number of endangered species,REPTILE,Reptiles,AUT,Austria,3.0
+CRITICAL,Number of critically endangered species,REPTILE,Reptiles,AUT,Austria,3.0
+VULNERABLE,Number of vulnerable species,REPTILE,Reptiles,AUT,Austria,3.0
+THREATENED,Total number of threatened species,REPTILE,Reptiles,AUT,Austria,9.0
+TOT_KNOWN,Total number of known species,REPTILE,Reptiles,BEL,Belgium,10.0
+ENDANGERED,Number of endangered species,REPTILE,Reptiles,BEL,Belgium,2.0
+VULNERABLE,Number of vulnerable species,REPTILE,Reptiles,BEL,Belgium,2.0
+THREATENED,Total number of threatened species,REPTILE,Reptiles,BEL,Belgium,4.0
+TOT_KNOWN,Total number of known species,REPTILE,Reptiles,CAN,Canada,45.0
+ENDANGERED,Number of endangered species,REPTILE,Reptiles,CAN,Canada,9.0
+VULNERABLE,Number of vulnerable species,REPTILE,Reptiles,CAN,Canada,16.0
+THREATENED,Total number of threatened species,REPTILE,Reptiles,CAN,Canada,29.0
+TOT_KNOWN,Total number of known species,REPTILE,Reptiles,CZE,Czech Republic,13.0
+ENDANGERED,Number of endangered species,REPTILE,Reptiles,CZE,Czech Republic,3.0
+CRITICAL,Number of critically endangered species,REPTILE,Reptiles,CZE,Czech Republic,1.0
+VULNERABLE,Number of vulnerable species,REPTILE,Reptiles,CZE,Czech Republic,3.0
+THREATENED,Total number of threatened species,REPTILE,Reptiles,CZE,Czech Republic,7.0
+TOT_KNOWN,Total number of known species,REPTILE,Reptiles,DNK,Denmark,8.0
+VULNERABLE,Number of vulnerable species,REPTILE,Reptiles,DNK,Denmark,1.0
+THREATENED,Total number of threatened species,REPTILE,Reptiles,DNK,Denmark,1.0
+TOT_KNOWN,Total number of known species,REPTILE,Reptiles,FIN,Finland,6.0
+VULNERABLE,Number of vulnerable species,REPTILE,Reptiles,FIN,Finland,1.0
+THREATENED,Total number of threatened species,REPTILE,Reptiles,FIN,Finland,1.0
+TOT_KNOWN,Total number of known species,REPTILE,Reptiles,FRA,France,38.0
+ENDANGERED,Number of endangered species,REPTILE,Reptiles,FRA,France,3.0
+CRITICAL,Number of critically endangered species,REPTILE,Reptiles,FRA,France,0.0
+VULNERABLE,Number of vulnerable species,REPTILE,Reptiles,FRA,France,6.0
+THREATENED,Total number of threatened species,REPTILE,Reptiles,FRA,France,9.0
+TOT_KNOWN,Total number of known species,REPTILE,Reptiles,DEU,Germany,13.0
+ENDANGERED,Number of endangered species,REPTILE,Reptiles,DEU,Germany,3.0
+CRITICAL,Number of critically endangered species,REPTILE,Reptiles,DEU,Germany,4.0
+VULNERABLE,Number of vulnerable species,REPTILE,Reptiles,DEU,Germany,2.0
+THREATENED,Total number of threatened species,REPTILE,Reptiles,DEU,Germany,9.0
+TOT_KNOWN,Total number of known species,REPTILE,Reptiles,GRC,Greece,66.0
+ENDANGERED,Number of endangered species,REPTILE,Reptiles,GRC,Greece,2.0
+CRITICAL,Number of critically endangered species,REPTILE,Reptiles,GRC,Greece,1.0
+VULNERABLE,Number of vulnerable species,REPTILE,Reptiles,GRC,Greece,6.0
+THREATENED,Total number of threatened species,REPTILE,Reptiles,GRC,Greece,9.0
+TOT_KNOWN,Total number of known species,REPTILE,Reptiles,HUN,Hungary,15.0
+ENDANGERED,Number of endangered species,REPTILE,Reptiles,HUN,Hungary,4.0
+THREATENED,Total number of threatened species,REPTILE,Reptiles,HUN,Hungary,4.0
+TOT_KNOWN,Total number of known species,REPTILE,Reptiles,IRL,Ireland,3.0
+ENDANGERED,Number of endangered species,REPTILE,Reptiles,IRL,Ireland,0.0
+THREATENED,Total number of threatened species,REPTILE,Reptiles,IRL,Ireland,0.0
+TOT_KNOWN,Total number of known species,REPTILE,Reptiles,ITA,Italy,56.0
+ENDANGERED,Number of endangered species,REPTILE,Reptiles,ITA,Italy,5.0
+CRITICAL,Number of critically endangered species,REPTILE,Reptiles,ITA,Italy,1.0
+VULNERABLE,Number of vulnerable species,REPTILE,Reptiles,ITA,Italy,5.0
+THREATENED,Total number of threatened species,REPTILE,Reptiles,ITA,Italy,11.0
+TOT_KNOWN,Total number of known species,REPTILE,Reptiles,JPN,Japan,100.0
+ENDANGERED,Number of endangered species,REPTILE,Reptiles,JPN,Japan,9.0
+CRITICAL,Number of critically endangered species,REPTILE,Reptiles,JPN,Japan,5.0
+VULNERABLE,Number of vulnerable species,REPTILE,Reptiles,JPN,Japan,23.0
+THREATENED,Total number of threatened species,REPTILE,Reptiles,JPN,Japan,37.0
+TOT_KNOWN,Total number of known species,REPTILE,Reptiles,KOR,Korea,32.0
+ENDANGERED,Number of endangered species,REPTILE,Reptiles,KOR,Korea,1.0
+CRITICAL,Number of critically endangered species,REPTILE,Reptiles,KOR,Korea,0.0
+VULNERABLE,Number of vulnerable species,REPTILE,Reptiles,KOR,Korea,4.0
+THREATENED,Total number of threatened species,REPTILE,Reptiles,KOR,Korea,5.0
+TOT_KNOWN,Total number of known species,REPTILE,Reptiles,LUX,Luxembourg,6.0
+ENDANGERED,Number of endangered species,REPTILE,Reptiles,LUX,Luxembourg,0.0
+CRITICAL,Number of critically endangered species,REPTILE,Reptiles,LUX,Luxembourg,0.0
+VULNERABLE,Number of vulnerable species,REPTILE,Reptiles,LUX,Luxembourg,2.0
+THREATENED,Total number of threatened species,REPTILE,Reptiles,LUX,Luxembourg,2.0
+TOT_KNOWN,Total number of known species,REPTILE,Reptiles,MEX,Mexico,953.0
+ENDANGERED,Number of endangered species,REPTILE,Reptiles,MEX,Mexico,28.0
+CRITICAL,Number of critically endangered species,REPTILE,Reptiles,MEX,Mexico,0.0
+VULNERABLE,Number of vulnerable species,REPTILE,Reptiles,MEX,Mexico,142.0
+THREATENED,Total number of threatened species,REPTILE,Reptiles,MEX,Mexico,170.0
+TOT_KNOWN,Total number of known species,REPTILE,Reptiles,NLD,Netherlands,7.0
+ENDANGERED,Number of endangered species,REPTILE,Reptiles,NLD,Netherlands,0.0
+CRITICAL,Number of critically endangered species,REPTILE,Reptiles,NLD,Netherlands,1.0
+VULNERABLE,Number of vulnerable species,REPTILE,Reptiles,NLD,Netherlands,4.0
+THREATENED,Total number of threatened species,REPTILE,Reptiles,NLD,Netherlands,5.0
+TOT_KNOWN,Total number of known species,REPTILE,Reptiles,NZL,New Zealand,125.0
+TOT_KNOWN,Total number of known species,REPTILE,Reptiles,NOR,Norway,5.0
+TOT_KNOWN,Total number of known species,REPTILE,Reptiles,POL,Poland,12.0
+ENDANGERED,Number of endangered species,REPTILE,Reptiles,POL,Poland,1.0
+CRITICAL,Number of critically endangered species,REPTILE,Reptiles,POL,Poland,1.0
+VULNERABLE,Number of vulnerable species,REPTILE,Reptiles,POL,Poland,1.0
+THREATENED,Total number of threatened species,REPTILE,Reptiles,POL,Poland,3.0
+TOT_KNOWN,Total number of known species,REPTILE,Reptiles,PRT,Portugal,49.0
+ENDANGERED,Number of endangered species,REPTILE,Reptiles,PRT,Portugal,4.0
+VULNERABLE,Number of vulnerable species,REPTILE,Reptiles,PRT,Portugal,6.0
+THREATENED,Total number of threatened species,REPTILE,Reptiles,PRT,Portugal,10.0
+TOT_KNOWN,Total number of known species,REPTILE,Reptiles,SVK,Slovak Republic,12.0
+CRITICAL,Number of critically endangered species,REPTILE,Reptiles,SVK,Slovak Republic,1.0
+VULNERABLE,Number of vulnerable species,REPTILE,Reptiles,SVK,Slovak Republic,4.0
+THREATENED,Total number of threatened species,REPTILE,Reptiles,SVK,Slovak Republic,5.0
+TOT_KNOWN,Total number of known species,REPTILE,Reptiles,ESP,Spain,105.0
+ENDANGERED,Number of endangered species,REPTILE,Reptiles,ESP,Spain,5.0
+CRITICAL,Number of critically endangered species,REPTILE,Reptiles,ESP,Spain,4.0
+VULNERABLE,Number of vulnerable species,REPTILE,Reptiles,ESP,Spain,10.0
+THREATENED,Total number of threatened species,REPTILE,Reptiles,ESP,Spain,19.0
+TOT_KNOWN,Total number of known species,REPTILE,Reptiles,SWE,Sweden,6.0
+VULNERABLE,Number of vulnerable species,REPTILE,Reptiles,SWE,Sweden,2.0
+THREATENED,Total number of threatened species,REPTILE,Reptiles,SWE,Sweden,2.0
+TOT_KNOWN,Total number of known species,REPTILE,Reptiles,CHE,Switzerland,19.0
+ENDANGERED,Number of endangered species,REPTILE,Reptiles,CHE,Switzerland,9.0
+CRITICAL,Number of critically endangered species,REPTILE,Reptiles,CHE,Switzerland,2.0
+VULNERABLE,Number of vulnerable species,REPTILE,Reptiles,CHE,Switzerland,2.0
+THREATENED,Total number of threatened species,REPTILE,Reptiles,CHE,Switzerland,13.0
+TOT_KNOWN,Total number of known species,REPTILE,Reptiles,TUR,Türkiye,146.0
+THREATENED,Total number of threatened species,REPTILE,Reptiles,TUR,Türkiye,22.0
+TOT_KNOWN,Total number of known species,REPTILE,Reptiles,GBR,United Kingdom,15.0
+ENDANGERED,Number of endangered species,REPTILE,Reptiles,GBR,United Kingdom,2.0
+TOT_KNOWN,Total number of known species,REPTILE,Reptiles,CHL,Chile,140.0
+ENDANGERED,Number of endangered species,REPTILE,Reptiles,CHL,Chile,18.0
+VULNERABLE,Number of vulnerable species,REPTILE,Reptiles,CHL,Chile,25.0
+THREATENED,Total number of threatened species,REPTILE,Reptiles,CHL,Chile,52.0
+TOT_KNOWN,Total number of known species,REPTILE,Reptiles,EST,Estonia,5.0
+VULNERABLE,Number of vulnerable species,REPTILE,Reptiles,EST,Estonia,1.0
+THREATENED,Total number of threatened species,REPTILE,Reptiles,EST,Estonia,2.0
+THREATENED,Total number of threatened species,REPTILE,Reptiles,RUS,Russia,9.0
+TOT_KNOWN,Total number of known species,REPTILE,Reptiles,SVN,Slovenia,24.0
+ENDANGERED,Number of endangered species,REPTILE,Reptiles,SVN,Slovenia,7.0
+VULNERABLE,Number of vulnerable species,REPTILE,Reptiles,SVN,Slovenia,11.0
+THREATENED,Total number of threatened species,REPTILE,Reptiles,SVN,Slovenia,18.0
+TOT_KNOWN,Total number of known species,AMPHIBIAN,Amphibians,AUS,Australia,239.0
+ENDANGERED,Number of endangered species,AMPHIBIAN,Amphibians,AUS,Australia,8.0
+CRITICAL,Number of critically endangered species,AMPHIBIAN,Amphibians,AUS,Australia,17.0
+VULNERABLE,Number of vulnerable species,AMPHIBIAN,Amphibians,AUS,Australia,14.0
+THREATENED,Total number of threatened species,AMPHIBIAN,Amphibians,AUS,Australia,39.0
+TOT_KNOWN,Total number of known species,AMPHIBIAN,Amphibians,AUT,Austria,21.0
+ENDANGERED,Number of endangered species,AMPHIBIAN,Amphibians,AUT,Austria,3.0
+CRITICAL,Number of critically endangered species,AMPHIBIAN,Amphibians,AUT,Austria,1.0
+VULNERABLE,Number of vulnerable species,AMPHIBIAN,Amphibians,AUT,Austria,8.0
+THREATENED,Total number of threatened species,AMPHIBIAN,Amphibians,AUT,Austria,12.0
+TOT_KNOWN,Total number of known species,AMPHIBIAN,Amphibians,BEL,Belgium,19.0
+ENDANGERED,Number of endangered species,AMPHIBIAN,Amphibians,BEL,Belgium,3.0
+CRITICAL,Number of critically endangered species,AMPHIBIAN,Amphibians,BEL,Belgium,3.0
+THREATENED,Total number of threatened species,AMPHIBIAN,Amphibians,BEL,Belgium,6.0
+TOT_KNOWN,Total number of known species,AMPHIBIAN,Amphibians,CAN,Canada,46.0
+ENDANGERED,Number of endangered species,AMPHIBIAN,Amphibians,CAN,Canada,5.0
+VULNERABLE,Number of vulnerable species,AMPHIBIAN,Amphibians,CAN,Canada,10.0
+THREATENED,Total number of threatened species,AMPHIBIAN,Amphibians,CAN,Canada,18.0
+TOT_KNOWN,Total number of known species,AMPHIBIAN,Amphibians,CZE,Czech Republic,21.0
+ENDANGERED,Number of endangered species,AMPHIBIAN,Amphibians,CZE,Czech Republic,5.0
+CRITICAL,Number of critically endangered species,AMPHIBIAN,Amphibians,CZE,Czech Republic,5.0
+VULNERABLE,Number of vulnerable species,AMPHIBIAN,Amphibians,CZE,Czech Republic,6.0
+THREATENED,Total number of threatened species,AMPHIBIAN,Amphibians,CZE,Czech Republic,16.0
+TOT_KNOWN,Total number of known species,AMPHIBIAN,Amphibians,DNK,Denmark,15.0
+ENDANGERED,Number of endangered species,AMPHIBIAN,Amphibians,DNK,Denmark,4.0
+CRITICAL,Number of critically endangered species,AMPHIBIAN,Amphibians,DNK,Denmark,1.0
+VULNERABLE,Number of vulnerable species,AMPHIBIAN,Amphibians,DNK,Denmark,1.0
+THREATENED,Total number of threatened species,AMPHIBIAN,Amphibians,DNK,Denmark,5.0
+TOT_KNOWN,Total number of known species,AMPHIBIAN,Amphibians,FIN,Finland,10.0
+VULNERABLE,Number of vulnerable species,AMPHIBIAN,Amphibians,FIN,Finland,0.0
+THREATENED,Total number of threatened species,AMPHIBIAN,Amphibians,FIN,Finland,1.0
+TOT_KNOWN,Total number of known species,AMPHIBIAN,Amphibians,FRA,France,35.0
+ENDANGERED,Number of endangered species,AMPHIBIAN,Amphibians,FRA,France,3.0
+CRITICAL,Number of critically endangered species,AMPHIBIAN,Amphibians,FRA,France,0.0
+VULNERABLE,Number of vulnerable species,AMPHIBIAN,Amphibians,FRA,France,5.0
+THREATENED,Total number of threatened species,AMPHIBIAN,Amphibians,FRA,France,8.0
+TOT_KNOWN,Total number of known species,AMPHIBIAN,Amphibians,DEU,Germany,21.0
+ENDANGERED,Number of endangered species,AMPHIBIAN,Amphibians,DEU,Germany,5.0
+VULNERABLE,Number of vulnerable species,AMPHIBIAN,Amphibians,DEU,Germany,5.0
+THREATENED,Total number of threatened species,AMPHIBIAN,Amphibians,DEU,Germany,10.0
+TOT_KNOWN,Total number of known species,AMPHIBIAN,Amphibians,GRC,Greece,23.0
+ENDANGERED,Number of endangered species,AMPHIBIAN,Amphibians,GRC,Greece,2.0
+CRITICAL,Number of critically endangered species,AMPHIBIAN,Amphibians,GRC,Greece,1.0
+VULNERABLE,Number of vulnerable species,AMPHIBIAN,Amphibians,GRC,Greece,3.0
+THREATENED,Total number of threatened species,AMPHIBIAN,Amphibians,GRC,Greece,6.0
+TOT_KNOWN,Total number of known species,AMPHIBIAN,Amphibians,HUN,Hungary,18.0
+ENDANGERED,Number of endangered species,AMPHIBIAN,Amphibians,HUN,Hungary,1.0
+VULNERABLE,Number of vulnerable species,AMPHIBIAN,Amphibians,HUN,Hungary,1.0
+THREATENED,Total number of threatened species,AMPHIBIAN,Amphibians,HUN,Hungary,2.0
+TOT_KNOWN,Total number of known species,AMPHIBIAN,Amphibians,IRL,Ireland,3.0
+ENDANGERED,Number of endangered species,AMPHIBIAN,Amphibians,IRL,Ireland,1.0
+THREATENED,Total number of threatened species,AMPHIBIAN,Amphibians,IRL,Ireland,1.0
+TOT_KNOWN,Total number of known species,AMPHIBIAN,Amphibians,ITA,Italy,44.0
+ENDANGERED,Number of endangered species,AMPHIBIAN,Amphibians,ITA,Italy,4.0
+CRITICAL,Number of critically endangered species,AMPHIBIAN,Amphibians,ITA,Italy,0.0
+VULNERABLE,Number of vulnerable species,AMPHIBIAN,Amphibians,ITA,Italy,10.0
+THREATENED,Total number of threatened species,AMPHIBIAN,Amphibians,ITA,Italy,14.0
+TOT_KNOWN,Total number of known species,AMPHIBIAN,Amphibians,JPN,Japan,91.0
+ENDANGERED,Number of endangered species,AMPHIBIAN,Amphibians,JPN,Japan,20.0
+CRITICAL,Number of critically endangered species,AMPHIBIAN,Amphibians,JPN,Japan,5.0
+VULNERABLE,Number of vulnerable species,AMPHIBIAN,Amphibians,JPN,Japan,22.0
+THREATENED,Total number of threatened species,AMPHIBIAN,Amphibians,JPN,Japan,47.0
+TOT_KNOWN,Total number of known species,AMPHIBIAN,Amphibians,KOR,Korea,27.0
+ENDANGERED,Number of endangered species,AMPHIBIAN,Amphibians,KOR,Korea,2.0
+CRITICAL,Number of critically endangered species,AMPHIBIAN,Amphibians,KOR,Korea,0.0
+VULNERABLE,Number of vulnerable species,AMPHIBIAN,Amphibians,KOR,Korea,3.0
+THREATENED,Total number of threatened species,AMPHIBIAN,Amphibians,KOR,Korea,5.0
+TOT_KNOWN,Total number of known species,AMPHIBIAN,Amphibians,LUX,Luxembourg,14.0
+ENDANGERED,Number of endangered species,AMPHIBIAN,Amphibians,LUX,Luxembourg,1.0
+CRITICAL,Number of critically endangered species,AMPHIBIAN,Amphibians,LUX,Luxembourg,2.0
+VULNERABLE,Number of vulnerable species,AMPHIBIAN,Amphibians,LUX,Luxembourg,1.0
+THREATENED,Total number of threatened species,AMPHIBIAN,Amphibians,LUX,Luxembourg,4.0
+TOT_KNOWN,Total number of known species,AMPHIBIAN,Amphibians,MEX,Mexico,413.0
+ENDANGERED,Number of endangered species,AMPHIBIAN,Amphibians,MEX,Mexico,15.0
+CRITICAL,Number of critically endangered species,AMPHIBIAN,Amphibians,MEX,Mexico,0.0
+VULNERABLE,Number of vulnerable species,AMPHIBIAN,Amphibians,MEX,Mexico,43.0
+THREATENED,Total number of threatened species,AMPHIBIAN,Amphibians,MEX,Mexico,58.0
+TOT_KNOWN,Total number of known species,AMPHIBIAN,Amphibians,NLD,Netherlands,16.0
+ENDANGERED,Number of endangered species,AMPHIBIAN,Amphibians,NLD,Netherlands,3.0
+CRITICAL,Number of critically endangered species,AMPHIBIAN,Amphibians,NLD,Netherlands,1.0
+VULNERABLE,Number of vulnerable species,AMPHIBIAN,Amphibians,NLD,Netherlands,3.0
+THREATENED,Total number of threatened species,AMPHIBIAN,Amphibians,NLD,Netherlands,7.0
+TOT_KNOWN,Total number of known species,AMPHIBIAN,Amphibians,NZL,New Zealand,8.0
+TOT_KNOWN,Total number of known species,AMPHIBIAN,Amphibians,NOR,Norway,6.0
+CRITICAL,Number of critically endangered species,AMPHIBIAN,Amphibians,NOR,Norway,1.0
+VULNERABLE,Number of vulnerable species,AMPHIBIAN,Amphibians,NOR,Norway,1.0
+THREATENED,Total number of threatened species,AMPHIBIAN,Amphibians,NOR,Norway,2.0
+TOT_KNOWN,Total number of known species,AMPHIBIAN,Amphibians,POL,Poland,19.0
+TOT_KNOWN,Total number of known species,AMPHIBIAN,Amphibians,PRT,Portugal,20.0
+VULNERABLE,Number of vulnerable species,AMPHIBIAN,Amphibians,PRT,Portugal,2.0
+THREATENED,Total number of threatened species,AMPHIBIAN,Amphibians,PRT,Portugal,2.0
+TOT_KNOWN,Total number of known species,AMPHIBIAN,Amphibians,SVK,Slovak Republic,18.0
+ENDANGERED,Number of endangered species,AMPHIBIAN,Amphibians,SVK,Slovak Republic,3.0
+VULNERABLE,Number of vulnerable species,AMPHIBIAN,Amphibians,SVK,Slovak Republic,5.0
+THREATENED,Total number of threatened species,AMPHIBIAN,Amphibians,SVK,Slovak Republic,8.0
+TOT_KNOWN,Total number of known species,AMPHIBIAN,Amphibians,ESP,Spain,39.0
+ENDANGERED,Number of endangered species,AMPHIBIAN,Amphibians,ESP,Spain,2.0
+CRITICAL,Number of critically endangered species,AMPHIBIAN,Amphibians,ESP,Spain,1.0
+VULNERABLE,Number of vulnerable species,AMPHIBIAN,Amphibians,ESP,Spain,6.0
+THREATENED,Total number of threatened species,AMPHIBIAN,Amphibians,ESP,Spain,9.0
+TOT_KNOWN,Total number of known species,AMPHIBIAN,Amphibians,SWE,Sweden,13.0
+ENDANGERED,Number of endangered species,AMPHIBIAN,Amphibians,SWE,Sweden,0.0
+VULNERABLE,Number of vulnerable species,AMPHIBIAN,Amphibians,SWE,Sweden,3.0
+THREATENED,Total number of threatened species,AMPHIBIAN,Amphibians,SWE,Sweden,3.0
+TOT_KNOWN,Total number of known species,AMPHIBIAN,Amphibians,CHE,Switzerland,19.0
+ENDANGERED,Number of endangered species,AMPHIBIAN,Amphibians,CHE,Switzerland,6.0
+CRITICAL,Number of critically endangered species,AMPHIBIAN,Amphibians,CHE,Switzerland,0.0
+VULNERABLE,Number of vulnerable species,AMPHIBIAN,Amphibians,CHE,Switzerland,8.0
+THREATENED,Total number of threatened species,AMPHIBIAN,Amphibians,CHE,Switzerland,14.0
+TOT_KNOWN,Total number of known species,AMPHIBIAN,Amphibians,TUR,Türkiye,39.0
+ENDANGERED,Number of endangered species,AMPHIBIAN,Amphibians,TUR,Türkiye,3.0
+CRITICAL,Number of critically endangered species,AMPHIBIAN,Amphibians,TUR,Türkiye,1.0
+VULNERABLE,Number of vulnerable species,AMPHIBIAN,Amphibians,TUR,Türkiye,4.0
+THREATENED,Total number of threatened species,AMPHIBIAN,Amphibians,TUR,Türkiye,8.0
+TOT_KNOWN,Total number of known species,AMPHIBIAN,Amphibians,GBR,United Kingdom,15.0
+ENDANGERED,Number of endangered species,AMPHIBIAN,Amphibians,GBR,United Kingdom,1.0
+CRITICAL,Number of critically endangered species,AMPHIBIAN,Amphibians,GBR,United Kingdom,1.0
+TOT_KNOWN,Total number of known species,AMPHIBIAN,Amphibians,CHL,Chile,65.0
+ENDANGERED,Number of endangered species,AMPHIBIAN,Amphibians,CHL,Chile,23.0
+VULNERABLE,Number of vulnerable species,AMPHIBIAN,Amphibians,CHL,Chile,11.0
+THREATENED,Total number of threatened species,AMPHIBIAN,Amphibians,CHL,Chile,44.0
+TOT_KNOWN,Total number of known species,AMPHIBIAN,Amphibians,EST,Estonia,11.0
+ENDANGERED,Number of endangered species,AMPHIBIAN,Amphibians,EST,Estonia,2.0
+VULNERABLE,Number of vulnerable species,AMPHIBIAN,Amphibians,EST,Estonia,1.0
+THREATENED,Total number of threatened species,AMPHIBIAN,Amphibians,EST,Estonia,3.0
+THREATENED,Total number of threatened species,AMPHIBIAN,Amphibians,RUS,Russia,0.0
+TOT_KNOWN,Total number of known species,AMPHIBIAN,Amphibians,SVN,Slovenia,21.0
+ENDANGERED,Number of endangered species,AMPHIBIAN,Amphibians,SVN,Slovenia,3.0
+VULNERABLE,Number of vulnerable species,AMPHIBIAN,Amphibians,SVN,Slovenia,14.0
+THREATENED,Total number of threatened species,AMPHIBIAN,Amphibians,SVN,Slovenia,17.0
+TOT_KNOWN,Total number of known species,VASCULAR_PLANT,Vascular plants,AUS,Australia,22949.0
+ENDANGERED,Number of endangered species,VASCULAR_PLANT,Vascular plants,AUS,Australia,553.0
+CRITICAL,Number of critically endangered species,VASCULAR_PLANT,Vascular plants,AUS,Australia,212.0
+VULNERABLE,Number of vulnerable species,VASCULAR_PLANT,Vascular plants,AUS,Australia,585.0
+THREATENED,Total number of threatened species,VASCULAR_PLANT,Vascular plants,AUS,Australia,1350.0
+TOT_KNOWN,Total number of known species,VASCULAR_PLANT,Vascular plants,AUT,Austria,3054.0
+ENDANGERED,Number of endangered species,VASCULAR_PLANT,Vascular plants,AUT,Austria,369.0
+CRITICAL,Number of critically endangered species,VASCULAR_PLANT,Vascular plants,AUT,Austria,235.0
+VULNERABLE,Number of vulnerable species,VASCULAR_PLANT,Vascular plants,AUT,Austria,488.0
+THREATENED,Total number of threatened species,VASCULAR_PLANT,Vascular plants,AUT,Austria,1092.0
+TOT_KNOWN,Total number of known species,VASCULAR_PLANT,Vascular plants,BEL,Belgium,1818.0
+ENDANGERED,Number of endangered species,VASCULAR_PLANT,Vascular plants,BEL,Belgium,107.0
+CRITICAL,Number of critically endangered species,VASCULAR_PLANT,Vascular plants,BEL,Belgium,253.0
+VULNERABLE,Number of vulnerable species,VASCULAR_PLANT,Vascular plants,BEL,Belgium,63.0
+THREATENED,Total number of threatened species,VASCULAR_PLANT,Vascular plants,BEL,Belgium,423.0
+TOT_KNOWN,Total number of known species,VASCULAR_PLANT,Vascular plants,CAN,Canada,5304.0
+ENDANGERED,Number of endangered species,VASCULAR_PLANT,Vascular plants,CAN,Canada,293.0
+VULNERABLE,Number of vulnerable species,VASCULAR_PLANT,Vascular plants,CAN,Canada,418.0
+THREATENED,Total number of threatened species,VASCULAR_PLANT,Vascular plants,CAN,Canada,965.0
+TOT_KNOWN,Total number of known species,VASCULAR_PLANT,Vascular plants,CZE,Czech Republic,2256.0
+ENDANGERED,Number of endangered species,VASCULAR_PLANT,Vascular plants,CZE,Czech Republic,412.0
+CRITICAL,Number of critically endangered species,VASCULAR_PLANT,Vascular plants,CZE,Czech Republic,284.0
+VULNERABLE,Number of vulnerable species,VASCULAR_PLANT,Vascular plants,CZE,Czech Republic,212.0
+THREATENED,Total number of threatened species,VASCULAR_PLANT,Vascular plants,CZE,Czech Republic,908.0
+TOT_KNOWN,Total number of known species,VASCULAR_PLANT,Vascular plants,DNK,Denmark,2918.0
+ENDANGERED,Number of endangered species,VASCULAR_PLANT,Vascular plants,DNK,Denmark,101.0
+CRITICAL,Number of critically endangered species,VASCULAR_PLANT,Vascular plants,DNK,Denmark,33.0
+VULNERABLE,Number of vulnerable species,VASCULAR_PLANT,Vascular plants,DNK,Denmark,28.0
+THREATENED,Total number of threatened species,VASCULAR_PLANT,Vascular plants,DNK,Denmark,162.0
+TOT_KNOWN,Total number of known species,VASCULAR_PLANT,Vascular plants,FIN,Finland,2628.0
+ENDANGERED,Number of endangered species,VASCULAR_PLANT,Vascular plants,FIN,Finland,101.0
+CRITICAL,Number of critically endangered species,VASCULAR_PLANT,Vascular plants,FIN,Finland,35.0
+VULNERABLE,Number of vulnerable species,VASCULAR_PLANT,Vascular plants,FIN,Finland,76.0
+THREATENED,Total number of threatened species,VASCULAR_PLANT,Vascular plants,FIN,Finland,212.0
+TOT_KNOWN,Total number of known species,VASCULAR_PLANT,Vascular plants,FRA,France,4982.0
+ENDANGERED,Number of endangered species,VASCULAR_PLANT,Vascular plants,FRA,France,132.0
+VULNERABLE,Number of vulnerable species,VASCULAR_PLANT,Vascular plants,FRA,France,238.0
+THREATENED,Total number of threatened species,VASCULAR_PLANT,Vascular plants,FRA,France,421.0
+TOT_KNOWN,Total number of known species,VASCULAR_PLANT,Vascular plants,DEU,Germany,4305.0
+ENDANGERED,Number of endangered species,VASCULAR_PLANT,Vascular plants,DEU,Germany,378.0
+CRITICAL,Number of critically endangered species,VASCULAR_PLANT,Vascular plants,DEU,Germany,212.0
+VULNERABLE,Number of vulnerable species,VASCULAR_PLANT,Vascular plants,DEU,Germany,820.0
+THREATENED,Total number of threatened species,VASCULAR_PLANT,Vascular plants,DEU,Germany,1410.0
+TOT_KNOWN,Total number of known species,VASCULAR_PLANT,Vascular plants,GRC,Greece,5850.0
+ENDANGERED,Number of endangered species,VASCULAR_PLANT,Vascular plants,GRC,Greece,64.0
+CRITICAL,Number of critically endangered species,VASCULAR_PLANT,Vascular plants,GRC,Greece,17.0
+VULNERABLE,Number of vulnerable species,VASCULAR_PLANT,Vascular plants,GRC,Greece,174.0
+THREATENED,Total number of threatened species,VASCULAR_PLANT,Vascular plants,GRC,Greece,255.0
+TOT_KNOWN,Total number of known species,VASCULAR_PLANT,Vascular plants,HUN,Hungary,2721.0
+ENDANGERED,Number of endangered species,VASCULAR_PLANT,Vascular plants,HUN,Hungary,162.0
+VULNERABLE,Number of vulnerable species,VASCULAR_PLANT,Vascular plants,HUN,Hungary,105.0
+THREATENED,Total number of threatened species,VASCULAR_PLANT,Vascular plants,HUN,Hungary,382.0
+TOT_KNOWN,Total number of known species,VASCULAR_PLANT,Vascular plants,ISL,Iceland,438.0
+THREATENED,Total number of threatened species,VASCULAR_PLANT,Vascular plants,ISL,Iceland,52.0
+TOT_KNOWN,Total number of known species,VASCULAR_PLANT,Vascular plants,IRL,Ireland,1050.0
+ENDANGERED,Number of endangered species,VASCULAR_PLANT,Vascular plants,IRL,Ireland,25.0
+CRITICAL,Number of critically endangered species,VASCULAR_PLANT,Vascular plants,IRL,Ireland,20.0
+VULNERABLE,Number of vulnerable species,VASCULAR_PLANT,Vascular plants,IRL,Ireland,56.0
+THREATENED,Total number of threatened species,VASCULAR_PLANT,Vascular plants,IRL,Ireland,101.0
+TOT_KNOWN,Total number of known species,VASCULAR_PLANT,Vascular plants,ITA,Italy,8249.0
+ENDANGERED,Number of endangered species,VASCULAR_PLANT,Vascular plants,ITA,Italy,269.0
+CRITICAL,Number of critically endangered species,VASCULAR_PLANT,Vascular plants,ITA,Italy,193.0
+VULNERABLE,Number of vulnerable species,VASCULAR_PLANT,Vascular plants,ITA,Italy,169.0
+THREATENED,Total number of threatened species,VASCULAR_PLANT,Vascular plants,ITA,Italy,631.0
+TOT_KNOWN,Total number of known species,VASCULAR_PLANT,Vascular plants,JPN,Japan,7000.0
+ENDANGERED,Number of endangered species,VASCULAR_PLANT,Vascular plants,JPN,Japan,520.0
+CRITICAL,Number of critically endangered species,VASCULAR_PLANT,Vascular plants,JPN,Japan,529.0
+VULNERABLE,Number of vulnerable species,VASCULAR_PLANT,Vascular plants,JPN,Japan,741.0
+THREATENED,Total number of threatened species,VASCULAR_PLANT,Vascular plants,JPN,Japan,1790.0
+TOT_KNOWN,Total number of known species,VASCULAR_PLANT,Vascular plants,KOR,Korea,4606.0
+ENDANGERED,Number of endangered species,VASCULAR_PLANT,Vascular plants,KOR,Korea,74.0
+CRITICAL,Number of critically endangered species,VASCULAR_PLANT,Vascular plants,KOR,Korea,28.0
+VULNERABLE,Number of vulnerable species,VASCULAR_PLANT,Vascular plants,KOR,Korea,86.0
+THREATENED,Total number of threatened species,VASCULAR_PLANT,Vascular plants,KOR,Korea,188.0
+TOT_KNOWN,Total number of known species,VASCULAR_PLANT,Vascular plants,LUX,Luxembourg,1323.0
+ENDANGERED,Number of endangered species,VASCULAR_PLANT,Vascular plants,LUX,Luxembourg,124.0
+CRITICAL,Number of critically endangered species,VASCULAR_PLANT,Vascular plants,LUX,Luxembourg,121.0
+VULNERABLE,Number of vulnerable species,VASCULAR_PLANT,Vascular plants,LUX,Luxembourg,109.0
+THREATENED,Total number of threatened species,VASCULAR_PLANT,Vascular plants,LUX,Luxembourg,354.0
+TOT_KNOWN,Total number of known species,VASCULAR_PLANT,Vascular plants,MEX,Mexico,23296.0
+ENDANGERED,Number of endangered species,VASCULAR_PLANT,Vascular plants,MEX,Mexico,212.0
+CRITICAL,Number of critically endangered species,VASCULAR_PLANT,Vascular plants,MEX,Mexico,6.0
+VULNERABLE,Number of vulnerable species,VASCULAR_PLANT,Vascular plants,MEX,Mexico,348.0
+THREATENED,Total number of threatened species,VASCULAR_PLANT,Vascular plants,MEX,Mexico,566.0
+TOT_KNOWN,Total number of known species,VASCULAR_PLANT,Vascular plants,NLD,Netherlands,1395.0
+ENDANGERED,Number of endangered species,VASCULAR_PLANT,Vascular plants,NLD,Netherlands,117.0
+CRITICAL,Number of critically endangered species,VASCULAR_PLANT,Vascular plants,NLD,Netherlands,71.0
+VULNERABLE,Number of vulnerable species,VASCULAR_PLANT,Vascular plants,NLD,Netherlands,168.0
+THREATENED,Total number of threatened species,VASCULAR_PLANT,Vascular plants,NLD,Netherlands,356.0
+TOT_KNOWN,Total number of known species,VASCULAR_PLANT,Vascular plants,NZL,New Zealand,4469.0
+TOT_KNOWN,Total number of known species,VASCULAR_PLANT,Vascular plants,NOR,Norway,1376.0
+ENDANGERED,Number of endangered species,VASCULAR_PLANT,Vascular plants,NOR,Norway,122.0
+CRITICAL,Number of critically endangered species,VASCULAR_PLANT,Vascular plants,NOR,Norway,44.0
+VULNERABLE,Number of vulnerable species,VASCULAR_PLANT,Vascular plants,NOR,Norway,131.0
+THREATENED,Total number of threatened species,VASCULAR_PLANT,Vascular plants,NOR,Norway,297.0
+TOT_KNOWN,Total number of known species,VASCULAR_PLANT,Vascular plants,POL,Poland,3141.0
+ENDANGERED,Number of endangered species,VASCULAR_PLANT,Vascular plants,POL,Poland,152.0
+CRITICAL,Number of critically endangered species,VASCULAR_PLANT,Vascular plants,POL,Poland,124.0
+VULNERABLE,Number of vulnerable species,VASCULAR_PLANT,Vascular plants,POL,Poland,204.0
+THREATENED,Total number of threatened species,VASCULAR_PLANT,Vascular plants,POL,Poland,480.0
+TOT_KNOWN,Total number of known species,VASCULAR_PLANT,Vascular plants,PRT,Portugal,3607.0
+TOT_KNOWN,Total number of known species,VASCULAR_PLANT,Vascular plants,SVK,Slovak Republic,3619.0
+ENDANGERED,Number of endangered species,VASCULAR_PLANT,Vascular plants,SVK,Slovak Republic,171.0
+CRITICAL,Number of critically endangered species,VASCULAR_PLANT,Vascular plants,SVK,Slovak Republic,155.0
+VULNERABLE,Number of vulnerable species,VASCULAR_PLANT,Vascular plants,SVK,Slovak Republic,201.0
+THREATENED,Total number of threatened species,VASCULAR_PLANT,Vascular plants,SVK,Slovak Republic,527.0
+TOT_KNOWN,Total number of known species,VASCULAR_PLANT,Vascular plants,ESP,Spain,7586.0
+ENDANGERED,Number of endangered species,VASCULAR_PLANT,Vascular plants,ESP,Spain,246.0
+CRITICAL,Number of critically endangered species,VASCULAR_PLANT,Vascular plants,ESP,Spain,272.0
+VULNERABLE,Number of vulnerable species,VASCULAR_PLANT,Vascular plants,ESP,Spain,523.0
+THREATENED,Total number of threatened species,VASCULAR_PLANT,Vascular plants,ESP,Spain,1041.0
+TOT_KNOWN,Total number of known species,VASCULAR_PLANT,Vascular plants,SWE,Sweden,1603.0
+ENDANGERED,Number of endangered species,VASCULAR_PLANT,Vascular plants,SWE,Sweden,90.0
+CRITICAL,Number of critically endangered species,VASCULAR_PLANT,Vascular plants,SWE,Sweden,39.0
+VULNERABLE,Number of vulnerable species,VASCULAR_PLANT,Vascular plants,SWE,Sweden,139.0
+THREATENED,Total number of threatened species,VASCULAR_PLANT,Vascular plants,SWE,Sweden,268.0
+TOT_KNOWN,Total number of known species,VASCULAR_PLANT,Vascular plants,CHE,Switzerland,2866.0
+ENDANGERED,Number of endangered species,VASCULAR_PLANT,Vascular plants,CHE,Switzerland,197.0
+CRITICAL,Number of critically endangered species,VASCULAR_PLANT,Vascular plants,CHE,Switzerland,111.0
+VULNERABLE,Number of vulnerable species,VASCULAR_PLANT,Vascular plants,CHE,Switzerland,362.0
+THREATENED,Total number of threatened species,VASCULAR_PLANT,Vascular plants,CHE,Switzerland,780.0
+TOT_KNOWN,Total number of known species,VASCULAR_PLANT,Vascular plants,TUR,Türkiye,12141.0
+ENDANGERED,Number of endangered species,VASCULAR_PLANT,Vascular plants,TUR,Türkiye,76.0
+CRITICAL,Number of critically endangered species,VASCULAR_PLANT,Vascular plants,TUR,Türkiye,65.0
+VULNERABLE,Number of vulnerable species,VASCULAR_PLANT,Vascular plants,TUR,Türkiye,56.0
+THREATENED,Total number of threatened species,VASCULAR_PLANT,Vascular plants,TUR,Türkiye,197.0
+TOT_KNOWN,Total number of known species,VASCULAR_PLANT,Vascular plants,GBR,United Kingdom,4562.0
+ENDANGERED,Number of endangered species,VASCULAR_PLANT,Vascular plants,GBR,United Kingdom,113.0
+CRITICAL,Number of critically endangered species,VASCULAR_PLANT,Vascular plants,GBR,United Kingdom,51.0
+VULNERABLE,Number of vulnerable species,VASCULAR_PLANT,Vascular plants,GBR,United Kingdom,229.0
+THREATENED,Total number of threatened species,VASCULAR_PLANT,Vascular plants,GBR,United Kingdom,393.0
+TOT_KNOWN,Total number of known species,VASCULAR_PLANT,Vascular plants,CHL,Chile,6103.0
+ENDANGERED,Number of endangered species,VASCULAR_PLANT,Vascular plants,CHL,Chile,199.0
+VULNERABLE,Number of vulnerable species,VASCULAR_PLANT,Vascular plants,CHL,Chile,153.0
+THREATENED,Total number of threatened species,VASCULAR_PLANT,Vascular plants,CHL,Chile,426.0
+TOT_KNOWN,Total number of known species,VASCULAR_PLANT,Vascular plants,EST,Estonia,2013.0
+ENDANGERED,Number of endangered species,VASCULAR_PLANT,Vascular plants,EST,Estonia,67.0
+CRITICAL,Number of critically endangered species,VASCULAR_PLANT,Vascular plants,EST,Estonia,35.0
+VULNERABLE,Number of vulnerable species,VASCULAR_PLANT,Vascular plants,EST,Estonia,102.0
+THREATENED,Total number of threatened species,VASCULAR_PLANT,Vascular plants,EST,Estonia,204.0
+THREATENED,Total number of threatened species,VASCULAR_PLANT,Vascular plants,RUS,Russia,63.0
+TOT_KNOWN,Total number of known species,VASCULAR_PLANT,Vascular plants,SVN,Slovenia,3452.0
+ENDANGERED,Number of endangered species,VASCULAR_PLANT,Vascular plants,SVN,Slovenia,80.0
+VULNERABLE,Number of vulnerable species,VASCULAR_PLANT,Vascular plants,SVN,Slovenia,254.0
+THREATENED,Total number of threatened species,VASCULAR_PLANT,Vascular plants,SVN,Slovenia,334.0
+TOT_KNOWN,Total number of known species,FISH_TOT,Fish,AUS,Australia,5342.0
+ENDANGERED,Number of endangered species,FISH_TOT,Fish,AUS,Australia,20.0
+ENDANGERED,Number of endangered species,MARINE_F,Marine Fish,AUS,Australia,3.0
+ENDANGERED,Number of endangered species,FRESHW_F,Freshwater Fish,AUS,Australia,17.0
+CRITICAL,Number of critically endangered species,FISH_TOT,Fish,AUS,Australia,8.0
+CRITICAL,Number of critically endangered species,MARINE_F,Marine Fish,AUS,Australia,4.0
+CRITICAL,Number of critically endangered species,FRESHW_F,Freshwater Fish,AUS,Australia,4.0
+VULNERABLE,Number of vulnerable species,FISH_TOT,Fish,AUS,Australia,25.0
+VULNERABLE,Number of vulnerable species,MARINE_F,Marine Fish,AUS,Australia,8.0
+VULNERABLE,Number of vulnerable species,FRESHW_F,Freshwater Fish,AUS,Australia,17.0
+THREATENED,Total number of threatened species,FISH_TOT,Fish,AUS,Australia,53.0
+THREATENED,Total number of threatened species,MARINE_F,Marine Fish,AUS,Australia,15.0
+THREATENED,Total number of threatened species,FRESHW_F,Freshwater Fish,AUS,Australia,38.0
+THREAT_PERCENT,Threatened species as % of known species,MAMMAL,Mammals,AUS,Australia,28.382
+THREAT_PERCENT,Threatened species as % of known species,BIRD,Birds,AUS,Australia,16.917
+THREAT_PERCENT,Threatened species as % of known species,REPTILE,Reptiles,AUS,Australia,5.53
+THREAT_PERCENT,Threatened species as % of known species,AMPHIBIAN,Amphibians,AUS,Australia,16.318
+THREAT_PERCENT,Threatened species as % of known species,VASCULAR_PLANT,Vascular plants,AUS,Australia,5.883
+THREAT_PERCENT,Threatened species as % of known species,FISH_TOT,Fish,AUS,Australia,0.992
+TOT_KNOWN,Total number of known species,FISH_TOT,Fish,AUT,Austria,99.0
+TOT_KNOWN,Total number of known species,FRESHW_F,Freshwater Fish,AUT,Austria,99.0
+ENDANGERED,Number of endangered species,FISH_TOT,Fish,AUT,Austria,18.0
+ENDANGERED,Number of endangered species,FRESHW_F,Freshwater Fish,AUT,Austria,18.0
+CRITICAL,Number of critically endangered species,FISH_TOT,Fish,AUT,Austria,6.0
+CRITICAL,Number of critically endangered species,FRESHW_F,Freshwater Fish,AUT,Austria,6.0
+VULNERABLE,Number of vulnerable species,FISH_TOT,Fish,AUT,Austria,15.0
+VULNERABLE,Number of vulnerable species,FRESHW_F,Freshwater Fish,AUT,Austria,15.0
+THREATENED,Total number of threatened species,FISH_TOT,Fish,AUT,Austria,39.0
+THREATENED,Total number of threatened species,FRESHW_F,Freshwater Fish,AUT,Austria,39.0
+THREAT_PERCENT,Threatened species as % of known species,MAMMAL,Mammals,AUT,Austria,25.962
+THREAT_PERCENT,Threatened species as % of known species,BIRD,Birds,AUT,Austria,28.821
+THREAT_PERCENT,Threatened species as % of known species,REPTILE,Reptiles,AUT,Austria,64.286
+THREAT_PERCENT,Threatened species as % of known species,AMPHIBIAN,Amphibians,AUT,Austria,57.143
+THREAT_PERCENT,Threatened species as % of known species,VASCULAR_PLANT,Vascular plants,AUT,Austria,35.756
+THREAT_PERCENT,Threatened species as % of known species,FISH_TOT,Fish,AUT,Austria,39.394
+THREAT_PERCENT,Threatened species as % of known species,FRESHW_F,Freshwater Fish,AUT,Austria,39.394
+TOT_KNOWN,Total number of known species,FISH_TOT,Fish,BEL,Belgium,142.0
+TOT_KNOWN,Total number of known species,MARINE_F,Marine Fish,BEL,Belgium,99.0
+TOT_KNOWN,Total number of known species,FRESHW_F,Freshwater Fish,BEL,Belgium,43.0
+ENDANGERED,Number of endangered species,FISH_TOT,Fish,BEL,Belgium,4.0
+ENDANGERED,Number of endangered species,MARINE_F,Marine Fish,BEL,Belgium,3.0
+ENDANGERED,Number of endangered species,FRESHW_F,Freshwater Fish,BEL,Belgium,1.0
+CRITICAL,Number of critically endangered species,FISH_TOT,Fish,BEL,Belgium,3.0
+CRITICAL,Number of critically endangered species,MARINE_F,Marine Fish,BEL,Belgium,2.0
+CRITICAL,Number of critically endangered species,FRESHW_F,Freshwater Fish,BEL,Belgium,1.0
+VULNERABLE,Number of vulnerable species,FISH_TOT,Fish,BEL,Belgium,22.0
+VULNERABLE,Number of vulnerable species,MARINE_F,Marine Fish,BEL,Belgium,9.0
+VULNERABLE,Number of vulnerable species,FRESHW_F,Freshwater Fish,BEL,Belgium,13.0
+THREATENED,Total number of threatened species,FISH_TOT,Fish,BEL,Belgium,29.0
+THREATENED,Total number of threatened species,MARINE_F,Marine Fish,BEL,Belgium,14.0
+THREATENED,Total number of threatened species,FRESHW_F,Freshwater Fish,BEL,Belgium,15.0
+THREAT_PERCENT,Threatened species as % of known species,MAMMAL,Mammals,BEL,Belgium,21.429
+THREAT_PERCENT,Threatened species as % of known species,BIRD,Birds,BEL,Belgium,27.778
+THREAT_PERCENT,Threatened species as % of known species,REPTILE,Reptiles,BEL,Belgium,40.0
+THREAT_PERCENT,Threatened species as % of known species,AMPHIBIAN,Amphibians,BEL,Belgium,31.579
+THREAT_PERCENT,Threatened species as % of known species,VASCULAR_PLANT,Vascular plants,BEL,Belgium,23.267
+THREAT_PERCENT,Threatened species as % of known species,FISH_TOT,Fish,BEL,Belgium,20.423
+THREAT_PERCENT,Threatened species as % of known species,MARINE_F,Marine Fish,BEL,Belgium,14.141
+THREAT_PERCENT,Threatened species as % of known species,FRESHW_F,Freshwater Fish,BEL,Belgium,34.884
+TOT_KNOWN,Total number of known species,FISH_TOT,Fish,CAN,Canada,1392.0
+TOT_KNOWN,Total number of known species,MARINE_F,Marine Fish,CAN,Canada,1229.0
+TOT_KNOWN,Total number of known species,FRESHW_F,Freshwater Fish,CAN,Canada,163.0
+ENDANGERED,Number of endangered species,FISH_TOT,Fish,CAN,Canada,28.0
+ENDANGERED,Number of endangered species,MARINE_F,Marine Fish,CAN,Canada,13.0
+ENDANGERED,Number of endangered species,FRESHW_F,Freshwater Fish,CAN,Canada,15.0
+CRITICAL,Number of critically endangered species,MAMMAL,Mammals,CAN,Canada,11.0
+CRITICAL,Number of critically endangered species,BIRD,Birds,CAN,Canada,23.0
+CRITICAL,Number of critically endangered species,REPTILE,Reptiles,CAN,Canada,4.0
+CRITICAL,Number of critically endangered species,AMPHIBIAN,Amphibians,CAN,Canada,3.0
+CRITICAL,Number of critically endangered species,VASCULAR_PLANT,Vascular plants,CAN,Canada,254.0
+CRITICAL,Number of critically endangered species,FISH_TOT,Fish,CAN,Canada,11.0
+CRITICAL,Number of critically endangered species,MARINE_F,Marine Fish,CAN,Canada,3.0
+CRITICAL,Number of critically endangered species,FRESHW_F,Freshwater Fish,CAN,Canada,8.0
+VULNERABLE,Number of vulnerable species,FISH_TOT,Fish,CAN,Canada,51.0
+VULNERABLE,Number of vulnerable species,MARINE_F,Marine Fish,CAN,Canada,38.0
+VULNERABLE,Number of vulnerable species,FRESHW_F,Freshwater Fish,CAN,Canada,13.0
+THREATENED,Total number of threatened species,FISH_TOT,Fish,CAN,Canada,90.0
+THREATENED,Total number of threatened species,MARINE_F,Marine Fish,CAN,Canada,54.0
+THREATENED,Total number of threatened species,FRESHW_F,Freshwater Fish,CAN,Canada,36.0
+THREAT_PERCENT,Threatened species as % of known species,MAMMAL,Mammals,CAN,Canada,24.775
+THREAT_PERCENT,Threatened species as % of known species,BIRD,Birds,CAN,Canada,14.038
+THREAT_PERCENT,Threatened species as % of known species,REPTILE,Reptiles,CAN,Canada,64.444
+THREAT_PERCENT,Threatened species as % of known species,AMPHIBIAN,Amphibians,CAN,Canada,39.13
+THREAT_PERCENT,Threatened species as % of known species,VASCULAR_PLANT,Vascular plants,CAN,Canada,18.194
+THREAT_PERCENT,Threatened species as % of known species,FISH_TOT,Fish,CAN,Canada,6.466
+THREAT_PERCENT,Threatened species as % of known species,MARINE_F,Marine Fish,CAN,Canada,4.394
+THREAT_PERCENT,Threatened species as % of known species,FRESHW_F,Freshwater Fish,CAN,Canada,22.086
+TOT_KNOWN,Total number of known species,FISH_TOT,Fish,CZE,Czech Republic,80.0
+TOT_KNOWN,Total number of known species,FRESHW_F,Freshwater Fish,CZE,Czech Republic,80.0
+ENDANGERED,Number of endangered species,FISH_TOT,Fish,CZE,Czech Republic,2.0
+ENDANGERED,Number of endangered species,FRESHW_F,Freshwater Fish,CZE,Czech Republic,2.0
+CRITICAL,Number of critically endangered species,FISH_TOT,Fish,CZE,Czech Republic,15.0
+CRITICAL,Number of critically endangered species,FRESHW_F,Freshwater Fish,CZE,Czech Republic,15.0
+VULNERABLE,Number of vulnerable species,FISH_TOT,Fish,CZE,Czech Republic,8.0
+VULNERABLE,Number of vulnerable species,FRESHW_F,Freshwater Fish,CZE,Czech Republic,8.0
+THREATENED,Total number of threatened species,FISH_TOT,Fish,CZE,Czech Republic,25.0
+THREATENED,Total number of threatened species,FRESHW_F,Freshwater Fish,CZE,Czech Republic,25.0
+THREAT_PERCENT,Threatened species as % of known species,MAMMAL,Mammals,CZE,Czech Republic,16.304
+THREAT_PERCENT,Threatened species as % of known species,BIRD,Birds,CZE,Czech Republic,44.796
+THREAT_PERCENT,Threatened species as % of known species,REPTILE,Reptiles,CZE,Czech Republic,53.846
+THREAT_PERCENT,Threatened species as % of known species,AMPHIBIAN,Amphibians,CZE,Czech Republic,76.19
+THREAT_PERCENT,Threatened species as % of known species,VASCULAR_PLANT,Vascular plants,CZE,Czech Republic,40.248
+THREAT_PERCENT,Threatened species as % of known species,FISH_TOT,Fish,CZE,Czech Republic,31.25
+THREAT_PERCENT,Threatened species as % of known species,FRESHW_F,Freshwater Fish,CZE,Czech Republic,31.25
+TOT_KNOWN,Total number of known species,FRESHW_F,Freshwater Fish,DNK,Denmark,55.0
+CRITICAL,Number of critically endangered species,FRESHW_F,Freshwater Fish,DNK,Denmark,2.0
+VULNERABLE,Number of vulnerable species,FRESHW_F,Freshwater Fish,DNK,Denmark,6.0
+THREATENED,Total number of threatened species,FRESHW_F,Freshwater Fish,DNK,Denmark,8.0
+THREAT_PERCENT,Threatened species as % of known species,MAMMAL,Mammals,DNK,Denmark,12.676
+THREAT_PERCENT,Threatened species as % of known species,BIRD,Birds,DNK,Denmark,34.855
+THREAT_PERCENT,Threatened species as % of known species,AMPHIBIAN,Amphibians,DNK,Denmark,33.333
+THREAT_PERCENT,Threatened species as % of known species,VASCULAR_PLANT,Vascular plants,DNK,Denmark,5.552
+THREAT_PERCENT,Threatened species as % of known species,FRESHW_F,Freshwater Fish,DNK,Denmark,14.545
+TOT_KNOWN,Total number of known species,FRESHW_F,Freshwater Fish,FIN,Finland,63.0
+ENDANGERED,Number of endangered species,FRESHW_F,Freshwater Fish,FIN,Finland,3.0
+CRITICAL,Number of critically endangered species,FRESHW_F,Freshwater Fish,FIN,Finland,3.0
+VULNERABLE,Number of vulnerable species,FRESHW_F,Freshwater Fish,FIN,Finland,4.0
+THREATENED,Total number of threatened species,FRESHW_F,Freshwater Fish,FIN,Finland,10.0
+THREAT_PERCENT,Threatened species as % of known species,MAMMAL,Mammals,FIN,Finland,11.268
+THREAT_PERCENT,Threatened species as % of known species,BIRD,Birds,FIN,Finland,33.992
+THREAT_PERCENT,Threatened species as % of known species,REPTILE,Reptiles,FIN,Finland,16.667
+THREAT_PERCENT,Threatened species as % of known species,AMPHIBIAN,Amphibians,FIN,Finland,10.0
+THREAT_PERCENT,Threatened species as % of known species,VASCULAR_PLANT,Vascular plants,FIN,Finland,8.067
+THREAT_PERCENT,Threatened species as % of known species,FRESHW_F,Freshwater Fish,FIN,Finland,15.873
+TOT_KNOWN,Total number of known species,FRESHW_F,Freshwater Fish,FRA,France,80.0
+ENDANGERED,Number of endangered species,FRESHW_F,Freshwater Fish,FRA,France,6.0
+CRITICAL,Number of critically endangered species,FRESHW_F,Freshwater Fish,FRA,France,4.0
+VULNERABLE,Number of vulnerable species,FRESHW_F,Freshwater Fish,FRA,France,5.0
+THREATENED,Total number of threatened species,FRESHW_F,Freshwater Fish,FRA,France,15.0
+THREAT_PERCENT,Threatened species as % of known species,MAMMAL,Mammals,FRA,France,13.6
+THREAT_PERCENT,Threatened species as % of known species,BIRD,Birds,FRA,France,27.02
+THREAT_PERCENT,Threatened species as % of known species,REPTILE,Reptiles,FRA,France,23.684
+THREAT_PERCENT,Threatened species as % of known species,AMPHIBIAN,Amphibians,FRA,France,22.857
+THREAT_PERCENT,Threatened species as % of known species,FRESHW_F,Freshwater Fish,FRA,France,18.75
+TOT_KNOWN,Total number of known species,FRESHW_F,Freshwater Fish,DEU,Germany,103.0
+ENDANGERED,Number of endangered species,FRESHW_F,Freshwater Fish,DEU,Germany,9.0
+CRITICAL,Number of critically endangered species,FRESHW_F,Freshwater Fish,DEU,Germany,8.0
+VULNERABLE,Number of vulnerable species,FRESHW_F,Freshwater Fish,DEU,Germany,11.0
+THREATENED,Total number of threatened species,FRESHW_F,Freshwater Fish,DEU,Germany,28.0
+THREAT_PERCENT,Threatened species as % of known species,MAMMAL,Mammals,DEU,Germany,36.449
+THREAT_PERCENT,Threatened species as % of known species,BIRD,Birds,DEU,Germany,33.571
+THREAT_PERCENT,Threatened species as % of known species,REPTILE,Reptiles,DEU,Germany,69.231
+THREAT_PERCENT,Threatened species as % of known species,AMPHIBIAN,Amphibians,DEU,Germany,47.619
+THREAT_PERCENT,Threatened species as % of known species,VASCULAR_PLANT,Vascular plants,DEU,Germany,32.753
+THREAT_PERCENT,Threatened species as % of known species,FRESHW_F,Freshwater Fish,DEU,Germany,27.184
+TOT_KNOWN,Total number of known species,FISH_TOT,Fish,GRC,Greece,665.0
+TOT_KNOWN,Total number of known species,MARINE_F,Marine Fish,GRC,Greece,511.0
+TOT_KNOWN,Total number of known species,FRESHW_F,Freshwater Fish,GRC,Greece,154.0
+ENDANGERED,Number of endangered species,FISH_TOT,Fish,GRC,Greece,16.0
+ENDANGERED,Number of endangered species,MARINE_F,Marine Fish,GRC,Greece,4.0
+ENDANGERED,Number of endangered species,FRESHW_F,Freshwater Fish,GRC,Greece,12.0
+CRITICAL,Number of critically endangered species,FISH_TOT,Fish,GRC,Greece,19.0
+CRITICAL,Number of critically endangered species,MARINE_F,Marine Fish,GRC,Greece,5.0
+CRITICAL,Number of critically endangered species,FRESHW_F,Freshwater Fish,GRC,Greece,14.0
+VULNERABLE,Number of vulnerable species,FISH_TOT,Fish,GRC,Greece,28.0
+VULNERABLE,Number of vulnerable species,MARINE_F,Marine Fish,GRC,Greece,5.0
+VULNERABLE,Number of vulnerable species,FRESHW_F,Freshwater Fish,GRC,Greece,23.0
+THREATENED,Total number of threatened species,FISH_TOT,Fish,GRC,Greece,63.0
+THREATENED,Total number of threatened species,MARINE_F,Marine Fish,GRC,Greece,14.0
+THREATENED,Total number of threatened species,FRESHW_F,Freshwater Fish,GRC,Greece,49.0
+THREAT_PERCENT,Threatened species as % of known species,MAMMAL,Mammals,GRC,Greece,25.217
+THREAT_PERCENT,Threatened species as % of known species,BIRD,Birds,GRC,Greece,14.091
+THREAT_PERCENT,Threatened species as % of known species,REPTILE,Reptiles,GRC,Greece,13.636
+THREAT_PERCENT,Threatened species as % of known species,AMPHIBIAN,Amphibians,GRC,Greece,26.087
+THREAT_PERCENT,Threatened species as % of known species,VASCULAR_PLANT,Vascular plants,GRC,Greece,4.359
+THREAT_PERCENT,Threatened species as % of known species,FISH_TOT,Fish,GRC,Greece,9.474
+THREAT_PERCENT,Threatened species as % of known species,MARINE_F,Marine Fish,GRC,Greece,2.74
+THREAT_PERCENT,Threatened species as % of known species,FRESHW_F,Freshwater Fish,GRC,Greece,31.818
+TOT_KNOWN,Total number of known species,FISH_TOT,Fish,HUN,Hungary,81.0
+TOT_KNOWN,Total number of known species,FRESHW_F,Freshwater Fish,HUN,Hungary,81.0
+THREATENED,Total number of threatened species,FISH_TOT,Fish,HUN,Hungary,35.0
+THREATENED,Total number of threatened species,FRESHW_F,Freshwater Fish,HUN,Hungary,35.0
+THREAT_PERCENT,Threatened species as % of known species,MAMMAL,Mammals,HUN,Hungary,16.092
+THREAT_PERCENT,Threatened species as % of known species,BIRD,Birds,HUN,Hungary,32.773
+THREAT_PERCENT,Threatened species as % of known species,REPTILE,Reptiles,HUN,Hungary,26.667
+THREAT_PERCENT,Threatened species as % of known species,AMPHIBIAN,Amphibians,HUN,Hungary,11.111
+THREAT_PERCENT,Threatened species as % of known species,VASCULAR_PLANT,Vascular plants,HUN,Hungary,14.039
+THREAT_PERCENT,Threatened species as % of known species,FISH_TOT,Fish,HUN,Hungary,43.21
+THREAT_PERCENT,Threatened species as % of known species,FRESHW_F,Freshwater Fish,HUN,Hungary,43.21
+TOT_KNOWN,Total number of known species,FRESHW_F,Freshwater Fish,ISL,Iceland,5.0
+THREAT_PERCENT,Threatened species as % of known species,BIRD,Birds,ISL,Iceland,44.0
+THREAT_PERCENT,Threatened species as % of known species,VASCULAR_PLANT,Vascular plants,ISL,Iceland,11.872
+TOT_KNOWN,Total number of known species,FISH_TOT,Fish,IRL,Ireland,404.0
+TOT_KNOWN,Total number of known species,MARINE_F,Marine Fish,IRL,Ireland,376.0
+TOT_KNOWN,Total number of known species,FRESHW_F,Freshwater Fish,IRL,Ireland,28.0
+CRITICAL,Number of critically endangered species,FRESHW_F,Freshwater Fish,IRL,Ireland,1.0
+VULNERABLE,Number of vulnerable species,FRESHW_F,Freshwater Fish,IRL,Ireland,4.0
+THREATENED,Total number of threatened species,FRESHW_F,Freshwater Fish,IRL,Ireland,5.0
+THREAT_PERCENT,Threatened species as % of known species,MAMMAL,Mammals,IRL,Ireland,1.754
+THREAT_PERCENT,Threatened species as % of known species,BIRD,Birds,IRL,Ireland,27.198
+THREAT_PERCENT,Threatened species as % of known species,REPTILE,Reptiles,IRL,Ireland,0.0
+THREAT_PERCENT,Threatened species as % of known species,AMPHIBIAN,Amphibians,IRL,Ireland,33.333
+THREAT_PERCENT,Threatened species as % of known species,VASCULAR_PLANT,Vascular plants,IRL,Ireland,9.619
+THREAT_PERCENT,Threatened species as % of known species,FRESHW_F,Freshwater Fish,IRL,Ireland,17.857
+TOT_KNOWN,Total number of known species,FISH_TOT,Fish,ITA,Italy,641.0
+TOT_KNOWN,Total number of known species,MARINE_F,Marine Fish,ITA,Italy,544.0
+TOT_KNOWN,Total number of known species,FRESHW_F,Freshwater Fish,ITA,Italy,97.0
+ENDANGERED,Number of endangered species,FRESHW_F,Freshwater Fish,ITA,Italy,6.0
+CRITICAL,Number of critically endangered species,FRESHW_F,Freshwater Fish,ITA,Italy,11.0
+VULNERABLE,Number of vulnerable species,FRESHW_F,Freshwater Fish,ITA,Italy,8.0
+THREATENED,Total number of threatened species,FRESHW_F,Freshwater Fish,ITA,Italy,25.0
+THREAT_PERCENT,Threatened species as % of known species,MAMMAL,Mammals,ITA,Italy,18.254
+THREAT_PERCENT,Threatened species as % of known species,BIRD,Birds,ITA,Italy,24.101
+THREAT_PERCENT,Threatened species as % of known species,REPTILE,Reptiles,ITA,Italy,19.643
+THREAT_PERCENT,Threatened species as % of known species,AMPHIBIAN,Amphibians,ITA,Italy,31.818
+THREAT_PERCENT,Threatened species as % of known species,VASCULAR_PLANT,Vascular plants,ITA,Italy,7.649
+THREAT_PERCENT,Threatened species as % of known species,FRESHW_F,Freshwater Fish,ITA,Italy,25.773
+TOT_KNOWN,Total number of known species,FRESHW_F,Freshwater Fish,JPN,Japan,400.0
+ENDANGERED,Number of endangered species,FRESHW_F,Freshwater Fish,JPN,Japan,54.0
+CRITICAL,Number of critically endangered species,FRESHW_F,Freshwater Fish,JPN,Japan,71.0
+VULNERABLE,Number of vulnerable species,FRESHW_F,Freshwater Fish,JPN,Japan,44.0
+THREATENED,Total number of threatened species,FRESHW_F,Freshwater Fish,JPN,Japan,169.0
+THREAT_PERCENT,Threatened species as % of known species,MAMMAL,Mammals,JPN,Japan,21.25
+THREAT_PERCENT,Threatened species as % of known species,BIRD,Birds,JPN,Japan,14.0
+THREAT_PERCENT,Threatened species as % of known species,REPTILE,Reptiles,JPN,Japan,37.0
+THREAT_PERCENT,Threatened species as % of known species,AMPHIBIAN,Amphibians,JPN,Japan,51.648
+THREAT_PERCENT,Threatened species as % of known species,VASCULAR_PLANT,Vascular plants,JPN,Japan,25.571
+THREAT_PERCENT,Threatened species as % of known species,FRESHW_F,Freshwater Fish,JPN,Japan,42.25
+TOT_KNOWN,Total number of known species,FISH_TOT,Fish,KOR,Korea,1326.0
+ENDANGERED,Number of endangered species,FISH_TOT,Fish,KOR,Korea,13.0
+ENDANGERED,Number of endangered species,FRESHW_F,Freshwater Fish,KOR,Korea,13.0
+CRITICAL,Number of critically endangered species,FISH_TOT,Fish,KOR,Korea,4.0
+CRITICAL,Number of critically endangered species,FRESHW_F,Freshwater Fish,KOR,Korea,4.0
+VULNERABLE,Number of vulnerable species,FISH_TOT,Fish,KOR,Korea,7.0
+VULNERABLE,Number of vulnerable species,FRESHW_F,Freshwater Fish,KOR,Korea,7.0
+THREATENED,Total number of threatened species,FISH_TOT,Fish,KOR,Korea,24.0
+THREATENED,Total number of threatened species,FRESHW_F,Freshwater Fish,KOR,Korea,24.0
+THREAT_PERCENT,Threatened species as % of known species,MAMMAL,Mammals,KOR,Korea,11.2
+THREAT_PERCENT,Threatened species as % of known species,BIRD,Birds,KOR,Korea,9.854
+THREAT_PERCENT,Threatened species as % of known species,REPTILE,Reptiles,KOR,Korea,15.625
+THREAT_PERCENT,Threatened species as % of known species,AMPHIBIAN,Amphibians,KOR,Korea,18.519
+THREAT_PERCENT,Threatened species as % of known species,VASCULAR_PLANT,Vascular plants,KOR,Korea,4.082
+THREAT_PERCENT,Threatened species as % of known species,FISH_TOT,Fish,KOR,Korea,1.81
+TOT_KNOWN,Total number of known species,FISH_TOT,Fish,LUX,Luxembourg,43.0
+TOT_KNOWN,Total number of known species,FRESHW_F,Freshwater Fish,LUX,Luxembourg,43.0
+ENDANGERED,Number of endangered species,FISH_TOT,Fish,LUX,Luxembourg,1.0
+ENDANGERED,Number of endangered species,FRESHW_F,Freshwater Fish,LUX,Luxembourg,1.0
+CRITICAL,Number of critically endangered species,FISH_TOT,Fish,LUX,Luxembourg,3.0
+CRITICAL,Number of critically endangered species,FRESHW_F,Freshwater Fish,LUX,Luxembourg,3.0
+VULNERABLE,Number of vulnerable species,FISH_TOT,Fish,LUX,Luxembourg,8.0
+VULNERABLE,Number of vulnerable species,FRESHW_F,Freshwater Fish,LUX,Luxembourg,8.0
+THREATENED,Total number of threatened species,FISH_TOT,Fish,LUX,Luxembourg,12.0
+THREATENED,Total number of threatened species,FRESHW_F,Freshwater Fish,LUX,Luxembourg,12.0
+THREAT_PERCENT,Threatened species as % of known species,BIRD,Birds,LUX,Luxembourg,19.847
+THREAT_PERCENT,Threatened species as % of known species,REPTILE,Reptiles,LUX,Luxembourg,33.333
+THREAT_PERCENT,Threatened species as % of known species,AMPHIBIAN,Amphibians,LUX,Luxembourg,28.571
+THREAT_PERCENT,Threatened species as % of known species,VASCULAR_PLANT,Vascular plants,LUX,Luxembourg,26.757
+THREAT_PERCENT,Threatened species as % of known species,FISH_TOT,Fish,LUX,Luxembourg,27.907
+THREAT_PERCENT,Threatened species as % of known species,FRESHW_F,Freshwater Fish,LUX,Luxembourg,27.907
+TOT_KNOWN,Total number of known species,FISH_TOT,Fish,MEX,Mexico,2763.0
+ENDANGERED,Number of endangered species,FISH_TOT,Fish,MEX,Mexico,85.0
+CRITICAL,Number of critically endangered species,FISH_TOT,Fish,MEX,Mexico,14.0
+VULNERABLE,Number of vulnerable species,FISH_TOT,Fish,MEX,Mexico,76.0
+THREATENED,Total number of threatened species,FISH_TOT,Fish,MEX,Mexico,175.0
+THREAT_PERCENT,Threatened species as % of known species,MAMMAL,Mammals,MEX,Mexico,26.241
+THREAT_PERCENT,Threatened species as % of known species,BIRD,Birds,MEX,Mexico,21.755
+THREAT_PERCENT,Threatened species as % of known species,REPTILE,Reptiles,MEX,Mexico,17.838
+THREAT_PERCENT,Threatened species as % of known species,AMPHIBIAN,Amphibians,MEX,Mexico,14.044
+THREAT_PERCENT,Threatened species as % of known species,VASCULAR_PLANT,Vascular plants,MEX,Mexico,2.43
+THREAT_PERCENT,Threatened species as % of known species,FISH_TOT,Fish,MEX,Mexico,6.334
+TOT_KNOWN,Total number of known species,FISH_TOT,Fish,NLD,Netherlands,97.0
+TOT_KNOWN,Total number of known species,MARINE_F,Marine Fish,NLD,Netherlands,57.0
+TOT_KNOWN,Total number of known species,FRESHW_F,Freshwater Fish,NLD,Netherlands,40.0
+ENDANGERED,Number of endangered species,FISH_TOT,Fish,NLD,Netherlands,5.0
+ENDANGERED,Number of endangered species,MARINE_F,Marine Fish,NLD,Netherlands,3.0
+ENDANGERED,Number of endangered species,FRESHW_F,Freshwater Fish,NLD,Netherlands,2.0
+CRITICAL,Number of critically endangered species,FISH_TOT,Fish,NLD,Netherlands,4.0
+CRITICAL,Number of critically endangered species,MARINE_F,Marine Fish,NLD,Netherlands,3.0
+CRITICAL,Number of critically endangered species,FRESHW_F,Freshwater Fish,NLD,Netherlands,1.0
+VULNERABLE,Number of vulnerable species,FISH_TOT,Fish,NLD,Netherlands,14.0
+VULNERABLE,Number of vulnerable species,MARINE_F,Marine Fish,NLD,Netherlands,4.0
+VULNERABLE,Number of vulnerable species,FRESHW_F,Freshwater Fish,NLD,Netherlands,10.0
+THREATENED,Total number of threatened species,FISH_TOT,Fish,NLD,Netherlands,23.0
+THREATENED,Total number of threatened species,MARINE_F,Marine Fish,NLD,Netherlands,10.0
+THREATENED,Total number of threatened species,FRESHW_F,Freshwater Fish,NLD,Netherlands,13.0
+THREAT_PERCENT,Threatened species as % of known species,MAMMAL,Mammals,NLD,Netherlands,18.868
+THREAT_PERCENT,Threatened species as % of known species,BIRD,Birds,NLD,Netherlands,24.405
+THREAT_PERCENT,Threatened species as % of known species,REPTILE,Reptiles,NLD,Netherlands,71.429
+THREAT_PERCENT,Threatened species as % of known species,AMPHIBIAN,Amphibians,NLD,Netherlands,43.75
+THREAT_PERCENT,Threatened species as % of known species,VASCULAR_PLANT,Vascular plants,NLD,Netherlands,25.52
+THREAT_PERCENT,Threatened species as % of known species,FISH_TOT,Fish,NLD,Netherlands,23.711
+THREAT_PERCENT,Threatened species as % of known species,MARINE_F,Marine Fish,NLD,Netherlands,17.544
+THREAT_PERCENT,Threatened species as % of known species,FRESHW_F,Freshwater Fish,NLD,Netherlands,32.5
+TOT_KNOWN,Total number of known species,FRESHW_F,Freshwater Fish,NZL,New Zealand,75.0
+TOT_KNOWN,Total number of known species,FISH_TOT,Fish,NOR,Norway,205.0
+TOT_KNOWN,Total number of known species,MARINE_F,Marine Fish,NOR,Norway,173.0
+TOT_KNOWN,Total number of known species,FRESHW_F,Freshwater Fish,NOR,Norway,32.0
+ENDANGERED,Number of endangered species,FISH_TOT,Fish,NOR,Norway,6.0
+ENDANGERED,Number of endangered species,MARINE_F,Marine Fish,NOR,Norway,6.0
+CRITICAL,Number of critically endangered species,FISH_TOT,Fish,NOR,Norway,2.0
+CRITICAL,Number of critically endangered species,MARINE_F,Marine Fish,NOR,Norway,2.0
+VULNERABLE,Number of vulnerable species,FISH_TOT,Fish,NOR,Norway,4.0
+VULNERABLE,Number of vulnerable species,MARINE_F,Marine Fish,NOR,Norway,3.0
+THREATENED,Total number of threatened species,FISH_TOT,Fish,NOR,Norway,12.0
+THREATENED,Total number of threatened species,MARINE_F,Marine Fish,NOR,Norway,11.0
+THREAT_PERCENT,Threatened species as % of known species,MAMMAL,Mammals,NOR,Norway,23.944
+THREAT_PERCENT,Threatened species as % of known species,BIRD,Birds,NOR,Norway,26.496
+THREAT_PERCENT,Threatened species as % of known species,AMPHIBIAN,Amphibians,NOR,Norway,33.333
+THREAT_PERCENT,Threatened species as % of known species,VASCULAR_PLANT,Vascular plants,NOR,Norway,21.584
+THREAT_PERCENT,Threatened species as % of known species,FISH_TOT,Fish,NOR,Norway,5.854
+THREAT_PERCENT,Threatened species as % of known species,MARINE_F,Marine Fish,NOR,Norway,6.358
+TOT_KNOWN,Total number of known species,FISH_TOT,Fish,POL,Poland,126.0
+TOT_KNOWN,Total number of known species,MARINE_F,Marine Fish,POL,Poland,36.0
+TOT_KNOWN,Total number of known species,FRESHW_F,Freshwater Fish,POL,Poland,77.0
+ENDANGERED,Number of endangered species,AMPHIBIAN,Amphibians,POL,Poland,0.0
+ENDANGERED,Number of endangered species,FISH_TOT,Fish,POL,Poland,5.0
+ENDANGERED,Number of endangered species,MARINE_F,Marine Fish,POL,Poland,0.0
+ENDANGERED,Number of endangered species,FRESHW_F,Freshwater Fish,POL,Poland,4.0
+CRITICAL,Number of critically endangered species,FISH_TOT,Fish,POL,Poland,6.0
+CRITICAL,Number of critically endangered species,MARINE_F,Marine Fish,POL,Poland,1.0
+CRITICAL,Number of critically endangered species,FRESHW_F,Freshwater Fish,POL,Poland,1.0
+VULNERABLE,Number of vulnerable species,FISH_TOT,Fish,POL,Poland,14.0
+VULNERABLE,Number of vulnerable species,MARINE_F,Marine Fish,POL,Poland,1.0
+VULNERABLE,Number of vulnerable species,FRESHW_F,Freshwater Fish,POL,Poland,12.0
+THREATENED,Total number of threatened species,FISH_TOT,Fish,POL,Poland,25.0
+THREATENED,Total number of threatened species,MARINE_F,Marine Fish,POL,Poland,2.0
+THREATENED,Total number of threatened species,FRESHW_F,Freshwater Fish,POL,Poland,17.0
+THREAT_PERCENT,Threatened species as % of known species,MAMMAL,Mammals,POL,Poland,11.607
+THREAT_PERCENT,Threatened species as % of known species,BIRD,Birds,POL,Poland,7.456
+THREAT_PERCENT,Threatened species as % of known species,REPTILE,Reptiles,POL,Poland,25.0
+THREAT_PERCENT,Threatened species as % of known species,VASCULAR_PLANT,Vascular plants,POL,Poland,15.282
+THREAT_PERCENT,Threatened species as % of known species,FISH_TOT,Fish,POL,Poland,19.841
+THREAT_PERCENT,Threatened species as % of known species,MARINE_F,Marine Fish,POL,Poland,5.556
+THREAT_PERCENT,Threatened species as % of known species,FRESHW_F,Freshwater Fish,POL,Poland,22.078
+TOT_KNOWN,Total number of known species,FISH_TOT,Fish,PRT,Portugal,65.0
+ENDANGERED,Number of endangered species,FISH_TOT,Fish,PRT,Portugal,10.0
+CRITICAL,Number of critically endangered species,FISH_TOT,Fish,PRT,Portugal,8.0
+VULNERABLE,Number of vulnerable species,FISH_TOT,Fish,PRT,Portugal,4.0
+THREATENED,Total number of threatened species,FISH_TOT,Fish,PRT,Portugal,22.0
+THREAT_PERCENT,Threatened species as % of known species,MAMMAL,Mammals,PRT,Portugal,19.62
+THREAT_PERCENT,Threatened species as % of known species,BIRD,Birds,PRT,Portugal,28.244
+THREAT_PERCENT,Threatened species as % of known species,REPTILE,Reptiles,PRT,Portugal,20.408
+THREAT_PERCENT,Threatened species as % of known species,AMPHIBIAN,Amphibians,PRT,Portugal,10.0
+THREAT_PERCENT,Threatened species as % of known species,FISH_TOT,Fish,PRT,Portugal,33.846
+TOT_KNOWN,Total number of known species,FRESHW_F,Freshwater Fish,SVK,Slovak Republic,79.0
+ENDANGERED,Number of endangered species,FRESHW_F,Freshwater Fish,SVK,Slovak Republic,6.0
+VULNERABLE,Number of vulnerable species,FRESHW_F,Freshwater Fish,SVK,Slovak Republic,6.0
+THREATENED,Total number of threatened species,FRESHW_F,Freshwater Fish,SVK,Slovak Republic,12.0
+THREAT_PERCENT,Threatened species as % of known species,MAMMAL,Mammals,SVK,Slovak Republic,22.222
+THREAT_PERCENT,Threatened species as % of known species,BIRD,Birds,SVK,Slovak Republic,24.171
+THREAT_PERCENT,Threatened species as % of known species,REPTILE,Reptiles,SVK,Slovak Republic,41.667
+THREAT_PERCENT,Threatened species as % of known species,AMPHIBIAN,Amphibians,SVK,Slovak Republic,44.444
+THREAT_PERCENT,Threatened species as % of known species,VASCULAR_PLANT,Vascular plants,SVK,Slovak Republic,14.562
+THREAT_PERCENT,Threatened species as % of known species,FRESHW_F,Freshwater Fish,SVK,Slovak Republic,15.19
+TOT_KNOWN,Total number of known species,FRESHW_F,Freshwater Fish,ESP,Spain,85.0
+ENDANGERED,Number of endangered species,FRESHW_F,Freshwater Fish,ESP,Spain,8.0
+CRITICAL,Number of critically endangered species,FRESHW_F,Freshwater Fish,ESP,Spain,9.0
+VULNERABLE,Number of vulnerable species,FRESHW_F,Freshwater Fish,ESP,Spain,19.0
+THREATENED,Total number of threatened species,FRESHW_F,Freshwater Fish,ESP,Spain,36.0
+THREAT_PERCENT,Threatened species as % of known species,MAMMAL,Mammals,ESP,Spain,15.116
+THREAT_PERCENT,Threatened species as % of known species,BIRD,Birds,ESP,Spain,10.625
+THREAT_PERCENT,Threatened species as % of known species,REPTILE,Reptiles,ESP,Spain,18.095
+THREAT_PERCENT,Threatened species as % of known species,AMPHIBIAN,Amphibians,ESP,Spain,23.077
+THREAT_PERCENT,Threatened species as % of known species,VASCULAR_PLANT,Vascular plants,ESP,Spain,13.723
+THREAT_PERCENT,Threatened species as % of known species,FRESHW_F,Freshwater Fish,ESP,Spain,42.353
+TOT_KNOWN,Total number of known species,FISH_TOT,Fish,SWE,Sweden,132.0
+ENDANGERED,Number of endangered species,FISH_TOT,Fish,SWE,Sweden,6.0
+CRITICAL,Number of critically endangered species,FISH_TOT,Fish,SWE,Sweden,6.0
+VULNERABLE,Number of vulnerable species,FISH_TOT,Fish,SWE,Sweden,8.0
+THREATENED,Total number of threatened species,FISH_TOT,Fish,SWE,Sweden,20.0
+THREAT_PERCENT,Threatened species as % of known species,MAMMAL,Mammals,SWE,Sweden,13.846
+THREAT_PERCENT,Threatened species as % of known species,BIRD,Birds,SWE,Sweden,21.344
+THREAT_PERCENT,Threatened species as % of known species,REPTILE,Reptiles,SWE,Sweden,33.333
+THREAT_PERCENT,Threatened species as % of known species,AMPHIBIAN,Amphibians,SWE,Sweden,23.077
+THREAT_PERCENT,Threatened species as % of known species,VASCULAR_PLANT,Vascular plants,SWE,Sweden,16.719
+THREAT_PERCENT,Threatened species as % of known species,FISH_TOT,Fish,SWE,Sweden,15.152
+TOT_KNOWN,Total number of known species,FISH_TOT,Fish,CHE,Switzerland,90.0
+TOT_KNOWN,Total number of known species,FRESHW_F,Freshwater Fish,CHE,Switzerland,90.0
+TOT_KNOWN,Total number of known species,FISH_TOT,Fish,TUR,Türkiye,896.0
+TOT_KNOWN,Total number of known species,MARINE_F,Marine Fish,TUR,Türkiye,512.0
+TOT_KNOWN,Total number of known species,FRESHW_F,Freshwater Fish,TUR,Türkiye,384.0
+THREAT_PERCENT,Threatened species as % of known species,MAMMAL,Mammals,TUR,Türkiye,13.143
+THREAT_PERCENT,Threatened species as % of known species,BIRD,Birds,TUR,Türkiye,11.0
+THREAT_PERCENT,Threatened species as % of known species,AMPHIBIAN,Amphibians,TUR,Türkiye,20.513
+THREAT_PERCENT,Threatened species as % of known species,VASCULAR_PLANT,Vascular plants,TUR,Türkiye,1.623
+TOT_KNOWN,Total number of known species,FISH_TOT,Fish,GBR,United Kingdom,622.0
+ENDANGERED,Number of endangered species,FRESHW_F,Freshwater Fish,GBR,United Kingdom,3.0
+VULNERABLE,Number of vulnerable species,FRESHW_F,Freshwater Fish,GBR,United Kingdom,3.0
+THREATENED,Total number of threatened species,FRESHW_F,Freshwater Fish,GBR,United Kingdom,8.0
+THREAT_PERCENT,Threatened species as % of known species,VASCULAR_PLANT,Vascular plants,GBR,United Kingdom,8.615
+TOT_KNOWN,Total number of known species,FISH_TOT,Fish,CHL,Chile,1272.0
+TOT_KNOWN,Total number of known species,MARINE_F,Marine Fish,CHL,Chile,1182.0
+TOT_KNOWN,Total number of known species,FRESHW_F,Freshwater Fish,CHL,Chile,72.0
+ENDANGERED,Number of endangered species,FISH_TOT,Fish,CHL,Chile,23.0
+ENDANGERED,Number of endangered species,FRESHW_F,Freshwater Fish,CHL,Chile,23.0
+VULNERABLE,Number of vulnerable species,FISH_TOT,Fish,CHL,Chile,14.0
+VULNERABLE,Number of vulnerable species,MARINE_F,Marine Fish,CHL,Chile,1.0
+VULNERABLE,Number of vulnerable species,FRESHW_F,Freshwater Fish,CHL,Chile,13.0
+THREATENED,Total number of threatened species,FISH_TOT,Fish,CHL,Chile,38.0
+THREATENED,Total number of threatened species,MARINE_F,Marine Fish,CHL,Chile,1.0
+THREATENED,Total number of threatened species,FRESHW_F,Freshwater Fish,CHL,Chile,37.0
+THREAT_PERCENT,Threatened species as % of known species,MAMMAL,Mammals,CHL,Chile,19.459
+THREAT_PERCENT,Threatened species as % of known species,BIRD,Birds,CHL,Chile,9.02
+THREAT_PERCENT,Threatened species as % of known species,REPTILE,Reptiles,CHL,Chile,37.143
+THREAT_PERCENT,Threatened species as % of known species,AMPHIBIAN,Amphibians,CHL,Chile,67.692
+THREAT_PERCENT,Threatened species as % of known species,VASCULAR_PLANT,Vascular plants,CHL,Chile,6.98
+THREAT_PERCENT,Threatened species as % of known species,FISH_TOT,Fish,CHL,Chile,2.987
+THREAT_PERCENT,Threatened species as % of known species,MARINE_F,Marine Fish,CHL,Chile,0.085
+THREAT_PERCENT,Threatened species as % of known species,FRESHW_F,Freshwater Fish,CHL,Chile,51.389
+TOT_KNOWN,Total number of known species,FISH_TOT,Fish,EST,Estonia,103.0
+TOT_KNOWN,Total number of known species,MARINE_F,Marine Fish,EST,Estonia,66.0
+TOT_KNOWN,Total number of known species,FRESHW_F,Freshwater Fish,EST,Estonia,54.0
+ENDANGERED,Number of endangered species,FISH_TOT,Fish,EST,Estonia,1.0
+CRITICAL,Number of critically endangered species,FISH_TOT,Fish,EST,Estonia,3.0
+CRITICAL,Number of critically endangered species,MARINE_F,Marine Fish,EST,Estonia,2.0
+CRITICAL,Number of critically endangered species,FRESHW_F,Freshwater Fish,EST,Estonia,3.0
+VULNERABLE,Number of vulnerable species,FISH_TOT,Fish,EST,Estonia,5.0
+VULNERABLE,Number of vulnerable species,FRESHW_F,Freshwater Fish,EST,Estonia,5.0
+THREATENED,Total number of threatened species,FISH_TOT,Fish,EST,Estonia,9.0
+THREATENED,Total number of threatened species,MARINE_F,Marine Fish,EST,Estonia,4.0
+THREATENED,Total number of threatened species,FRESHW_F,Freshwater Fish,EST,Estonia,9.0
+THREAT_PERCENT,Threatened species as % of known species,MAMMAL,Mammals,EST,Estonia,4.545
+THREAT_PERCENT,Threatened species as % of known species,BIRD,Birds,EST,Estonia,40.598
+THREAT_PERCENT,Threatened species as % of known species,REPTILE,Reptiles,EST,Estonia,40.0
+THREAT_PERCENT,Threatened species as % of known species,AMPHIBIAN,Amphibians,EST,Estonia,27.273
+THREAT_PERCENT,Threatened species as % of known species,VASCULAR_PLANT,Vascular plants,EST,Estonia,10.134
+THREAT_PERCENT,Threatened species as % of known species,FISH_TOT,Fish,EST,Estonia,8.738
+THREAT_PERCENT,Threatened species as % of known species,MARINE_F,Marine Fish,EST,Estonia,6.061
+THREAT_PERCENT,Threatened species as % of known species,FRESHW_F,Freshwater Fish,EST,Estonia,16.667
+THREATENED,Total number of threatened species,FRESHW_F,Freshwater Fish,RUS,Russia,40.0
+TOT_KNOWN,Total number of known species,FISH_TOT,Fish,SVN,Slovenia,273.0
+TOT_KNOWN,Total number of known species,MARINE_F,Marine Fish,SVN,Slovenia,188.0
+TOT_KNOWN,Total number of known species,FRESHW_F,Freshwater Fish,SVN,Slovenia,85.0
+ENDANGERED,Number of endangered species,FISH_TOT,Fish,SVN,Slovenia,40.0
+ENDANGERED,Number of endangered species,MARINE_F,Marine Fish,SVN,Slovenia,9.0
+ENDANGERED,Number of endangered species,FRESHW_F,Freshwater Fish,SVN,Slovenia,31.0
+VULNERABLE,Number of vulnerable species,FISH_TOT,Fish,SVN,Slovenia,10.0
+VULNERABLE,Number of vulnerable species,MARINE_F,Marine Fish,SVN,Slovenia,1.0
+VULNERABLE,Number of vulnerable species,FRESHW_F,Freshwater Fish,SVN,Slovenia,9.0
+THREATENED,Total number of threatened species,FISH_TOT,Fish,SVN,Slovenia,50.0
+THREATENED,Total number of threatened species,MARINE_F,Marine Fish,SVN,Slovenia,10.0
+THREATENED,Total number of threatened species,FRESHW_F,Freshwater Fish,SVN,Slovenia,40.0
+THREAT_PERCENT,Threatened species as % of known species,MAMMAL,Mammals,SVN,Slovenia,38.202
+THREAT_PERCENT,Threatened species as % of known species,BIRD,Birds,SVN,Slovenia,27.632
+THREAT_PERCENT,Threatened species as % of known species,REPTILE,Reptiles,SVN,Slovenia,75.0
+THREAT_PERCENT,Threatened species as % of known species,AMPHIBIAN,Amphibians,SVN,Slovenia,80.952
+THREAT_PERCENT,Threatened species as % of known species,VASCULAR_PLANT,Vascular plants,SVN,Slovenia,9.676
+THREAT_PERCENT,Threatened species as % of known species,FISH_TOT,Fish,SVN,Slovenia,18.315
+THREAT_PERCENT,Threatened species as % of known species,MARINE_F,Marine Fish,SVN,Slovenia,5.319
+THREAT_PERCENT,Threatened species as % of known species,FRESHW_F,Freshwater Fish,SVN,Slovenia,47.059
+CRITICAL,Number of critically endangered species,MAMMAL,Mammals,CHL,Chile,3.0
+CRITICAL,Number of critically endangered species,AMPHIBIAN,Amphibians,CHL,Chile,10.0
+CRITICAL,Number of critically endangered species,VASCULAR_PLANT,Vascular plants,CHL,Chile,74.0
+CRITICAL,Number of critically endangered species,FISH_TOT,Fish,CHL,Chile,1.0
+CRITICAL,Number of critically endangered species,FRESHW_F,Freshwater Fish,CHL,Chile,1.0
+TOT_KNOWN,Total number of known species,FISH_TOT,Fish,FRA,France,163.0
+TOT_KNOWN,Total number of known species,MARINE_F,Marine Fish,FRA,France,83.0
+ENDANGERED,Number of endangered species,FISH_TOT,Fish,ITA,Italy,12.0
+ENDANGERED,Number of endangered species,MARINE_F,Marine Fish,ITA,Italy,6.0
+CRITICAL,Number of critically endangered species,FISH_TOT,Fish,ITA,Italy,21.0
+CRITICAL,Number of critically endangered species,MARINE_F,Marine Fish,ITA,Italy,10.0
+VULNERABLE,Number of vulnerable species,FISH_TOT,Fish,ITA,Italy,14.0
+VULNERABLE,Number of vulnerable species,MARINE_F,Marine Fish,ITA,Italy,6.0
+THREATENED,Total number of threatened species,FISH_TOT,Fish,ITA,Italy,47.0
+THREATENED,Total number of threatened species,MARINE_F,Marine Fish,ITA,Italy,22.0
+THREAT_PERCENT,Threatened species as % of known species,FISH_TOT,Fish,ITA,Italy,7.332
+THREAT_PERCENT,Threatened species as % of known species,MARINE_F,Marine Fish,ITA,Italy,4.044
+TOT_KNOWN,Total number of known species,FISH_TOT,Fish,NZL,New Zealand,1262.0
+TOT_KNOWN,Total number of known species,MARINE_F,Marine Fish,NZL,New Zealand,1187.0
+ENDANGERED,Number of endangered species,REPTILE,Reptiles,TUR,Türkiye,9.0
+ENDANGERED,Number of endangered species,FISH_TOT,Fish,TUR,Türkiye,44.0
+ENDANGERED,Number of endangered species,FRESHW_F,Freshwater Fish,TUR,Türkiye,44.0
+CRITICAL,Number of critically endangered species,REPTILE,Reptiles,TUR,Türkiye,8.0
+CRITICAL,Number of critically endangered species,FISH_TOT,Fish,TUR,Türkiye,27.0
+CRITICAL,Number of critically endangered species,FRESHW_F,Freshwater Fish,TUR,Türkiye,27.0
+VULNERABLE,Number of vulnerable species,REPTILE,Reptiles,TUR,Türkiye,5.0
+VULNERABLE,Number of vulnerable species,FISH_TOT,Fish,TUR,Türkiye,27.0
+VULNERABLE,Number of vulnerable species,FRESHW_F,Freshwater Fish,TUR,Türkiye,27.0
+THREATENED,Total number of threatened species,FISH_TOT,Fish,TUR,Türkiye,98.0
+THREATENED,Total number of threatened species,FRESHW_F,Freshwater Fish,TUR,Türkiye,98.0
+THREAT_PERCENT,Threatened species as % of known species,REPTILE,Reptiles,TUR,Türkiye,15.068
+THREAT_PERCENT,Threatened species as % of known species,FISH_TOT,Fish,TUR,Türkiye,10.938
+THREAT_PERCENT,Threatened species as % of known species,FRESHW_F,Freshwater Fish,TUR,Türkiye,25.521
+TOT_KNOWN,Total number of known species,MOSS,Mosses,CAN,Canada,1405.0
+ENDANGERED,Number of endangered species,MOSS,Mosses,CAN,Canada,146.0
+ENDANGERED,Number of endangered species,LICHEN,Lichens,CAN,Canada,97.0
+VULNERABLE,Number of vulnerable species,MOSS,Mosses,CAN,Canada,184.0
+VULNERABLE,Number of vulnerable species,LICHEN,Lichens,CAN,Canada,104.0
+THREATENED,Total number of threatened species,MOSS,Mosses,CAN,Canada,405.0
+THREATENED,Total number of threatened species,LICHEN,Lichens,CAN,Canada,328.0
+THREAT_PERCENT,Threatened species as % of known species,MOSS,Mosses,CAN,Canada,28.826
+TOT_KNOWN,Total number of known species,FISH_TOT,Fish,FIN,Finland,88.0
+TOT_KNOWN,Total number of known species,MARINE_F,Marine Fish,FIN,Finland,25.0
+TOT_KNOWN,Total number of known species,MOSS,Mosses,FIN,Finland,929.0
+TOT_KNOWN,Total number of known species,LICHEN,Lichens,FIN,Finland,1898.0
+TOT_KNOWN,Total number of known species,INVERTEB,Invertebrates,FIN,Finland,14647.0
+ENDANGERED,Number of endangered species,REPTILE,Reptiles,FIN,Finland,0.0
+ENDANGERED,Number of endangered species,AMPHIBIAN,Amphibians,FIN,Finland,1.0
+ENDANGERED,Number of endangered species,FISH_TOT,Fish,FIN,Finland,3.0
+ENDANGERED,Number of endangered species,MOSS,Mosses,FIN,Finland,91.0
+ENDANGERED,Number of endangered species,LICHEN,Lichens,FIN,Finland,155.0
+ENDANGERED,Number of endangered species,INVERTEB,Invertebrates,FIN,Finland,454.0
+CRITICAL,Number of critically endangered species,REPTILE,Reptiles,FIN,Finland,0.0
+CRITICAL,Number of critically endangered species,AMPHIBIAN,Amphibians,FIN,Finland,0.0
+CRITICAL,Number of critically endangered species,FISH_TOT,Fish,FIN,Finland,4.0
+CRITICAL,Number of critically endangered species,MARINE_F,Marine Fish,FIN,Finland,1.0
+CRITICAL,Number of critically endangered species,MOSS,Mosses,FIN,Finland,133.0
+CRITICAL,Number of critically endangered species,LICHEN,Lichens,FIN,Finland,98.0
+CRITICAL,Number of critically endangered species,INVERTEB,Invertebrates,FIN,Finland,168.0
+VULNERABLE,Number of vulnerable species,FISH_TOT,Fish,FIN,Finland,5.0
+VULNERABLE,Number of vulnerable species,MARINE_F,Marine Fish,FIN,Finland,1.0
+VULNERABLE,Number of vulnerable species,MOSS,Mosses,FIN,Finland,88.0
+VULNERABLE,Number of vulnerable species,LICHEN,Lichens,FIN,Finland,224.0
+VULNERABLE,Number of vulnerable species,INVERTEB,Invertebrates,FIN,Finland,676.0
+THREATENED,Total number of threatened species,FISH_TOT,Fish,FIN,Finland,12.0
+THREATENED,Total number of threatened species,MARINE_F,Marine Fish,FIN,Finland,2.0
+THREATENED,Total number of threatened species,MOSS,Mosses,FIN,Finland,312.0
+THREATENED,Total number of threatened species,LICHEN,Lichens,FIN,Finland,477.0
+THREATENED,Total number of threatened species,INVERTEB,Invertebrates,FIN,Finland,1298.0
+THREAT_PERCENT,Threatened species as % of known species,FISH_TOT,Fish,FIN,Finland,13.636
+THREAT_PERCENT,Threatened species as % of known species,MARINE_F,Marine Fish,FIN,Finland,8.0
+THREAT_PERCENT,Threatened species as % of known species,MOSS,Mosses,FIN,Finland,33.585
+THREAT_PERCENT,Threatened species as % of known species,LICHEN,Lichens,FIN,Finland,25.132
+THREAT_PERCENT,Threatened species as % of known species,INVERTEB,Invertebrates,FIN,Finland,8.862
+TOT_KNOWN,Total number of known species,FISH_TOT,Fish,DEU,Germany,197.0
+TOT_KNOWN,Total number of known species,MARINE_F,Marine Fish,DEU,Germany,94.0
+TOT_KNOWN,Total number of known species,MOSS,Mosses,DEU,Germany,1195.0
+TOT_KNOWN,Total number of known species,LICHEN,Lichens,DEU,Germany,2380.0
+TOT_KNOWN,Total number of known species,INVERTEB,Invertebrates,DEU,Germany,10434.0
+ENDANGERED,Number of endangered species,FISH_TOT,Fish,DEU,Germany,14.0
+ENDANGERED,Number of endangered species,MARINE_F,Marine Fish,DEU,Germany,5.0
+ENDANGERED,Number of endangered species,MOSS,Mosses,DEU,Germany,114.0
+ENDANGERED,Number of endangered species,LICHEN,Lichens,DEU,Germany,169.0
+ENDANGERED,Number of endangered species,INVERTEB,Invertebrates,DEU,Germany,1010.0
+CRITICAL,Number of critically endangered species,AMPHIBIAN,Amphibians,DEU,Germany,0.0
+CRITICAL,Number of critically endangered species,FISH_TOT,Fish,DEU,Germany,12.0
+CRITICAL,Number of critically endangered species,MARINE_F,Marine Fish,DEU,Germany,4.0
+CRITICAL,Number of critically endangered species,MOSS,Mosses,DEU,Germany,45.0
+CRITICAL,Number of critically endangered species,LICHEN,Lichens,DEU,Germany,337.0
+CRITICAL,Number of critically endangered species,INVERTEB,Invertebrates,DEU,Germany,559.0
+VULNERABLE,Number of vulnerable species,FISH_TOT,Fish,DEU,Germany,23.0
+VULNERABLE,Number of vulnerable species,MARINE_F,Marine Fish,DEU,Germany,12.0
+VULNERABLE,Number of vulnerable species,MOSS,Mosses,DEU,Germany,250.0
+VULNERABLE,Number of vulnerable species,LICHEN,Lichens,DEU,Germany,546.0
+VULNERABLE,Number of vulnerable species,INVERTEB,Invertebrates,DEU,Germany,2183.0
+THREATENED,Total number of threatened species,FISH_TOT,Fish,DEU,Germany,49.0
+THREATENED,Total number of threatened species,MARINE_F,Marine Fish,DEU,Germany,21.0
+THREATENED,Total number of threatened species,MOSS,Mosses,DEU,Germany,409.0
+THREATENED,Total number of threatened species,LICHEN,Lichens,DEU,Germany,1052.0
+THREATENED,Total number of threatened species,INVERTEB,Invertebrates,DEU,Germany,3752.0
+THREAT_PERCENT,Threatened species as % of known species,FISH_TOT,Fish,DEU,Germany,24.873
+THREAT_PERCENT,Threatened species as % of known species,MARINE_F,Marine Fish,DEU,Germany,22.34
+THREAT_PERCENT,Threatened species as % of known species,MOSS,Mosses,DEU,Germany,34.226
+THREAT_PERCENT,Threatened species as % of known species,LICHEN,Lichens,DEU,Germany,44.202
+THREAT_PERCENT,Threatened species as % of known species,INVERTEB,Invertebrates,DEU,Germany,35.959
+TOT_KNOWN,Total number of known species,INVERTEB,Invertebrates,ITA,Italy,58632.0
+ENDANGERED,Number of endangered species,INVERTEB,Invertebrates,ITA,Italy,136.0
+CRITICAL,Number of critically endangered species,INVERTEB,Invertebrates,ITA,Italy,88.0
+VULNERABLE,Number of vulnerable species,INVERTEB,Invertebrates,ITA,Italy,232.0
+THREATENED,Total number of threatened species,INVERTEB,Invertebrates,ITA,Italy,456.0
+THREAT_PERCENT,Threatened species as % of known species,INVERTEB,Invertebrates,ITA,Italy,0.778
+TOT_KNOWN,Total number of known species,MARINE_F,Marine Fish,KOR,Korea,1102.0
+TOT_KNOWN,Total number of known species,FRESHW_F,Freshwater Fish,KOR,Korea,224.0
+TOT_KNOWN,Total number of known species,INVERTEB,Invertebrates,KOR,Korea,30054.0
+ENDANGERED,Number of endangered species,INVERTEB,Invertebrates,KOR,Korea,39.0
+CRITICAL,Number of critically endangered species,INVERTEB,Invertebrates,KOR,Korea,18.0
+VULNERABLE,Number of vulnerable species,INVERTEB,Invertebrates,KOR,Korea,117.0
+THREATENED,Total number of threatened species,INVERTEB,Invertebrates,KOR,Korea,174.0
+THREAT_PERCENT,Threatened species as % of known species,FRESHW_F,Freshwater Fish,KOR,Korea,10.714
+THREAT_PERCENT,Threatened species as % of known species,INVERTEB,Invertebrates,KOR,Korea,0.579
+TOT_KNOWN,Total number of known species,INVERTEB,Invertebrates,LUX,Luxembourg,149.0
+ENDANGERED,Number of endangered species,INVERTEB,Invertebrates,LUX,Luxembourg,7.0
+VULNERABLE,Number of vulnerable species,INVERTEB,Invertebrates,LUX,Luxembourg,9.0
+THREATENED,Total number of threatened species,INVERTEB,Invertebrates,LUX,Luxembourg,23.0
+THREAT_PERCENT,Threatened species as % of known species,INVERTEB,Invertebrates,LUX,Luxembourg,15.436
+TOT_KNOWN,Total number of known species,MARINE_F,Marine Fish,MEX,Mexico,2224.0
+TOT_KNOWN,Total number of known species,FRESHW_F,Freshwater Fish,MEX,Mexico,505.0
+ENDANGERED,Number of endangered species,MARINE_F,Marine Fish,MEX,Mexico,2.0
+ENDANGERED,Number of endangered species,FRESHW_F,Freshwater Fish,MEX,Mexico,77.0
+ENDANGERED,Number of endangered species,INVERTEB,Invertebrates,MEX,Mexico,24.0
+CRITICAL,Number of critically endangered species,MARINE_F,Marine Fish,MEX,Mexico,0.0
+CRITICAL,Number of critically endangered species,FRESHW_F,Freshwater Fish,MEX,Mexico,13.0
+VULNERABLE,Number of vulnerable species,MARINE_F,Marine Fish,MEX,Mexico,2.0
+VULNERABLE,Number of vulnerable species,FRESHW_F,Freshwater Fish,MEX,Mexico,66.0
+VULNERABLE,Number of vulnerable species,MOSS,Mosses,MEX,Mexico,2.0
+VULNERABLE,Number of vulnerable species,INVERTEB,Invertebrates,MEX,Mexico,26.0
+THREATENED,Total number of threatened species,MARINE_F,Marine Fish,MEX,Mexico,4.0
+THREATENED,Total number of threatened species,FRESHW_F,Freshwater Fish,MEX,Mexico,156.0
+THREATENED,Total number of threatened species,INVERTEB,Invertebrates,MEX,Mexico,51.0
+THREAT_PERCENT,Threatened species as % of known species,MARINE_F,Marine Fish,MEX,Mexico,0.18
+THREAT_PERCENT,Threatened species as % of known species,FRESHW_F,Freshwater Fish,MEX,Mexico,30.891
+TOT_KNOWN,Total number of known species,MOSS,Mosses,NLD,Netherlands,517.0
+TOT_KNOWN,Total number of known species,LICHEN,Lichens,NLD,Netherlands,683.0
+TOT_KNOWN,Total number of known species,INVERTEB,Invertebrates,NLD,Netherlands,507.0
+ENDANGERED,Number of endangered species,MOSS,Mosses,NLD,Netherlands,27.0
+ENDANGERED,Number of endangered species,LICHEN,Lichens,NLD,Netherlands,42.0
+ENDANGERED,Number of endangered species,INVERTEB,Invertebrates,NLD,Netherlands,61.0
+CRITICAL,Number of critically endangered species,MOSS,Mosses,NLD,Netherlands,52.0
+CRITICAL,Number of critically endangered species,LICHEN,Lichens,NLD,Netherlands,49.0
+CRITICAL,Number of critically endangered species,INVERTEB,Invertebrates,NLD,Netherlands,50.0
+VULNERABLE,Number of vulnerable species,MOSS,Mosses,NLD,Netherlands,43.0
+VULNERABLE,Number of vulnerable species,LICHEN,Lichens,NLD,Netherlands,65.0
+VULNERABLE,Number of vulnerable species,INVERTEB,Invertebrates,NLD,Netherlands,51.0
+THREATENED,Total number of threatened species,MOSS,Mosses,NLD,Netherlands,122.0
+THREATENED,Total number of threatened species,LICHEN,Lichens,NLD,Netherlands,156.0
+THREATENED,Total number of threatened species,INVERTEB,Invertebrates,NLD,Netherlands,162.0
+THREAT_PERCENT,Threatened species as % of known species,MOSS,Mosses,NLD,Netherlands,23.598
+THREAT_PERCENT,Threatened species as % of known species,LICHEN,Lichens,NLD,Netherlands,22.84
+THREAT_PERCENT,Threatened species as % of known species,INVERTEB,Invertebrates,NLD,Netherlands,31.953
+TOT_KNOWN,Total number of known species,INVERTEB,Invertebrates,NZL,New Zealand,5747.0
+ENDANGERED,Number of endangered species,MOSS,Mosses,NZL,New Zealand,4.0
+ENDANGERED,Number of endangered species,LICHEN,Lichens,NZL,New Zealand,2.0
+ENDANGERED,Number of endangered species,INVERTEB,Invertebrates,NZL,New Zealand,62.0
+CRITICAL,Number of critically endangered species,MOSS,Mosses,NZL,New Zealand,14.0
+CRITICAL,Number of critically endangered species,LICHEN,Lichens,NZL,New Zealand,6.0
+CRITICAL,Number of critically endangered species,INVERTEB,Invertebrates,NZL,New Zealand,133.0
+VULNERABLE,Number of vulnerable species,MOSS,Mosses,NZL,New Zealand,2.0
+VULNERABLE,Number of vulnerable species,LICHEN,Lichens,NZL,New Zealand,8.0
+VULNERABLE,Number of vulnerable species,INVERTEB,Invertebrates,NZL,New Zealand,71.0
+THREATENED,Total number of threatened species,MOSS,Mosses,NZL,New Zealand,20.0
+THREATENED,Total number of threatened species,LICHEN,Lichens,NZL,New Zealand,16.0
+THREATENED,Total number of threatened species,INVERTEB,Invertebrates,NZL,New Zealand,266.0
+THREAT_PERCENT,Threatened species as % of known species,INVERTEB,Invertebrates,NZL,New Zealand,4.629
+TOT_KNOWN,Total number of known species,MOSS,Mosses,NOR,Norway,1099.0
+TOT_KNOWN,Total number of known species,LICHEN,Lichens,NOR,Norway,1402.0
+TOT_KNOWN,Total number of known species,INVERTEB,Invertebrates,NOR,Norway,15266.0
+ENDANGERED,Number of endangered species,MOSS,Mosses,NOR,Norway,75.0
+ENDANGERED,Number of endangered species,LICHEN,Lichens,NOR,Norway,97.0
+ENDANGERED,Number of endangered species,INVERTEB,Invertebrates,NOR,Norway,468.0
+CRITICAL,Number of critically endangered species,MOSS,Mosses,NOR,Norway,44.0
+CRITICAL,Number of critically endangered species,LICHEN,Lichens,NOR,Norway,49.0
+CRITICAL,Number of critically endangered species,INVERTEB,Invertebrates,NOR,Norway,103.0
+VULNERABLE,Number of vulnerable species,FRESHW_F,Freshwater Fish,NOR,Norway,1.0
+VULNERABLE,Number of vulnerable species,MOSS,Mosses,NOR,Norway,124.0
+VULNERABLE,Number of vulnerable species,LICHEN,Lichens,NOR,Norway,123.0
+VULNERABLE,Number of vulnerable species,INVERTEB,Invertebrates,NOR,Norway,785.0
+THREATENED,Total number of threatened species,FRESHW_F,Freshwater Fish,NOR,Norway,1.0
+THREATENED,Total number of threatened species,MOSS,Mosses,NOR,Norway,243.0
+THREATENED,Total number of threatened species,LICHEN,Lichens,NOR,Norway,269.0
+THREATENED,Total number of threatened species,INVERTEB,Invertebrates,NOR,Norway,1356.0
+THREAT_PERCENT,Threatened species as % of known species,FRESHW_F,Freshwater Fish,NOR,Norway,3.125
+THREAT_PERCENT,Threatened species as % of known species,MOSS,Mosses,NOR,Norway,22.111
+THREAT_PERCENT,Threatened species as % of known species,LICHEN,Lichens,NOR,Norway,19.187
+THREAT_PERCENT,Threatened species as % of known species,INVERTEB,Invertebrates,NOR,Norway,8.882
+TOT_KNOWN,Total number of known species,MOSS,Mosses,POL,Poland,705.0
+TOT_KNOWN,Total number of known species,LICHEN,Lichens,POL,Poland,1650.0
+TOT_KNOWN,Total number of known species,INVERTEB,Invertebrates,POL,Poland,33872.0
+ENDANGERED,Number of endangered species,MOSS,Mosses,POL,Poland,52.0
+ENDANGERED,Number of endangered species,LICHEN,Lichens,POL,Poland,201.0
+ENDANGERED,Number of endangered species,INVERTEB,Invertebrates,POL,Poland,358.0
+CRITICAL,Number of critically endangered species,LICHEN,Lichens,POL,Poland,179.0
+CRITICAL,Number of critically endangered species,INVERTEB,Invertebrates,POL,Poland,152.0
+VULNERABLE,Number of vulnerable species,MOSS,Mosses,POL,Poland,31.0
+VULNERABLE,Number of vulnerable species,LICHEN,Lichens,POL,Poland,165.0
+VULNERABLE,Number of vulnerable species,INVERTEB,Invertebrates,POL,Poland,571.0
+THREATENED,Total number of threatened species,MOSS,Mosses,POL,Poland,83.0
+THREATENED,Total number of threatened species,LICHEN,Lichens,POL,Poland,545.0
+THREATENED,Total number of threatened species,INVERTEB,Invertebrates,POL,Poland,1081.0
+THREAT_PERCENT,Threatened species as % of known species,MOSS,Mosses,POL,Poland,11.773
+THREAT_PERCENT,Threatened species as % of known species,LICHEN,Lichens,POL,Poland,33.03
+THREAT_PERCENT,Threatened species as % of known species,INVERTEB,Invertebrates,POL,Poland,3.191
+TOT_KNOWN,Total number of known species,FISH_TOT,Fish,SVK,Slovak Republic,79.0
+TOT_KNOWN,Total number of known species,MOSS,Mosses,SVK,Slovak Republic,699.0
+TOT_KNOWN,Total number of known species,LICHEN,Lichens,SVK,Slovak Republic,1508.0
+TOT_KNOWN,Total number of known species,INVERTEB,Invertebrates,SVK,Slovak Republic,24818.0
+ENDANGERED,Number of endangered species,FISH_TOT,Fish,SVK,Slovak Republic,6.0
+ENDANGERED,Number of endangered species,MOSS,Mosses,SVK,Slovak Republic,75.0
+ENDANGERED,Number of endangered species,LICHEN,Lichens,SVK,Slovak Republic,48.0
+ENDANGERED,Number of endangered species,INVERTEB,Invertebrates,SVK,Slovak Republic,401.0
+CRITICAL,Number of critically endangered species,MOSS,Mosses,SVK,Slovak Republic,47.0
+CRITICAL,Number of critically endangered species,LICHEN,Lichens,SVK,Slovak Republic,140.0
+CRITICAL,Number of critically endangered species,INVERTEB,Invertebrates,SVK,Slovak Republic,199.0
+VULNERABLE,Number of vulnerable species,FISH_TOT,Fish,SVK,Slovak Republic,6.0
+VULNERABLE,Number of vulnerable species,MOSS,Mosses,SVK,Slovak Republic,190.0
+VULNERABLE,Number of vulnerable species,LICHEN,Lichens,SVK,Slovak Republic,169.0
+VULNERABLE,Number of vulnerable species,INVERTEB,Invertebrates,SVK,Slovak Republic,1036.0
+THREATENED,Total number of threatened species,FISH_TOT,Fish,SVK,Slovak Republic,12.0
+THREATENED,Total number of threatened species,MOSS,Mosses,SVK,Slovak Republic,312.0
+THREATENED,Total number of threatened species,LICHEN,Lichens,SVK,Slovak Republic,357.0
+THREATENED,Total number of threatened species,INVERTEB,Invertebrates,SVK,Slovak Republic,1621.0
+THREAT_PERCENT,Threatened species as % of known species,FISH_TOT,Fish,SVK,Slovak Republic,15.19
+THREAT_PERCENT,Threatened species as % of known species,MOSS,Mosses,SVK,Slovak Republic,44.635
+THREAT_PERCENT,Threatened species as % of known species,LICHEN,Lichens,SVK,Slovak Republic,23.674
+THREAT_PERCENT,Threatened species as % of known species,INVERTEB,Invertebrates,SVK,Slovak Republic,6.532
+TOT_KNOWN,Total number of known species,MOSS,Mosses,CHE,Switzerland,1153.0
+TOT_KNOWN,Total number of known species,LICHEN,Lichens,CHE,Switzerland,786.0
+TOT_KNOWN,Total number of known species,INVERTEB,Invertebrates,CHE,Switzerland,3118.0
+ENDANGERED,Number of endangered species,FISH_TOT,Fish,CHE,Switzerland,8.0
+ENDANGERED,Number of endangered species,FRESHW_F,Freshwater Fish,CHE,Switzerland,8.0
+ENDANGERED,Number of endangered species,MOSS,Mosses,CHE,Switzerland,102.0
+ENDANGERED,Number of endangered species,LICHEN,Lichens,CHE,Switzerland,96.0
+ENDANGERED,Number of endangered species,INVERTEB,Invertebrates,CHE,Switzerland,358.0
+CRITICAL,Number of critically endangered species,FISH_TOT,Fish,CHE,Switzerland,15.0
+CRITICAL,Number of critically endangered species,FRESHW_F,Freshwater Fish,CHE,Switzerland,15.0
+CRITICAL,Number of critically endangered species,MOSS,Mosses,CHE,Switzerland,121.0
+CRITICAL,Number of critically endangered species,LICHEN,Lichens,CHE,Switzerland,45.0
+CRITICAL,Number of critically endangered species,INVERTEB,Invertebrates,CHE,Switzerland,230.0
+VULNERABLE,Number of vulnerable species,FISH_TOT,Fish,CHE,Switzerland,11.0
+VULNERABLE,Number of vulnerable species,FRESHW_F,Freshwater Fish,CHE,Switzerland,11.0
+VULNERABLE,Number of vulnerable species,MOSS,Mosses,CHE,Switzerland,164.0
+VULNERABLE,Number of vulnerable species,LICHEN,Lichens,CHE,Switzerland,116.0
+VULNERABLE,Number of vulnerable species,INVERTEB,Invertebrates,CHE,Switzerland,487.0
+THREATENED,Total number of threatened species,FISH_TOT,Fish,CHE,Switzerland,34.0
+THREATENED,Total number of threatened species,FRESHW_F,Freshwater Fish,CHE,Switzerland,34.0
+THREATENED,Total number of threatened species,MOSS,Mosses,CHE,Switzerland,387.0
+THREATENED,Total number of threatened species,LICHEN,Lichens,CHE,Switzerland,257.0
+THREATENED,Total number of threatened species,INVERTEB,Invertebrates,CHE,Switzerland,1075.0
+THREAT_PERCENT,Threatened species as % of known species,MAMMAL,Mammals,CHE,Switzerland,34.021
+THREAT_PERCENT,Threatened species as % of known species,BIRD,Birds,CHE,Switzerland,37.073
+THREAT_PERCENT,Threatened species as % of known species,REPTILE,Reptiles,CHE,Switzerland,68.421
+THREAT_PERCENT,Threatened species as % of known species,AMPHIBIAN,Amphibians,CHE,Switzerland,73.684
+THREAT_PERCENT,Threatened species as % of known species,VASCULAR_PLANT,Vascular plants,CHE,Switzerland,27.216
+THREAT_PERCENT,Threatened species as % of known species,FISH_TOT,Fish,CHE,Switzerland,37.778
+THREAT_PERCENT,Threatened species as % of known species,FRESHW_F,Freshwater Fish,CHE,Switzerland,37.778
+THREAT_PERCENT,Threatened species as % of known species,MOSS,Mosses,CHE,Switzerland,33.565
+THREAT_PERCENT,Threatened species as % of known species,LICHEN,Lichens,CHE,Switzerland,32.697
+THREAT_PERCENT,Threatened species as % of known species,INVERTEB,Invertebrates,CHE,Switzerland,34.477
+TOT_KNOWN,Total number of known species,LICHEN,Lichens,GBR,United Kingdom,2875.0
+TOT_KNOWN,Total number of known species,INVERTEB,Invertebrates,GBR,United Kingdom,36242.0
+ENDANGERED,Number of endangered species,MOSS,Mosses,GBR,United Kingdom,30.0
+ENDANGERED,Number of endangered species,LICHEN,Lichens,GBR,United Kingdom,34.0
+ENDANGERED,Number of endangered species,INVERTEB,Invertebrates,GBR,United Kingdom,138.0
+CRITICAL,Number of critically endangered species,FRESHW_F,Freshwater Fish,GBR,United Kingdom,2.0
+CRITICAL,Number of critically endangered species,MOSS,Mosses,GBR,United Kingdom,26.0
+CRITICAL,Number of critically endangered species,LICHEN,Lichens,GBR,United Kingdom,45.0
+CRITICAL,Number of critically endangered species,INVERTEB,Invertebrates,GBR,United Kingdom,102.0
+VULNERABLE,Number of vulnerable species,MOSS,Mosses,GBR,United Kingdom,52.0
+VULNERABLE,Number of vulnerable species,LICHEN,Lichens,GBR,United Kingdom,111.0
+VULNERABLE,Number of vulnerable species,INVERTEB,Invertebrates,GBR,United Kingdom,272.0
+THREATENED,Total number of threatened species,REPTILE,Reptiles,GBR,United Kingdom,2.0
+THREATENED,Total number of threatened species,AMPHIBIAN,Amphibians,GBR,United Kingdom,2.0
+THREATENED,Total number of threatened species,LICHEN,Lichens,GBR,United Kingdom,190.0
+THREATENED,Total number of threatened species,INVERTEB,Invertebrates,GBR,United Kingdom,512.0
+THREAT_PERCENT,Threatened species as % of known species,MAMMAL,Mammals,GBR,United Kingdom,10.28
+THREAT_PERCENT,Threatened species as % of known species,BIRD,Birds,GBR,United Kingdom,17.119
+THREAT_PERCENT,Threatened species as % of known species,REPTILE,Reptiles,GBR,United Kingdom,13.333
+THREAT_PERCENT,Threatened species as % of known species,AMPHIBIAN,Amphibians,GBR,United Kingdom,13.333
+THREAT_PERCENT,Threatened species as % of known species,LICHEN,Lichens,GBR,United Kingdom,6.609
+THREAT_PERCENT,Threatened species as % of known species,INVERTEB,Invertebrates,GBR,United Kingdom,1.413
+TOT_KNOWN,Total number of known species,MOSS,Mosses,CHL,Chile,923.0
+TOT_KNOWN,Total number of known species,LICHEN,Lichens,CHL,Chile,1383.0
+TOT_KNOWN,Total number of known species,INVERTEB,Invertebrates,CHL,Chile,12220.0
+ENDANGERED,Number of endangered species,INVERTEB,Invertebrates,CHL,Chile,63.0
+CRITICAL,Number of critically endangered species,BIRD,Birds,CHL,Chile,2.0
+CRITICAL,Number of critically endangered species,REPTILE,Reptiles,CHL,Chile,9.0
+CRITICAL,Number of critically endangered species,INVERTEB,Invertebrates,CHL,Chile,33.0
+VULNERABLE,Number of vulnerable species,INVERTEB,Invertebrates,CHL,Chile,23.0
+THREATENED,Total number of threatened species,INVERTEB,Invertebrates,CHL,Chile,119.0
+THREAT_PERCENT,Threatened species as % of known species,INVERTEB,Invertebrates,CHL,Chile,0.974
+TOT_KNOWN,Total number of known species,MAMMAL,Mammals,COL,Colombia,543.0
+TOT_KNOWN,Total number of known species,BIRD,Birds,COL,Colombia,1954.0
+TOT_KNOWN,Total number of known species,REPTILE,Reptiles,COL,Colombia,638.0
+TOT_KNOWN,Total number of known species,AMPHIBIAN,Amphibians,COL,Colombia,871.0
+TOT_KNOWN,Total number of known species,VASCULAR_PLANT,Vascular plants,COL,Colombia,38140.0
+TOT_KNOWN,Total number of known species,FISH_TOT,Fish,COL,Colombia,4216.0
+TOT_KNOWN,Total number of known species,MARINE_F,Marine Fish,COL,Colombia,2600.0
+TOT_KNOWN,Total number of known species,FRESHW_F,Freshwater Fish,COL,Colombia,1603.0
+TOT_KNOWN,Total number of known species,MOSS,Mosses,COL,Colombia,1640.0
+TOT_KNOWN,Total number of known species,LICHEN,Lichens,COL,Colombia,1761.0
+TOT_KNOWN,Total number of known species,INVERTEB,Invertebrates,COL,Colombia,22745.0
+ENDANGERED,Number of endangered species,MAMMAL,Mammals,COL,Colombia,9.0
+ENDANGERED,Number of endangered species,BIRD,Birds,COL,Colombia,49.0
+ENDANGERED,Number of endangered species,REPTILE,Reptiles,COL,Colombia,16.0
+ENDANGERED,Number of endangered species,AMPHIBIAN,Amphibians,COL,Colombia,123.0
+ENDANGERED,Number of endangered species,VASCULAR_PLANT,Vascular plants,COL,Colombia,241.0
+ENDANGERED,Number of endangered species,FISH_TOT,Fish,COL,Colombia,10.0
+ENDANGERED,Number of endangered species,MARINE_F,Marine Fish,COL,Colombia,2.0
+ENDANGERED,Number of endangered species,FRESHW_F,Freshwater Fish,COL,Colombia,3.0
+ENDANGERED,Number of endangered species,MOSS,Mosses,COL,Colombia,4.0
+ENDANGERED,Number of endangered species,INVERTEB,Invertebrates,COL,Colombia,44.0
+CRITICAL,Number of critically endangered species,MAMMAL,Mammals,COL,Colombia,4.0
+CRITICAL,Number of critically endangered species,BIRD,Birds,COL,Colombia,15.0
+CRITICAL,Number of critically endangered species,REPTILE,Reptiles,COL,Colombia,11.0
+CRITICAL,Number of critically endangered species,AMPHIBIAN,Amphibians,COL,Colombia,75.0
+CRITICAL,Number of critically endangered species,VASCULAR_PLANT,Vascular plants,COL,Colombia,105.0
+CRITICAL,Number of critically endangered species,FISH_TOT,Fish,COL,Colombia,7.0
+CRITICAL,Number of critically endangered species,MARINE_F,Marine Fish,COL,Colombia,1.0
+CRITICAL,Number of critically endangered species,FRESHW_F,Freshwater Fish,COL,Colombia,2.0
+CRITICAL,Number of critically endangered species,MOSS,Mosses,COL,Colombia,6.0
+CRITICAL,Number of critically endangered species,INVERTEB,Invertebrates,COL,Colombia,6.0
+VULNERABLE,Number of vulnerable species,MAMMAL,Mammals,COL,Colombia,24.0
+VULNERABLE,Number of vulnerable species,BIRD,Birds,COL,Colombia,61.0
+VULNERABLE,Number of vulnerable species,REPTILE,Reptiles,COL,Colombia,17.0
+VULNERABLE,Number of vulnerable species,AMPHIBIAN,Amphibians,COL,Colombia,101.0
+VULNERABLE,Number of vulnerable species,VASCULAR_PLANT,Vascular plants,COL,Colombia,319.0
+VULNERABLE,Number of vulnerable species,FISH_TOT,Fish,COL,Colombia,92.0
+VULNERABLE,Number of vulnerable species,MARINE_F,Marine Fish,COL,Colombia,9.0
+VULNERABLE,Number of vulnerable species,FRESHW_F,Freshwater Fish,COL,Colombia,46.0
+VULNERABLE,Number of vulnerable species,MOSS,Mosses,COL,Colombia,32.0
+VULNERABLE,Number of vulnerable species,INVERTEB,Invertebrates,COL,Colombia,48.0
+THREATENED,Total number of threatened species,MAMMAL,Mammals,COL,Colombia,37.0
+THREATENED,Total number of threatened species,BIRD,Birds,COL,Colombia,125.0
+THREATENED,Total number of threatened species,REPTILE,Reptiles,COL,Colombia,44.0
+THREATENED,Total number of threatened species,AMPHIBIAN,Amphibians,COL,Colombia,299.0
+THREATENED,Total number of threatened species,VASCULAR_PLANT,Vascular plants,COL,Colombia,665.0
+THREATENED,Total number of threatened species,FISH_TOT,Fish,COL,Colombia,109.0
+THREATENED,Total number of threatened species,MARINE_F,Marine Fish,COL,Colombia,12.0
+THREATENED,Total number of threatened species,FRESHW_F,Freshwater Fish,COL,Colombia,51.0
+THREATENED,Total number of threatened species,MOSS,Mosses,COL,Colombia,42.0
+THREATENED,Total number of threatened species,INVERTEB,Invertebrates,COL,Colombia,98.0
+THREAT_PERCENT,Threatened species as % of known species,MAMMAL,Mammals,COL,Colombia,6.814
+THREAT_PERCENT,Threatened species as % of known species,BIRD,Birds,COL,Colombia,6.397
+THREAT_PERCENT,Threatened species as % of known species,REPTILE,Reptiles,COL,Colombia,6.897
+THREAT_PERCENT,Threatened species as % of known species,AMPHIBIAN,Amphibians,COL,Colombia,34.328
+THREAT_PERCENT,Threatened species as % of known species,VASCULAR_PLANT,Vascular plants,COL,Colombia,1.744
+THREAT_PERCENT,Threatened species as % of known species,FISH_TOT,Fish,COL,Colombia,2.585
+THREAT_PERCENT,Threatened species as % of known species,MARINE_F,Marine Fish,COL,Colombia,0.462
+THREAT_PERCENT,Threatened species as % of known species,FRESHW_F,Freshwater Fish,COL,Colombia,3.182
+THREAT_PERCENT,Threatened species as % of known species,MOSS,Mosses,COL,Colombia,2.561
+THREAT_PERCENT,Threatened species as % of known species,INVERTEB,Invertebrates,COL,Colombia,0.431
+TOT_KNOWN,Total number of known species,MOSS,Mosses,EST,Estonia,598.0
+TOT_KNOWN,Total number of known species,LICHEN,Lichens,EST,Estonia,556.0
+TOT_KNOWN,Total number of known species,INVERTEB,Invertebrates,EST,Estonia,10371.0
+ENDANGERED,Number of endangered species,REPTILE,Reptiles,EST,Estonia,1.0
+ENDANGERED,Number of endangered species,MARINE_F,Marine Fish,EST,Estonia,1.0
+ENDANGERED,Number of endangered species,FRESHW_F,Freshwater Fish,EST,Estonia,1.0
+ENDANGERED,Number of endangered species,MOSS,Mosses,EST,Estonia,24.0
+ENDANGERED,Number of endangered species,LICHEN,Lichens,EST,Estonia,74.0
+ENDANGERED,Number of endangered species,INVERTEB,Invertebrates,EST,Estonia,43.0
+CRITICAL,Number of critically endangered species,MAMMAL,Mammals,EST,Estonia,2.0
+CRITICAL,Number of critically endangered species,MOSS,Mosses,EST,Estonia,19.0
+CRITICAL,Number of critically endangered species,LICHEN,Lichens,EST,Estonia,64.0
+CRITICAL,Number of critically endangered species,INVERTEB,Invertebrates,EST,Estonia,40.0
+VULNERABLE,Number of vulnerable species,MARINE_F,Marine Fish,EST,Estonia,1.0
+VULNERABLE,Number of vulnerable species,MOSS,Mosses,EST,Estonia,116.0
+VULNERABLE,Number of vulnerable species,LICHEN,Lichens,EST,Estonia,43.0
+VULNERABLE,Number of vulnerable species,INVERTEB,Invertebrates,EST,Estonia,54.0
+THREATENED,Total number of threatened species,MOSS,Mosses,EST,Estonia,159.0
+THREATENED,Total number of threatened species,LICHEN,Lichens,EST,Estonia,181.0
+THREATENED,Total number of threatened species,INVERTEB,Invertebrates,EST,Estonia,137.0
+THREAT_PERCENT,Threatened species as % of known species,MOSS,Mosses,EST,Estonia,26.589
+THREAT_PERCENT,Threatened species as % of known species,LICHEN,Lichens,EST,Estonia,32.554
+THREAT_PERCENT,Threatened species as % of known species,INVERTEB,Invertebrates,EST,Estonia,1.321
+TOT_KNOWN,Total number of known species,MAMMAL,Mammals,LVA,Latvia,62.0
+TOT_KNOWN,Total number of known species,BIRD,Birds,LVA,Latvia,233.0
+TOT_KNOWN,Total number of known species,REPTILE,Reptiles,LVA,Latvia,7.0
+TOT_KNOWN,Total number of known species,AMPHIBIAN,Amphibians,LVA,Latvia,13.0
+TOT_KNOWN,Total number of known species,VASCULAR_PLANT,Vascular plants,LVA,Latvia,1937.0
+TOT_KNOWN,Total number of known species,FISH_TOT,Fish,LVA,Latvia,87.0
+TOT_KNOWN,Total number of known species,MARINE_F,Marine Fish,LVA,Latvia,42.0
+TOT_KNOWN,Total number of known species,FRESHW_F,Freshwater Fish,LVA,Latvia,45.0
+ENDANGERED,Number of endangered species,MAMMAL,Mammals,LVA,Latvia,3.0
+ENDANGERED,Number of endangered species,BIRD,Birds,LVA,Latvia,19.0
+ENDANGERED,Number of endangered species,REPTILE,Reptiles,LVA,Latvia,1.0
+ENDANGERED,Number of endangered species,AMPHIBIAN,Amphibians,LVA,Latvia,1.0
+ENDANGERED,Number of endangered species,VASCULAR_PLANT,Vascular plants,LVA,Latvia,110.0
+ENDANGERED,Number of endangered species,FISH_TOT,Fish,LVA,Latvia,0.0
+ENDANGERED,Number of endangered species,MARINE_F,Marine Fish,LVA,Latvia,0.0
+ENDANGERED,Number of endangered species,FRESHW_F,Freshwater Fish,LVA,Latvia,0.0
+ENDANGERED,Number of endangered species,MOSS,Mosses,LVA,Latvia,41.0
+ENDANGERED,Number of endangered species,LICHEN,Lichens,LVA,Latvia,18.0
+ENDANGERED,Number of endangered species,INVERTEB,Invertebrates,LVA,Latvia,38.0
+CRITICAL,Number of critically endangered species,MAMMAL,Mammals,LVA,Latvia,0.0
+CRITICAL,Number of critically endangered species,BIRD,Birds,LVA,Latvia,4.0
+CRITICAL,Number of critically endangered species,REPTILE,Reptiles,LVA,Latvia,1.0
+CRITICAL,Number of critically endangered species,AMPHIBIAN,Amphibians,LVA,Latvia,1.0
+CRITICAL,Number of critically endangered species,VASCULAR_PLANT,Vascular plants,LVA,Latvia,16.0
+CRITICAL,Number of critically endangered species,FISH_TOT,Fish,LVA,Latvia,1.0
+CRITICAL,Number of critically endangered species,MARINE_F,Marine Fish,LVA,Latvia,1.0
+CRITICAL,Number of critically endangered species,MOSS,Mosses,LVA,Latvia,3.0
+CRITICAL,Number of critically endangered species,LICHEN,Lichens,LVA,Latvia,2.0
+CRITICAL,Number of critically endangered species,INVERTEB,Invertebrates,LVA,Latvia,7.0
+VULNERABLE,Number of vulnerable species,MAMMAL,Mammals,LVA,Latvia,2.0
+VULNERABLE,Number of vulnerable species,BIRD,Birds,LVA,Latvia,16.0
+VULNERABLE,Number of vulnerable species,REPTILE,Reptiles,LVA,Latvia,0.0
+VULNERABLE,Number of vulnerable species,AMPHIBIAN,Amphibians,LVA,Latvia,2.0
+VULNERABLE,Number of vulnerable species,VASCULAR_PLANT,Vascular plants,LVA,Latvia,83.0
+VULNERABLE,Number of vulnerable species,FISH_TOT,Fish,LVA,Latvia,1.0
+VULNERABLE,Number of vulnerable species,FRESHW_F,Freshwater Fish,LVA,Latvia,1.0
+VULNERABLE,Number of vulnerable species,MOSS,Mosses,LVA,Latvia,17.0
+VULNERABLE,Number of vulnerable species,LICHEN,Lichens,LVA,Latvia,4.0
+VULNERABLE,Number of vulnerable species,INVERTEB,Invertebrates,LVA,Latvia,34.0
+THREATENED,Total number of threatened species,MAMMAL,Mammals,LVA,Latvia,5.0
+THREATENED,Total number of threatened species,BIRD,Birds,LVA,Latvia,39.0
+THREATENED,Total number of threatened species,REPTILE,Reptiles,LVA,Latvia,2.0
+THREATENED,Total number of threatened species,AMPHIBIAN,Amphibians,LVA,Latvia,4.0
+THREATENED,Total number of threatened species,VASCULAR_PLANT,Vascular plants,LVA,Latvia,209.0
+THREATENED,Total number of threatened species,FISH_TOT,Fish,LVA,Latvia,2.0
+THREATENED,Total number of threatened species,MARINE_F,Marine Fish,LVA,Latvia,1.0
+THREATENED,Total number of threatened species,FRESHW_F,Freshwater Fish,LVA,Latvia,1.0
+THREATENED,Total number of threatened species,MOSS,Mosses,LVA,Latvia,61.0
+THREATENED,Total number of threatened species,LICHEN,Lichens,LVA,Latvia,24.0
+THREATENED,Total number of threatened species,INVERTEB,Invertebrates,LVA,Latvia,79.0
+THREAT_PERCENT,Threatened species as % of known species,MAMMAL,Mammals,LVA,Latvia,8.065
+THREAT_PERCENT,Threatened species as % of known species,BIRD,Birds,LVA,Latvia,16.738
+THREAT_PERCENT,Threatened species as % of known species,REPTILE,Reptiles,LVA,Latvia,28.571
+THREAT_PERCENT,Threatened species as % of known species,AMPHIBIAN,Amphibians,LVA,Latvia,30.769
+THREAT_PERCENT,Threatened species as % of known species,VASCULAR_PLANT,Vascular plants,LVA,Latvia,10.79
+THREAT_PERCENT,Threatened species as % of known species,FISH_TOT,Fish,LVA,Latvia,2.299
+THREAT_PERCENT,Threatened species as % of known species,MARINE_F,Marine Fish,LVA,Latvia,2.381
+THREAT_PERCENT,Threatened species as % of known species,FRESHW_F,Freshwater Fish,LVA,Latvia,2.222
+ENDANGERED,Number of endangered species,MAMMAL,Mammals,BRA,Brazil,43.0
+ENDANGERED,Number of endangered species,BIRD,Birds,BRA,Brazil,71.0
+ENDANGERED,Number of endangered species,REPTILE,Reptiles,BRA,Brazil,50.0
+ENDANGERED,Number of endangered species,AMPHIBIAN,Amphibians,BRA,Brazil,12.0
+ENDANGERED,Number of endangered species,FISH_TOT,Fish,BRA,Brazil,126.0
+ENDANGERED,Number of endangered species,MARINE_F,Marine Fish,BRA,Brazil,14.0
+ENDANGERED,Number of endangered species,FRESHW_F,Freshwater Fish,BRA,Brazil,112.0
+ENDANGERED,Number of endangered species,INVERTEB,Invertebrates,BRA,Brazil,104.0
+CRITICAL,Number of critically endangered species,MAMMAL,Mammals,BRA,Brazil,12.0
+CRITICAL,Number of critically endangered species,BIRD,Birds,BRA,Brazil,42.0
+CRITICAL,Number of critically endangered species,REPTILE,Reptiles,BRA,Brazil,10.0
+CRITICAL,Number of critically endangered species,AMPHIBIAN,Amphibians,BRA,Brazil,18.0
+CRITICAL,Number of critically endangered species,FISH_TOT,Fish,BRA,Brazil,135.0
+CRITICAL,Number of critically endangered species,MARINE_F,Marine Fish,BRA,Brazil,34.0
+CRITICAL,Number of critically endangered species,FRESHW_F,Freshwater Fish,BRA,Brazil,101.0
+CRITICAL,Number of critically endangered species,INVERTEB,Invertebrates,BRA,Brazil,101.0
+VULNERABLE,Number of vulnerable species,MAMMAL,Mammals,BRA,Brazil,55.0
+VULNERABLE,Number of vulnerable species,BIRD,Birds,BRA,Brazil,120.0
+VULNERABLE,Number of vulnerable species,REPTILE,Reptiles,BRA,Brazil,20.0
+VULNERABLE,Number of vulnerable species,AMPHIBIAN,Amphibians,BRA,Brazil,11.0
+VULNERABLE,Number of vulnerable species,FISH_TOT,Fish,BRA,Brazil,148.0
+VULNERABLE,Number of vulnerable species,MARINE_F,Marine Fish,BRA,Brazil,50.0
+VULNERABLE,Number of vulnerable species,FRESHW_F,Freshwater Fish,BRA,Brazil,98.0
+VULNERABLE,Number of vulnerable species,INVERTEB,Invertebrates,BRA,Brazil,94.0
+THREATENED,Total number of threatened species,MAMMAL,Mammals,BRA,Brazil,110.0
+THREATENED,Total number of threatened species,BIRD,Birds,BRA,Brazil,234.0
+THREATENED,Total number of threatened species,REPTILE,Reptiles,BRA,Brazil,80.0
+THREATENED,Total number of threatened species,AMPHIBIAN,Amphibians,BRA,Brazil,38.0
+THREATENED,Total number of threatened species,FISH_TOT,Fish,BRA,Brazil,409.0
+THREATENED,Total number of threatened species,MARINE_F,Marine Fish,BRA,Brazil,98.0
+THREATENED,Total number of threatened species,FRESHW_F,Freshwater Fish,BRA,Brazil,311.0
+THREATENED,Total number of threatened species,INVERTEB,Invertebrates,BRA,Brazil,299.0
+TOT_KNOWN,Total number of known species,MOSS,Mosses,AUS,Australia,2020.0
+TOT_KNOWN,Total number of known species,LICHEN,Lichens,AUS,Australia,3880.0
+TOT_KNOWN,Total number of known species,INVERTEB,Invertebrates,AUS,Australia,114940.0
+ENDANGERED,Number of endangered species,INVERTEB,Invertebrates,AUS,Australia,27.0
+CRITICAL,Number of critically endangered species,INVERTEB,Invertebrates,AUS,Australia,30.0
+VULNERABLE,Number of vulnerable species,MOSS,Mosses,AUS,Australia,1.0
+VULNERABLE,Number of vulnerable species,INVERTEB,Invertebrates,AUS,Australia,14.0
+THREATENED,Total number of threatened species,MOSS,Mosses,AUS,Australia,1.0
+THREATENED,Total number of threatened species,INVERTEB,Invertebrates,AUS,Australia,71.0
+THREAT_PERCENT,Threatened species as % of known species,MOSS,Mosses,AUS,Australia,0.05
+THREAT_PERCENT,Threatened species as % of known species,INVERTEB,Invertebrates,AUS,Australia,0.062
+TOT_KNOWN,Total number of known species,MOSS,Mosses,BEL,Belgium,521.0
+TOT_KNOWN,Total number of known species,LICHEN,Lichens,BEL,Belgium,838.0
+TOT_KNOWN,Total number of known species,INVERTEB,Invertebrates,BEL,Belgium,5238.0
+ENDANGERED,Number of endangered species,INVERTEB,Invertebrates,BEL,Belgium,201.0
+CRITICAL,Number of critically endangered species,INVERTEB,Invertebrates,BEL,Belgium,135.0
+VULNERABLE,Number of vulnerable species,INVERTEB,Invertebrates,BEL,Belgium,230.0
+THREATENED,Total number of threatened species,MOSS,Mosses,BEL,Belgium,140.0
+THREATENED,Total number of threatened species,LICHEN,Lichens,BEL,Belgium,495.0
+THREATENED,Total number of threatened species,INVERTEB,Invertebrates,BEL,Belgium,566.0
+THREAT_PERCENT,Threatened species as % of known species,MOSS,Mosses,BEL,Belgium,26.871
+THREAT_PERCENT,Threatened species as % of known species,LICHEN,Lichens,BEL,Belgium,59.069
+THREAT_PERCENT,Threatened species as % of known species,INVERTEB,Invertebrates,BEL,Belgium,10.806
+TOT_KNOWN,Total number of known species,MOSS,Mosses,CZE,Czech Republic,886.0
+TOT_KNOWN,Total number of known species,LICHEN,Lichens,CZE,Czech Republic,1526.0
+TOT_KNOWN,Total number of known species,INVERTEB,Invertebrates,CZE,Czech Republic,32000.0
+ENDANGERED,Number of endangered species,MOSS,Mosses,CZE,Czech Republic,78.0
+ENDANGERED,Number of endangered species,LICHEN,Lichens,CZE,Czech Republic,186.0
+ENDANGERED,Number of endangered species,INVERTEB,Invertebrates,CZE,Czech Republic,1091.0
+CRITICAL,Number of critically endangered species,MOSS,Mosses,CZE,Czech Republic,70.0
+CRITICAL,Number of critically endangered species,LICHEN,Lichens,CZE,Czech Republic,136.0
+CRITICAL,Number of critically endangered species,INVERTEB,Invertebrates,CZE,Czech Republic,961.0
+VULNERABLE,Number of vulnerable species,MOSS,Mosses,CZE,Czech Republic,76.0
+VULNERABLE,Number of vulnerable species,LICHEN,Lichens,CZE,Czech Republic,247.0
+VULNERABLE,Number of vulnerable species,INVERTEB,Invertebrates,CZE,Czech Republic,1261.0
+THREATENED,Total number of threatened species,MOSS,Mosses,CZE,Czech Republic,224.0
+THREATENED,Total number of threatened species,LICHEN,Lichens,CZE,Czech Republic,569.0
+THREATENED,Total number of threatened species,INVERTEB,Invertebrates,CZE,Czech Republic,3313.0
+THREAT_PERCENT,Threatened species as % of known species,MOSS,Mosses,CZE,Czech Republic,25.282
+THREAT_PERCENT,Threatened species as % of known species,LICHEN,Lichens,CZE,Czech Republic,37.287
+THREAT_PERCENT,Threatened species as % of known species,INVERTEB,Invertebrates,CZE,Czech Republic,10.353
+TOT_KNOWN,Total number of known species,LICHEN,Lichens,DNK,Denmark,1002.0
+TOT_KNOWN,Total number of known species,INVERTEB,Invertebrates,DNK,Denmark,4270.0
+ENDANGERED,Number of endangered species,LICHEN,Lichens,DNK,Denmark,50.0
+ENDANGERED,Number of endangered species,INVERTEB,Invertebrates,DNK,Denmark,179.0
+CRITICAL,Number of critically endangered species,LICHEN,Lichens,DNK,Denmark,84.0
+CRITICAL,Number of critically endangered species,INVERTEB,Invertebrates,DNK,Denmark,104.0
+VULNERABLE,Number of vulnerable species,LICHEN,Lichens,DNK,Denmark,87.0
+VULNERABLE,Number of vulnerable species,INVERTEB,Invertebrates,DNK,Denmark,319.0
+THREATENED,Total number of threatened species,LICHEN,Lichens,DNK,Denmark,221.0
+THREATENED,Total number of threatened species,INVERTEB,Invertebrates,DNK,Denmark,602.0
+THREAT_PERCENT,Threatened species as % of known species,LICHEN,Lichens,DNK,Denmark,22.056
+THREAT_PERCENT,Threatened species as % of known species,INVERTEB,Invertebrates,DNK,Denmark,14.098
+TOT_KNOWN,Total number of known species,MOSS,Mosses,IRL,Ireland,596.0
+TOT_KNOWN,Total number of known species,INVERTEB,Invertebrates,IRL,Ireland,1230.0
+ENDANGERED,Number of endangered species,MOSS,Mosses,IRL,Ireland,30.0
+ENDANGERED,Number of endangered species,INVERTEB,Invertebrates,IRL,Ireland,51.0
+CRITICAL,Number of critically endangered species,MOSS,Mosses,IRL,Ireland,19.0
+CRITICAL,Number of critically endangered species,INVERTEB,Invertebrates,IRL,Ireland,28.0
+VULNERABLE,Number of vulnerable species,MOSS,Mosses,IRL,Ireland,64.0
+VULNERABLE,Number of vulnerable species,INVERTEB,Invertebrates,IRL,Ireland,100.0
+THREATENED,Total number of threatened species,MOSS,Mosses,IRL,Ireland,113.0
+THREATENED,Total number of threatened species,INVERTEB,Invertebrates,IRL,Ireland,179.0
+THREAT_PERCENT,Threatened species as % of known species,MOSS,Mosses,IRL,Ireland,18.96
+THREAT_PERCENT,Threatened species as % of known species,INVERTEB,Invertebrates,IRL,Ireland,14.553
+TOT_KNOWN,Total number of known species,MOSS,Mosses,JPN,Japan,1800.0
+TOT_KNOWN,Total number of known species,LICHEN,Lichens,JPN,Japan,1600.0
+TOT_KNOWN,Total number of known species,INVERTEB,Invertebrates,JPN,Japan,5300.0
+ENDANGERED,Number of endangered species,MOSS,Mosses,JPN,Japan,138.0
+ENDANGERED,Number of endangered species,LICHEN,Lichens,JPN,Japan,41.0
+ENDANGERED,Number of endangered species,INVERTEB,Invertebrates,JPN,Japan,2.0
+VULNERABLE,Number of vulnerable species,MOSS,Mosses,JPN,Japan,103.0
+VULNERABLE,Number of vulnerable species,LICHEN,Lichens,JPN,Japan,20.0
+VULNERABLE,Number of vulnerable species,INVERTEB,Invertebrates,JPN,Japan,43.0
+THREATENED,Total number of threatened species,MOSS,Mosses,JPN,Japan,240.0
+THREATENED,Total number of threatened species,LICHEN,Lichens,JPN,Japan,63.0
+THREATENED,Total number of threatened species,INVERTEB,Invertebrates,JPN,Japan,65.0
+THREAT_PERCENT,Threatened species as % of known species,MOSS,Mosses,JPN,Japan,13.333
+THREAT_PERCENT,Threatened species as % of known species,LICHEN,Lichens,JPN,Japan,3.938
+THREAT_PERCENT,Threatened species as % of known species,INVERTEB,Invertebrates,JPN,Japan,1.226
+TOT_KNOWN,Total number of known species,MOSS,Mosses,KOR,Korea,1051.0
+TOT_KNOWN,Total number of known species,LICHEN,Lichens,KOR,Korea,1133.0
+TOT_KNOWN,Total number of known species,MOSS,Mosses,ESP,Spain,885.0
+TOT_KNOWN,Total number of known species,LICHEN,Lichens,ESP,Spain,466.0
+ENDANGERED,Number of endangered species,MOSS,Mosses,ESP,Spain,10.0
+ENDANGERED,Number of endangered species,INVERTEB,Invertebrates,ESP,Spain,54.0
+CRITICAL,Number of critically endangered species,MOSS,Mosses,ESP,Spain,13.0
+CRITICAL,Number of critically endangered species,INVERTEB,Invertebrates,ESP,Spain,20.0
+VULNERABLE,Number of vulnerable species,MOSS,Mosses,ESP,Spain,22.0
+VULNERABLE,Number of vulnerable species,INVERTEB,Invertebrates,ESP,Spain,164.0
+THREATENED,Total number of threatened species,MOSS,Mosses,ESP,Spain,45.0
+THREATENED,Total number of threatened species,INVERTEB,Invertebrates,ESP,Spain,238.0
+THREAT_PERCENT,Threatened species as % of known species,MOSS,Mosses,ESP,Spain,5.085
+TOT_KNOWN,Total number of known species,MARINE_F,Marine Fish,SWE,Sweden,97.0
+TOT_KNOWN,Total number of known species,FRESHW_F,Freshwater Fish,SWE,Sweden,42.0
+ENDANGERED,Number of endangered species,MARINE_F,Marine Fish,SWE,Sweden,5.0
+ENDANGERED,Number of endangered species,FRESHW_F,Freshwater Fish,SWE,Sweden,1.0
+CRITICAL,Number of critically endangered species,MARINE_F,Marine Fish,SWE,Sweden,6.0
+VULNERABLE,Number of vulnerable species,MARINE_F,Marine Fish,SWE,Sweden,6.0
+VULNERABLE,Number of vulnerable species,FRESHW_F,Freshwater Fish,SWE,Sweden,1.0
+THREATENED,Total number of threatened species,MARINE_F,Marine Fish,SWE,Sweden,17.0
+THREATENED,Total number of threatened species,FRESHW_F,Freshwater Fish,SWE,Sweden,3.0
+THREAT_PERCENT,Threatened species as % of known species,MARINE_F,Marine Fish,SWE,Sweden,17.526
+THREAT_PERCENT,Threatened species as % of known species,FRESHW_F,Freshwater Fish,SWE,Sweden,7.143
+THREATENED,Total number of threatened species,MOSS,Mosses,GBR,United Kingdom,108.0
+TOT_KNOWN,Total number of known species,MAMMAL,Mammals,CRI,Costa Rica,241.0
+TOT_KNOWN,Total number of known species,BIRD,Birds,CRI,Costa Rica,890.0
+TOT_KNOWN,Total number of known species,REPTILE,Reptiles,CRI,Costa Rica,196.0
+TOT_KNOWN,Total number of known species,AMPHIBIAN,Amphibians,CRI,Costa Rica,191.0
+TOT_KNOWN,Total number of known species,VASCULAR_PLANT,Vascular plants,CRI,Costa Rica,1943.0
+TOT_KNOWN,Total number of known species,INVERTEB,Invertebrates,CRI,Costa Rica,447.0
+ENDANGERED,Number of endangered species,MAMMAL,Mammals,CRI,Costa Rica,7.0
+ENDANGERED,Number of endangered species,BIRD,Birds,CRI,Costa Rica,9.0
+ENDANGERED,Number of endangered species,REPTILE,Reptiles,CRI,Costa Rica,5.0
+ENDANGERED,Number of endangered species,AMPHIBIAN,Amphibians,CRI,Costa Rica,22.0
+ENDANGERED,Number of endangered species,VASCULAR_PLANT,Vascular plants,CRI,Costa Rica,58.0
+CRITICAL,Number of critically endangered species,BIRD,Birds,CRI,Costa Rica,2.0
+CRITICAL,Number of critically endangered species,REPTILE,Reptiles,CRI,Costa Rica,3.0
+CRITICAL,Number of critically endangered species,AMPHIBIAN,Amphibians,CRI,Costa Rica,23.0
+CRITICAL,Number of critically endangered species,VASCULAR_PLANT,Vascular plants,CRI,Costa Rica,10.0
+VULNERABLE,Number of vulnerable species,MAMMAL,Mammals,CRI,Costa Rica,13.0
+VULNERABLE,Number of vulnerable species,BIRD,Birds,CRI,Costa Rica,19.0
+VULNERABLE,Number of vulnerable species,REPTILE,Reptiles,CRI,Costa Rica,5.0
+VULNERABLE,Number of vulnerable species,AMPHIBIAN,Amphibians,CRI,Costa Rica,15.0
+VULNERABLE,Number of vulnerable species,VASCULAR_PLANT,Vascular plants,CRI,Costa Rica,90.0
+THREATENED,Total number of threatened species,MAMMAL,Mammals,CRI,Costa Rica,21.0
+THREATENED,Total number of threatened species,BIRD,Birds,CRI,Costa Rica,30.0
+THREATENED,Total number of threatened species,REPTILE,Reptiles,CRI,Costa Rica,13.0
+THREATENED,Total number of threatened species,AMPHIBIAN,Amphibians,CRI,Costa Rica,60.0
+THREATENED,Total number of threatened species,VASCULAR_PLANT,Vascular plants,CRI,Costa Rica,158.0
+THREAT_PERCENT,Threatened species as % of known species,MAMMAL,Mammals,CRI,Costa Rica,8.714
+THREAT_PERCENT,Threatened species as % of known species,BIRD,Birds,CRI,Costa Rica,3.371
+THREAT_PERCENT,Threatened species as % of known species,REPTILE,Reptiles,CRI,Costa Rica,6.633
+THREAT_PERCENT,Threatened species as % of known species,AMPHIBIAN,Amphibians,CRI,Costa Rica,31.414
+THREAT_PERCENT,Threatened species as % of known species,VASCULAR_PLANT,Vascular plants,CRI,Costa Rica,8.132
+TOT_KNOWN,Total number of known species,MOSS,Mosses,LVA,Latvia,560.0
+TOT_KNOWN,Total number of known species,LICHEN,Lichens,LVA,Latvia,687.0
+TOT_KNOWN,Total number of known species,INVERTEB,Invertebrates,LVA,Latvia,17100.0
+THREAT_PERCENT,Threatened species as % of known species,MOSS,Mosses,LVA,Latvia,10.893
+THREAT_PERCENT,Threatened species as % of known species,LICHEN,Lichens,LVA,Latvia,3.493
+THREAT_PERCENT,Threatened species as % of known species,INVERTEB,Invertebrates,LVA,Latvia,0.462
+TOT_KNOWN,Total number of known species,MAMMAL,Mammals,LTU,Lithuania,68.0
+TOT_KNOWN,Total number of known species,BIRD,Birds,LTU,Lithuania,389.0
+TOT_KNOWN,Total number of known species,REPTILE,Reptiles,LTU,Lithuania,7.0
+TOT_KNOWN,Total number of known species,AMPHIBIAN,Amphibians,LTU,Lithuania,13.0
+TOT_KNOWN,Total number of known species,VASCULAR_PLANT,Vascular plants,LTU,Lithuania,1334.0
+TOT_KNOWN,Total number of known species,FISH_TOT,Fish,LTU,Lithuania,105.0
+TOT_KNOWN,Total number of known species,MARINE_F,Marine Fish,LTU,Lithuania,51.0
+TOT_KNOWN,Total number of known species,FRESHW_F,Freshwater Fish,LTU,Lithuania,54.0
+TOT_KNOWN,Total number of known species,MOSS,Mosses,LTU,Lithuania,470.0
+TOT_KNOWN,Total number of known species,LICHEN,Lichens,LTU,Lithuania,250.0
+TOT_KNOWN,Total number of known species,INVERTEB,Invertebrates,LTU,Lithuania,25000.0
+ENDANGERED,Number of endangered species,MAMMAL,Mammals,LTU,Lithuania,3.0
+ENDANGERED,Number of endangered species,BIRD,Birds,LTU,Lithuania,17.0
+ENDANGERED,Number of endangered species,REPTILE,Reptiles,LTU,Lithuania,1.0
+ENDANGERED,Number of endangered species,AMPHIBIAN,Amphibians,LTU,Lithuania,1.0
+ENDANGERED,Number of endangered species,VASCULAR_PLANT,Vascular plants,LTU,Lithuania,66.0
+ENDANGERED,Number of endangered species,FISH_TOT,Fish,LTU,Lithuania,0.0
+ENDANGERED,Number of endangered species,MARINE_F,Marine Fish,LTU,Lithuania,0.0
+ENDANGERED,Number of endangered species,FRESHW_F,Freshwater Fish,LTU,Lithuania,0.0
+ENDANGERED,Number of endangered species,MOSS,Mosses,LTU,Lithuania,13.0
+ENDANGERED,Number of endangered species,LICHEN,Lichens,LTU,Lithuania,16.0
+ENDANGERED,Number of endangered species,INVERTEB,Invertebrates,LTU,Lithuania,54.0
+VULNERABLE,Number of vulnerable species,MAMMAL,Mammals,LTU,Lithuania,4.0
+VULNERABLE,Number of vulnerable species,BIRD,Birds,LTU,Lithuania,20.0
+VULNERABLE,Number of vulnerable species,REPTILE,Reptiles,LTU,Lithuania,1.0
+VULNERABLE,Number of vulnerable species,AMPHIBIAN,Amphibians,LTU,Lithuania,3.0
+VULNERABLE,Number of vulnerable species,VASCULAR_PLANT,Vascular plants,LTU,Lithuania,41.0
+VULNERABLE,Number of vulnerable species,FISH_TOT,Fish,LTU,Lithuania,2.0
+VULNERABLE,Number of vulnerable species,MARINE_F,Marine Fish,LTU,Lithuania,0.0
+VULNERABLE,Number of vulnerable species,FRESHW_F,Freshwater Fish,LTU,Lithuania,2.0
+VULNERABLE,Number of vulnerable species,MOSS,Mosses,LTU,Lithuania,26.0
+VULNERABLE,Number of vulnerable species,LICHEN,Lichens,LTU,Lithuania,3.0
+VULNERABLE,Number of vulnerable species,INVERTEB,Invertebrates,LTU,Lithuania,22.0
+THREATENED,Total number of threatened species,MAMMAL,Mammals,LTU,Lithuania,7.0
+THREATENED,Total number of threatened species,BIRD,Birds,LTU,Lithuania,56.0
+THREATENED,Total number of threatened species,REPTILE,Reptiles,LTU,Lithuania,2.0
+THREATENED,Total number of threatened species,AMPHIBIAN,Amphibians,LTU,Lithuania,4.0
+THREATENED,Total number of threatened species,VASCULAR_PLANT,Vascular plants,LTU,Lithuania,130.0
+THREATENED,Total number of threatened species,FISH_TOT,Fish,LTU,Lithuania,5.0
+THREATENED,Total number of threatened species,MARINE_F,Marine Fish,LTU,Lithuania,1.0
+THREATENED,Total number of threatened species,FRESHW_F,Freshwater Fish,LTU,Lithuania,4.0
+THREATENED,Total number of threatened species,MOSS,Mosses,LTU,Lithuania,48.0
+THREATENED,Total number of threatened species,LICHEN,Lichens,LTU,Lithuania,43.0
+THREATENED,Total number of threatened species,INVERTEB,Invertebrates,LTU,Lithuania,89.0
+THREAT_PERCENT,Threatened species as % of known species,MAMMAL,Mammals,LTU,Lithuania,10.294
+THREAT_PERCENT,Threatened species as % of known species,BIRD,Birds,LTU,Lithuania,14.396
+THREAT_PERCENT,Threatened species as % of known species,REPTILE,Reptiles,LTU,Lithuania,28.571
+THREAT_PERCENT,Threatened species as % of known species,VASCULAR_PLANT,Vascular plants,LTU,Lithuania,9.745
+THREAT_PERCENT,Threatened species as % of known species,FISH_TOT,Fish,LTU,Lithuania,4.762
+THREAT_PERCENT,Threatened species as % of known species,MARINE_F,Marine Fish,LTU,Lithuania,1.961
+THREAT_PERCENT,Threatened species as % of known species,MOSS,Mosses,LTU,Lithuania,10.213
+THREAT_PERCENT,Threatened species as % of known species,LICHEN,Lichens,LTU,Lithuania,17.2
+THREAT_PERCENT,Threatened species as % of known species,INVERTEB,Invertebrates,LTU,Lithuania,0.356
+TOT_KNOWN,Total number of known species,MOSS,Mosses,AUT,Austria,1016.0
+TOT_KNOWN,Total number of known species,LICHEN,Lichens,AUT,Austria,2100.0
+TOT_KNOWN,Total number of known species,INVERTEB,Invertebrates,AUT,Austria,53464.0
+ENDANGERED,Number of endangered species,MOSS,Mosses,AUT,Austria,69.0
+ENDANGERED,Number of endangered species,LICHEN,Lichens,AUT,Austria,135.0
+ENDANGERED,Number of endangered species,INVERTEB,Invertebrates,AUT,Austria,310.0
+CRITICAL,Number of critically endangered species,MOSS,Mosses,AUT,Austria,34.0
+CRITICAL,Number of critically endangered species,LICHEN,Lichens,AUT,Austria,57.0
+CRITICAL,Number of critically endangered species,INVERTEB,Invertebrates,AUT,Austria,302.0
+VULNERABLE,Number of vulnerable species,MOSS,Mosses,AUT,Austria,135.0
+VULNERABLE,Number of vulnerable species,LICHEN,Lichens,AUT,Austria,251.0
+VULNERABLE,Number of vulnerable species,INVERTEB,Invertebrates,AUT,Austria,356.0
+THREATENED,Total number of threatened species,MOSS,Mosses,AUT,Austria,238.0
+THREATENED,Total number of threatened species,LICHEN,Lichens,AUT,Austria,443.0
+THREATENED,Total number of threatened species,INVERTEB,Invertebrates,AUT,Austria,968.0
+THREAT_PERCENT,Threatened species as % of known species,MOSS,Mosses,AUT,Austria,23.425
+THREAT_PERCENT,Threatened species as % of known species,LICHEN,Lichens,AUT,Austria,21.095
+THREAT_PERCENT,Threatened species as % of known species,INVERTEB,Invertebrates,AUT,Austria,1.811
+TOT_KNOWN,Total number of known species,INVERTEB,Invertebrates,FRA,France,1060.0
+ENDANGERED,Number of endangered species,FISH_TOT,Fish,FRA,France,11.0
+ENDANGERED,Number of endangered species,INVERTEB,Invertebrates,FRA,France,22.0
+CRITICAL,Number of critically endangered species,VASCULAR_PLANT,Vascular plants,FRA,France,51.0
+CRITICAL,Number of critically endangered species,FISH_TOT,Fish,FRA,France,7.0
+CRITICAL,Number of critically endangered species,INVERTEB,Invertebrates,FRA,France,18.0
+VULNERABLE,Number of vulnerable species,FISH_TOT,Fish,FRA,France,8.0
+VULNERABLE,Number of vulnerable species,INVERTEB,Invertebrates,FRA,France,179.0
+THREATENED,Total number of threatened species,FISH_TOT,Fish,FRA,France,26.0
+THREATENED,Total number of threatened species,INVERTEB,Invertebrates,FRA,France,219.0
+THREAT_PERCENT,Threatened species as % of known species,VASCULAR_PLANT,Vascular plants,FRA,France,8.45
+THREAT_PERCENT,Threatened species as % of known species,FISH_TOT,Fish,FRA,France,15.951
+THREAT_PERCENT,Threatened species as % of known species,INVERTEB,Invertebrates,FRA,France,20.66
+TOT_KNOWN,Total number of known species,MOSS,Mosses,ITA,Italy,1209.0
+TOT_KNOWN,Total number of known species,LICHEN,Lichens,ITA,Italy,2704.0
+THREATENED,Total number of threatened species,MOSS,Mosses,ITA,Italy,237.0
+THREATENED,Total number of threatened species,LICHEN,Lichens,ITA,Italy,153.0
+THREAT_PERCENT,Threatened species as % of known species,MOSS,Mosses,ITA,Italy,19.603
+THREAT_PERCENT,Threatened species as % of known species,LICHEN,Lichens,ITA,Italy,5.658
+TOT_KNOWN,Total number of known species,INVERTEB,Invertebrates,TUR,Türkiye,20636.0
+TOT_KNOWN,Total number of known species,LICHEN,Lichens,CAN,Canada,2677.0
+CRITICAL,Number of critically endangered species,MOSS,Mosses,CAN,Canada,75.0
+CRITICAL,Number of critically endangered species,LICHEN,Lichens,CAN,Canada,127.0
+THREAT_PERCENT,Threatened species as % of known species,LICHEN,Lichens,CAN,Canada,12.253
+CRITICAL,Number of critically endangered species,VASCULAR_PLANT,Vascular plants,HUN,Hungary,115.0
+ENDANGERED,Number of endangered species,MARINE_F,Marine Fish,IRL,Ireland,5.0
+CRITICAL,Number of critically endangered species,MARINE_F,Marine Fish,IRL,Ireland,6.0
+VULNERABLE,Number of vulnerable species,MARINE_F,Marine Fish,IRL,Ireland,6.0
+THREATENED,Total number of threatened species,MARINE_F,Marine Fish,IRL,Ireland,17.0
+THREAT_PERCENT,Threatened species as % of known species,MARINE_F,Marine Fish,IRL,Ireland,4.521
+TOT_KNOWN,Total number of known species,LICHEN,Lichens,TUR,Türkiye,1000.0
+THREATENED,Total number of threatened species,INVERTEB,Invertebrates,TUR,Türkiye,89.0
+THREAT_PERCENT,Threatened species as % of known species,INVERTEB,Invertebrates,TUR,Türkiye,0.431
+TOT_KNOWN,Total number of known species,AMPHIBIAN,Amphibians,BRA,Brazil,877.0
+THREAT_PERCENT,Threatened species as % of known species,AMPHIBIAN,Amphibians,BRA,Brazil,4.333
+TOT_KNOWN,Total number of known species,INVERTEB,Invertebrates,CAN,Canada,31471.0
+ENDANGERED,Number of endangered species,INVERTEB,Invertebrates,CAN,Canada,477.0
+CRITICAL,Number of critically endangered species,INVERTEB,Invertebrates,CAN,Canada,287.0
+VULNERABLE,Number of vulnerable species,INVERTEB,Invertebrates,CAN,Canada,1553.0
+THREATENED,Total number of threatened species,INVERTEB,Invertebrates,CAN,Canada,2317.0
+THREAT_PERCENT,Threatened species as % of known species,INVERTEB,Invertebrates,CAN,Canada,7.362
+TOT_KNOWN,Total number of known species,MOSS,Mosses,HUN,Hungary,659.0
+TOT_KNOWN,Total number of known species,LICHEN,Lichens,HUN,Hungary,715.0
+TOT_KNOWN,Total number of known species,INVERTEB,Invertebrates,HUN,Hungary,87.0
+ENDANGERED,Number of endangered species,MOSS,Mosses,HUN,Hungary,90.0
+ENDANGERED,Number of endangered species,LICHEN,Lichens,HUN,Hungary,44.0
+ENDANGERED,Number of endangered species,INVERTEB,Invertebrates,HUN,Hungary,7.0
+CRITICAL,Number of critically endangered species,MOSS,Mosses,HUN,Hungary,20.0
+CRITICAL,Number of critically endangered species,LICHEN,Lichens,HUN,Hungary,24.0
+CRITICAL,Number of critically endangered species,INVERTEB,Invertebrates,HUN,Hungary,9.0
+VULNERABLE,Number of vulnerable species,MOSS,Mosses,HUN,Hungary,63.0
+VULNERABLE,Number of vulnerable species,LICHEN,Lichens,HUN,Hungary,45.0
+VULNERABLE,Number of vulnerable species,INVERTEB,Invertebrates,HUN,Hungary,8.0
+THREATENED,Total number of threatened species,MOSS,Mosses,HUN,Hungary,173.0
+THREATENED,Total number of threatened species,LICHEN,Lichens,HUN,Hungary,113.0
+THREATENED,Total number of threatened species,INVERTEB,Invertebrates,HUN,Hungary,24.0
+THREAT_PERCENT,Threatened species as % of known species,MOSS,Mosses,HUN,Hungary,26.252
+THREAT_PERCENT,Threatened species as % of known species,LICHEN,Lichens,HUN,Hungary,15.804
+THREAT_PERCENT,Threatened species as % of known species,INVERTEB,Invertebrates,HUN,Hungary,27.586
+TOT_KNOWN,Total number of known species,FISH_TOT,Fish,JPN,Japan,4300.0
+TOT_KNOWN,Total number of known species,MARINE_F,Marine Fish,JPN,Japan,3900.0
+ENDANGERED,Number of endangered species,FISH_TOT,Fish,JPN,Japan,60.0
+ENDANGERED,Number of endangered species,MARINE_F,Marine Fish,JPN,Japan,6.0
+CRITICAL,Number of critically endangered species,FISH_TOT,Fish,JPN,Japan,79.0
+CRITICAL,Number of critically endangered species,MARINE_F,Marine Fish,JPN,Japan,8.0
+VULNERABLE,Number of vulnerable species,FISH_TOT,Fish,JPN,Japan,46.0
+VULNERABLE,Number of vulnerable species,MARINE_F,Marine Fish,JPN,Japan,2.0
+THREATENED,Total number of threatened species,FISH_TOT,Fish,JPN,Japan,185.0
+THREATENED,Total number of threatened species,MARINE_F,Marine Fish,JPN,Japan,16.0
+THREAT_PERCENT,Threatened species as % of known species,FISH_TOT,Fish,JPN,Japan,4.302
+THREAT_PERCENT,Threatened species as % of known species,MARINE_F,Marine Fish,JPN,Japan,0.41
+CRITICAL,Number of critically endangered species,INVERTEB,Invertebrates,LUX,Luxembourg,7.0
+TOT_KNOWN,Total number of known species,MOSS,Mosses,GBR,United Kingdom,805.0
+THREAT_PERCENT,Threatened species as % of known species,MOSS,Mosses,GBR,United Kingdom,13.416
+CRITICAL,Number of critically endangered species,BIRD,Birds,LTU,Lithuania,19.0
+CRITICAL,Number of critically endangered species,VASCULAR_PLANT,Vascular plants,LTU,Lithuania,23.0
+CRITICAL,Number of critically endangered species,FISH_TOT,Fish,LTU,Lithuania,3.0
+CRITICAL,Number of critically endangered species,MARINE_F,Marine Fish,LTU,Lithuania,1.0
+CRITICAL,Number of critically endangered species,FRESHW_F,Freshwater Fish,LTU,Lithuania,2.0
+CRITICAL,Number of critically endangered species,MOSS,Mosses,LTU,Lithuania,9.0
+CRITICAL,Number of critically endangered species,LICHEN,Lichens,LTU,Lithuania,24.0
+CRITICAL,Number of critically endangered species,INVERTEB,Invertebrates,LTU,Lithuania,13.0
+THREAT_PERCENT,Threatened species as % of known species,AMPHIBIAN,Amphibians,LTU,Lithuania,30.769
+THREAT_PERCENT,Threatened species as % of known species,FRESHW_F,Freshwater Fish,LTU,Lithuania,7.407
+TOT_KNOWN,Total number of known species,MARINE_F,Marine Fish,AUS,Australia,5058.0
+TOT_KNOWN,Total number of known species,FRESHW_F,Freshwater Fish,AUS,Australia,315.0
+THREAT_PERCENT,Threatened species as % of known species,MARINE_F,Marine Fish,AUS,Australia,0.297
+THREAT_PERCENT,Threatened species as % of known species,FRESHW_F,Freshwater Fish,AUS,Australia,12.063
+TOT_KNOWN,Total number of known species,MARINE_F,Marine Fish,ESP,Spain,1062.0
+ENDANGERED,Number of endangered species,MARINE_F,Marine Fish,ESP,Spain,1.0
+CRITICAL,Number of critically endangered species,MARINE_F,Marine Fish,ESP,Spain,0.0
+VULNERABLE,Number of vulnerable species,MARINE_F,Marine Fish,ESP,Spain,5.0
+THREATENED,Total number of threatened species,MARINE_F,Marine Fish,ESP,Spain,6.0
+THREAT_PERCENT,Threatened species as % of known species,MARINE_F,Marine Fish,ESP,Spain,0.565
+ENDANGERED,Number of endangered species,MOSS,Mosses,CHL,Chile,4.0
+CRITICAL,Number of critically endangered species,MOSS,Mosses,CHL,Chile,1.0
+VULNERABLE,Number of vulnerable species,MOSS,Mosses,CHL,Chile,4.0
+THREATENED,Total number of threatened species,MOSS,Mosses,CHL,Chile,9.0
+THREAT_PERCENT,Threatened species as % of known species,MOSS,Mosses,CHL,Chile,0.975
+ENDANGERED,Number of endangered species,LICHEN,Lichens,COL,Colombia,0.0
+CRITICAL,Number of critically endangered species,LICHEN,Lichens,COL,Colombia,0.0
+VULNERABLE,Number of vulnerable species,LICHEN,Lichens,COL,Colombia,0.0
+THREATENED,Total number of threatened species,LICHEN,Lichens,COL,Colombia,0.0
+THREAT_PERCENT,Threatened species as % of known species,LICHEN,Lichens,COL,Colombia,0.0
+TOT_KNOWN,Total number of known species,FISH_TOT,Fish,CRI,Costa Rica,2012.0
+TOT_KNOWN,Total number of known species,MOSS,Mosses,CRI,Costa Rica,4.0
+ENDANGERED,Number of endangered species,FISH_TOT,Fish,CRI,Costa Rica,28.0
+ENDANGERED,Number of endangered species,INVERTEB,Invertebrates,CRI,Costa Rica,13.0
+CRITICAL,Number of critically endangered species,FISH_TOT,Fish,CRI,Costa Rica,4.0
+CRITICAL,Number of critically endangered species,INVERTEB,Invertebrates,CRI,Costa Rica,3.0
+VULNERABLE,Number of vulnerable species,FISH_TOT,Fish,CRI,Costa Rica,74.0
+VULNERABLE,Number of vulnerable species,MOSS,Mosses,CRI,Costa Rica,2.0
+VULNERABLE,Number of vulnerable species,INVERTEB,Invertebrates,CRI,Costa Rica,15.0
+THREATENED,Total number of threatened species,FISH_TOT,Fish,CRI,Costa Rica,106.0
+THREATENED,Total number of threatened species,MOSS,Mosses,CRI,Costa Rica,2.0
+THREATENED,Total number of threatened species,INVERTEB,Invertebrates,CRI,Costa Rica,31.0
+THREAT_PERCENT,Threatened species as % of known species,FISH_TOT,Fish,CRI,Costa Rica,5.268
+THREAT_PERCENT,Threatened species as % of known species,MOSS,Mosses,CRI,Costa Rica,50.0
+THREAT_PERCENT,Threatened species as % of known species,INVERTEB,Invertebrates,CRI,Costa Rica,6.935
+THREATENED,Total number of threatened species,INVERTEB,Invertebrates,RUS,Russia,38.0
+TOT_KNOWN,Total number of known species,FISH_TOT,Fish,DNK,Denmark,238.0
+TOT_KNOWN,Total number of known species,MOSS,Mosses,DNK,Denmark,452.0
+ENDANGERED,Number of endangered species,FISH_TOT,Fish,DNK,Denmark,3.0
+ENDANGERED,Number of endangered species,MOSS,Mosses,DNK,Denmark,13.0
+CRITICAL,Number of critically endangered species,FISH_TOT,Fish,DNK,Denmark,3.0
+CRITICAL,Number of critically endangered species,MOSS,Mosses,DNK,Denmark,5.0
+VULNERABLE,Number of vulnerable species,FISH_TOT,Fish,DNK,Denmark,2.0
+VULNERABLE,Number of vulnerable species,MOSS,Mosses,DNK,Denmark,33.0
+THREATENED,Total number of threatened species,FISH_TOT,Fish,DNK,Denmark,8.0
+THREATENED,Total number of threatened species,MOSS,Mosses,DNK,Denmark,51.0
+ENDANGERED,Number of endangered species,MARINE_F,Marine Fish,FRA,France,5.0
+CRITICAL,Number of critically endangered species,MARINE_F,Marine Fish,FRA,France,3.0
+VULNERABLE,Number of vulnerable species,MARINE_F,Marine Fish,FRA,France,3.0
+THREATENED,Total number of threatened species,MARINE_F,Marine Fish,FRA,France,11.0
+CRITICAL,Number of critically endangered species,MOSS,Mosses,JPN,Japan,137.0
+CRITICAL,Number of critically endangered species,LICHEN,Lichens,JPN,Japan,2.0
+CRITICAL,Number of critically endangered species,INVERTEB,Invertebrates,JPN,Japan,20.0
+TOT_KNOWN,Total number of known species,MOSS,Mosses,MEX,Mexico,1000.0
+ENDANGERED,Number of endangered species,MOSS,Mosses,MEX,Mexico,0.0
+CRITICAL,Number of critically endangered species,MOSS,Mosses,MEX,Mexico,0.0
+CRITICAL,Number of critically endangered species,INVERTEB,Invertebrates,MEX,Mexico,1.0
+THREATENED,Total number of threatened species,MOSS,Mosses,MEX,Mexico,2.0
+TOT_KNOWN,Total number of known species,FISH_TOT,Fish,ESP,Spain,1147.0
+ENDANGERED,Number of endangered species,FISH_TOT,Fish,ESP,Spain,9.0
+CRITICAL,Number of critically endangered species,FISH_TOT,Fish,ESP,Spain,9.0
+VULNERABLE,Number of vulnerable species,FISH_TOT,Fish,ESP,Spain,24.0
+THREATENED,Total number of threatened species,FISH_TOT,Fish,ESP,Spain,42.0
+CRITICAL,Number of critically endangered species,LICHEN,Lichens,CHL,Chile,1.0
+VULNERABLE,Number of vulnerable species,LICHEN,Lichens,CHL,Chile,1.0
+THREATENED,Total number of threatened species,LICHEN,Lichens,CHL,Chile,2.0
+CRITICAL,Number of critically endangered species,MAMMAL,Mammals,CRI,Costa Rica,1.0
+THREAT_PERCENT,Threatened species as % of known species,FISH_TOT,Fish,ESP,Spain,3.662
+THREAT_PERCENT,Threatened species as % of known species,REPTILE,Reptiles,DNK,Denmark,12.5
+THREAT_PERCENT,Threatened species as % of known species,FISH_TOT,Fish,DNK,Denmark,3.361
+THREAT_PERCENT,Threatened species as % of known species,MOSS,Mosses,DNK,Denmark,11.283
+THREAT_PERCENT,Threatened species as % of known species,MARINE_F,Marine Fish,FRA,France,13.253
+TOT_KNOWN,Total number of known species,FISH_TOT,Fish,ISL,Iceland,5.0
+THREAT_PERCENT,Threatened species as % of known species,MOSS,Mosses,MEX,Mexico,0.2
+TOT_KNOWN,Total number of known species,INVERTEB,Invertebrates,ESP,Spain,42969.0
+THREAT_PERCENT,Threatened species as % of known species,INVERTEB,Invertebrates,ESP,Spain,0.554
+TOT_KNOWN,Total number of known species,MOSS,Mosses,SWE,Sweden,1040.0
+TOT_KNOWN,Total number of known species,LICHEN,Lichens,SWE,Sweden,2637.0
+TOT_KNOWN,Total number of known species,INVERTEB,Invertebrates,SWE,Sweden,38487.0
+ENDANGERED,Number of endangered species,MOSS,Mosses,SWE,Sweden,56.0
+ENDANGERED,Number of endangered species,LICHEN,Lichens,SWE,Sweden,71.0
+ENDANGERED,Number of endangered species,INVERTEB,Invertebrates,SWE,Sweden,297.0
+CRITICAL,Number of critically endangered species,FRESHW_F,Freshwater Fish,SWE,Sweden,1.0
+CRITICAL,Number of critically endangered species,MOSS,Mosses,SWE,Sweden,11.0
+CRITICAL,Number of critically endangered species,LICHEN,Lichens,SWE,Sweden,52.0
+CRITICAL,Number of critically endangered species,INVERTEB,Invertebrates,SWE,Sweden,87.0
+VULNERABLE,Number of vulnerable species,MOSS,Mosses,SWE,Sweden,87.0
+VULNERABLE,Number of vulnerable species,LICHEN,Lichens,SWE,Sweden,85.0
+VULNERABLE,Number of vulnerable species,INVERTEB,Invertebrates,SWE,Sweden,695.0
+THREATENED,Total number of threatened species,MOSS,Mosses,SWE,Sweden,154.0
+THREATENED,Total number of threatened species,INVERTEB,Invertebrates,SWE,Sweden,1079.0
+THREAT_PERCENT,Threatened species as % of known species,MOSS,Mosses,SWE,Sweden,14.808
+THREAT_PERCENT,Threatened species as % of known species,INVERTEB,Invertebrates,SWE,Sweden,2.804
+THREAT_PERCENT,Threatened species as % of known species,LICHEN,Lichens,CHL,Chile,0.145
+TOT_KNOWN,Total number of known species,MOSS,Mosses,NZL,New Zealand,1362.0
+TOT_KNOWN,Total number of known species,LICHEN,Lichens,NZL,New Zealand,2026.0
+THREAT_PERCENT,Threatened species as % of known species,MOSS,Mosses,NZL,New Zealand,1.468
+THREAT_PERCENT,Threatened species as % of known species,LICHEN,Lichens,NZL,New Zealand,0.79
