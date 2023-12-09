@@ -3,7 +3,10 @@
     "listing": "/index.html",
     "items": [
       "/posts/synthetic-data/index.html",
-      "/posts/liwc/index.html"
+      "/posts/liwc/index.html",
+      "/posts/rprofile-globals/index.html",
+      "/posts/mounting-gu-domains/index.html",
+      "/posts/images-in-qmd/index.html"
     ]
   }
 ]

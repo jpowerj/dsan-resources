@@ -1,0 +1,23 @@
+---
+title: "Mounting Your GU Domains Space as a Local Drive"
+image: "images/gtown_domains.png"
+date: 2023-11-02
+author: "Jeff Jacobs"
+institute: "<a href='mailto:jj1088@georgetown.edu' target='_blank'>`jj1088@georgetown.edu`</a>"
+format:
+  html:
+    df-print: kable
+categories:
+  - "GU Domains"
+---
+
+You can use a Mac App called Mountain Duck to **mount** your GU Domains space as a disk on your local computer, so that you can upload/download/view/modify files on your GU Domains space the same way you work with files on your local computer.
+
+On my Mac, for example, I have my GU Domains server space mounted so that my Finder sidebar looks as follows:
+
+![](images/gu-domains-mounted.jpeg){fig-align="center"}
+
+So that when I open this Georgetown Domains "drive", I see the following:
+
+![](images/gu-domains-finder.jpeg){fig-align="center"}
+

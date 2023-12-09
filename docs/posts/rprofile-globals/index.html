@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Kangheng Liu">
+<meta name="author" content="Jeff Jacobs">
+<meta name="dcterms.date" content="2023-11-03">
 
-<title>DSAN Resources - Resources for DSAN Students</title>
+<title>DSAN Resources - Establishing Global Settings for R in VSCode</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,27 +23,59 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -61,41 +96,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
+<script src="../../jjcustom.js"></script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-<script src="./jjcustom.js"></script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-sidebar floating">
@@ -107,7 +111,9 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><i class="bi bi-house pe-1"></i>Home</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      DSAN Resources
+      </li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -122,7 +128,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">DSAN Resources</a> 
+      <a href="../../">DSAN Resources</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -134,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><i class="bi bi-house pe-1"></i>Home</span></a>
   </div>
 </li>
@@ -145,20 +151,33 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="GU Domains">GU Domains <span class="quarto-category-count">(1)</span></div><div class="category" data-category="General">General <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Quarto">Quarto <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Text Analysis">Text Analysis <span class="quarto-category-count">(1)</span></div></div></div>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Resources for DSAN Students</h1>
+<h1 class="title">Establishing Global Settings for R in VSCode</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Authors</div>
+    <div class="quarto-title-meta-contents">
+             <p>Kangheng Liu </p>
+             <p>Jeff Jacobs </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 3, 2023</p>
+    </div>
+  </div>
   
     
   </div>
@@ -166,186 +185,18 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>This page contains some general resources for DSAN students, which I hope can be useful across multiple different DSAN courses and/or in your future careers! 🤩</p>
+<p>Awesome student Kangheng Liu figured out the following, which will be helpful for students who use the dark (default!) theme for VSCode but find that their R plots show up as black labels on a black background, so that they are not readable:</p>
+<p>The IRkernel actually calls the R default startup process. The .Rprofile works whether inside or outside of jupyter.</p>
+<p>The problem was R’s logic in sourcing the <code>.Rprofile</code> file. It won’t load libraries/packages in starting R kernel process. To pass background color as white, <a href="https://journal.r-project.org/news/RN-2004-1-core/RN-2004-1-core.pdf" target="_blank">we need to write a hook for that</a>. Search for hook in the link for explanations.</p>
+<p>The coding is as below. in <code>.Rprofile</code> at home folder (or project folder, will take presendence if any):</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setHook</span>(<span class="fu">packageEvent</span>(<span class="st">"grDevices"</span>, <span class="st">"onLoad"</span>),</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>        <span class="cf">function</span>(...) grDevices<span class="sc">::</span><span class="fu">pdf.options</span>(<span class="at">bg=</span><span class="st">"white"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This will pass <code>bg="white"</code> to <code>grDevices</code>, which is the R graphics device package.</p>
+<p>Thank you Kangheng, on behalf of the DSAN students, for discovering this!</p>
 
 
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="General" data-listing-date-sort="1701752400000" data-listing-file-modified-sort="1701914841957" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10">
-<div class="thumbnail">
-<p><a href="./posts/synthetic-data/index.html"> <img src="./posts/synthetic-data/images/synthetic-data-crop.jpeg" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/synthetic-data/index.html">
-<h3 class="no-anchor listing-title">
-Generating Synthetic Microdata from Aggregated Count Data
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('General'); return false;">
-General
-</div>
-</div>
-<a href="./posts/synthetic-data/index.html">
-<div class="listing-description">
-Before we…
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/synthetic-data/index.html">
-<div class="listing-date">
-Dec 5, 2023
-</div>
-<div class="listing-author">
-Jeff Jacobs
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="Text Analysis" data-listing-date-sort="1701666000000" data-listing-file-modified-sort="1701914285481" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
-<div class="thumbnail">
-<p><a href="./posts/liwc/index.html"> <img src="./posts/liwc/images/liwc.jpg" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/liwc/index.html">
-<h3 class="no-anchor listing-title">
-Using LIWC for Document-Level Sentiment Analysis
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Text Analysis'); return false;">
-Text Analysis
-</div>
-</div>
-<a href="./posts/liwc/index.html">
-<div class="listing-description">
-You…<sup></sup>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/liwc/index.html">
-<div class="listing-date">
-Dec 4, 2023
-</div>
-<div class="listing-author">
-Jeff Jacobs
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1698984000000" data-listing-file-modified-sort="1701914836960" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="./posts/rprofile-globals/index.html"> <img src="./posts/rprofile-globals/images/vscode.png" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/rprofile-globals/index.html">
-<h3 class="no-anchor listing-title">
-Establishing Global Settings for R in VSCode
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-Awesome student Kangheng Liu figured out the following, which…
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/rprofile-globals/index.html">
-<div class="listing-date">
-Nov 3, 2023
-</div>
-<div class="listing-author">
-Kangheng Liu, Jeff Jacobs
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="GU Domains" data-listing-date-sort="1698897600000" data-listing-file-modified-sort="1701914640554" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="./posts/mounting-gu-domains/index.html"> <img src="./posts/mounting-gu-domains/images/gtown_domains.png" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/mounting-gu-domains/index.html">
-<h3 class="no-anchor listing-title">
-Mounting Your GU Domains Space as a Local Drive
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('GU Domains'); return false;">
-GU Domains
-</div>
-</div>
-<a href="./posts/mounting-gu-domains/index.html">
-<div class="listing-description">
-You can use a Mac App called Mountain Duck to <strong>mount</strong> your GU Domains space as a disk on your local computer, so…
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/mounting-gu-domains/index.html">
-<div class="listing-date">
-Nov 2, 2023
-</div>
-<div class="listing-author">
-Jeff Jacobs
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="Quarto" data-listing-date-sort="1698811200000" data-listing-file-modified-sort="1701914879308" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
-<div class="thumbnail">
-<p><a href="./posts/images-in-qmd/index.html"> <img src="./posts/images-in-qmd/images/quarto_logo.svg" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/images-in-qmd/index.html">
-<h3 class="no-anchor listing-title">
-Including Images in <code>.qmd</code> Files
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Quarto'); return false;">
-Quarto
-</div>
-</div>
-<a href="./posts/images-in-qmd/index.html">
-<div class="listing-description">
-If you already have an image file ready to be included in your <code>.qmd</code> file, you can include it in a <code>.qmd</code> file using the following syntax:
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/images-in-qmd/index.html">
-<div class="listing-date">
-Nov 1, 2023
-</div>
-<div class="listing-author">
-Jeff Jacobs
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

@@ -4,7 +4,14 @@
     "href": "index.html",
     "title": "Resources for DSAN Students",
     "section": "",
-    "text": "This page contains some general resources for DSAN students, which I hope can be useful across multiple different DSAN courses and/or in your future careers! 🤩\n\n\n\n\n\n\n\n\n  \n\n\n\n\nGenerating Synthetic Microdata from Aggregated Count Data\n\n\n\n\n\n\n\nGeneral\n\n\n\n\n\n\n\n\n\n\n\nDec 4, 2023\n\n\nJeff Jacobs\n\n\n\n\n\n\n  \n\n\n\n\nUsing LIWC for Document-Level Sentiment Analysis\n\n\n\n\n\n\n\nText Analysis\n\n\n\n\n\n\n\n\n\n\n\nDec 4, 2023\n\n\nJeff Jacobs\n\n\n\n\n\n\nNo matching items"
+    "text": "This page contains some general resources for DSAN students, which I hope can be useful across multiple different DSAN courses and/or in your future careers! 🤩\n\n\n\n\n\n\n\n\n  \n\n\n\n\nGenerating Synthetic Microdata from Aggregated Count Data\n\n\n\n\n\n\n\nGeneral\n\n\n\n\n\n\n\n\n\n\n\nDec 5, 2023\n\n\nJeff Jacobs\n\n\n\n\n\n\n  \n\n\n\n\nUsing LIWC for Document-Level Sentiment Analysis\n\n\n\n\n\n\n\nText Analysis\n\n\n\n\n\n\n\n\n\n\n\nDec 4, 2023\n\n\nJeff Jacobs\n\n\n\n\n\n\n  \n\n\n\n\nEstablishing Global Settings for R in VSCode\n\n\n\n\n\n\n\n\n\n\n\n\nNov 3, 2023\n\n\nKangheng Liu, Jeff Jacobs\n\n\n\n\n\n\n  \n\n\n\n\nMounting Your GU Domains Space as a Local Drive\n\n\n\n\n\n\n\nGU Domains\n\n\n\n\n\n\n\n\n\n\n\nNov 2, 2023\n\n\nJeff Jacobs\n\n\n\n\n\n\n  \n\n\n\n\nIncluding Images in .qmd Files\n\n\n\n\n\n\n\nQuarto\n\n\n\n\n\n\n\n\n\n\n\nNov 1, 2023\n\n\nJeff Jacobs\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/rprofile-globals/index.html",
+    "href": "posts/rprofile-globals/index.html",
+    "title": "Establishing Global Settings for R in VSCode",
+    "section": "",
+    "text": "Awesome student Kangheng Liu figured out the following, which will be helpful for students who use the dark (default!) theme for VSCode but find that their R plots show up as black labels on a black background, so that they are not readable:\nThe IRkernel actually calls the R default startup process. The .Rprofile works whether inside or outside of jupyter.\nThe problem was R’s logic in sourcing the .Rprofile file. It won’t load libraries/packages in starting R kernel process. To pass background color as white, we need to write a hook for that. Search for hook in the link for explanations.\nThe coding is as below. in .Rprofile at home folder (or project folder, will take presendence if any):\nsetHook(packageEvent(\"grDevices\", \"onLoad\"),\n        function(...) grDevices::pdf.options(bg=\"white\"))\nThis will pass bg=\"white\" to grDevices, which is the R graphics device package.\nThank you Kangheng, on behalf of the DSAN students, for discovering this!"
   },
   {
     "objectID": "posts/liwc/index.html",
@@ -49,6 +56,27 @@
     "text": "Footnotes\n\n\nAnd, in case you want to use it in the future, you can download the entire set of word lists as a zip file here↩︎"
   },
   {
+    "objectID": "posts/images-in-qmd/index.html",
+    "href": "posts/images-in-qmd/index.html",
+    "title": "Including Images in .qmd Files",
+    "section": "",
+    "text": "If you already have an image file ready to be included in your .qmd file, you can include it in a .qmd file using the following syntax:\n![Image caption](/path/to/image.jpg)\nSo, for example, if the image has the filename my_image.png, and it is saved in the same folder as the .qmd file you are trying to include it in, then the syntax would look like:\n![Image caption](my_image.png)\n\n\nIf you are trying to create a .qmd document which uses a lot of images, it is good practice to create an images subdirectory in the folder where your .qmd file exists, so that the main directory does not get cluttered by all of the image files.\nSo, if we moved our my_image.png file into the images subdirectory, our syntax for including the image would now look like:\n![Image caption](images/my_image.png)"
+  },
+  {
+    "objectID": "posts/images-in-qmd/index.html#if-you-already-have-the-image-file-saved-locally",
+    "href": "posts/images-in-qmd/index.html#if-you-already-have-the-image-file-saved-locally",
+    "title": "Including Images in .qmd Files",
+    "section": "",
+    "text": "If you already have an image file ready to be included in your .qmd file, you can include it in a .qmd file using the following syntax:\n![Image caption](/path/to/image.jpg)\nSo, for example, if the image has the filename my_image.png, and it is saved in the same folder as the .qmd file you are trying to include it in, then the syntax would look like:\n![Image caption](my_image.png)\n\n\nIf you are trying to create a .qmd document which uses a lot of images, it is good practice to create an images subdirectory in the folder where your .qmd file exists, so that the main directory does not get cluttered by all of the image files.\nSo, if we moved our my_image.png file into the images subdirectory, our syntax for including the image would now look like:\n![Image caption](images/my_image.png)"
+  },
+  {
+    "objectID": "posts/images-in-qmd/index.html#if-youre-unsure-how-to-save-the-image-file-locally",
+    "href": "posts/images-in-qmd/index.html#if-youre-unsure-how-to-save-the-image-file-locally",
+    "title": "Including Images in .qmd Files",
+    "section": "If You’re Unsure How To Save The Image File Locally",
+    "text": "If You’re Unsure How To Save The Image File Locally\nSometimes, for example, students want to take a photo or scan of a written document, or a screenshot, and include that in a .qmd file. In that case, the difficult part is not knowing the above syntax but knowing how to get the image onto your drive in the first place.\nWhen I want to include screenshots, for example, I tend to use the Mac shortcut cmd+shift+F4, which lets me take a screenshot of some portion of the screen, and then I open the saved screenshot and choose “Add to Photos”. Finally, I open up the Photos app and export the image to the images subdirectory mentioned above.\nWhen I want to include photos taken from my phone, there are a lot of different approaches based on different phone types and operating systems, but in general in my case I tend to export the photo to Google Photos or Dropbox, and then download the photo from photos.google.com or dropbox.com and include it in my .qmd file that way."
+  },
+  {
     "objectID": "posts/synthetic-data/index.html",
     "href": "posts/synthetic-data/index.html",
     "title": "Generating Synthetic Microdata from Aggregated Count Data",
@@ -82,5 +110,12 @@
     "title": "Generating Synthetic Microdata from Aggregated Count Data",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nThe thumbnail image for this post is from MIT Sloan’s primer on synthetic data.↩︎"
+  },
+  {
+    "objectID": "posts/mounting-gu-domains/index.html",
+    "href": "posts/mounting-gu-domains/index.html",
+    "title": "Mounting Your GU Domains Space as a Local Drive",
+    "section": "",
+    "text": "You can use a Mac App called Mountain Duck to mount your GU Domains space as a disk on your local computer, so that you can upload/download/view/modify files on your GU Domains space the same way you work with files on your local computer.\nOn my Mac, for example, I have my GU Domains server space mounted so that my Finder sidebar looks as follows:\n\n\n\n\n\nSo that when I open this Georgetown Domains “drive”, I see the following:"
   }
 ]

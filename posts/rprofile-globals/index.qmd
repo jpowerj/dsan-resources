@@ -1,0 +1,28 @@
+---
+title: "Establishing Global Settings for R in VSCode"
+image: "images/vscode.png"
+author:
+  - "Kangheng Liu"
+  - "Jeff Jacobs"
+date: 2023-11-03
+format:
+  html:
+    df-print: kable
+---
+
+Awesome student Kangheng Liu figured out the following, which will be helpful for students who use the dark (default!) theme for VSCode but find that their R plots show up as black labels on a black background, so that they are not readable:
+
+The IRkernel actually calls the R default startup process. The .Rprofile works whether inside or outside of jupyter. 
+
+The problem was R's logic in sourcing the `.Rprofile` file. It won't load libraries/packages in starting R kernel process. To pass background color as white, <a href='https://journal.r-project.org/news/RN-2004-1-core/RN-2004-1-core.pdf' target='_blank'>we need to write a hook for that</a>. Search for hook in the link for explanations. 
+
+The coding is as below. in `.Rprofile` at home folder (or project folder, will take presendence if any):
+
+```r
+setHook(packageEvent("grDevices", "onLoad"),
+        function(...) grDevices::pdf.options(bg="white"))
+```
+
+This will pass `bg="white"` to `grDevices`, which is the R graphics device package.
+
+Thank you Kangheng, on behalf of the DSAN students, for discovering this!

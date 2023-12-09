@@ -16,5 +16,14 @@
   },
   "posts/synthetic-data/index.qmd": {
     "index.html": "73d07ff3"
+  },
+  "posts/images-in-qmd/index.qmd": {
+    "index.html": "5620a20d"
+  },
+  "posts/rprofile-globals/index.qmd": {
+    "index.html": "0399fc6a"
+  },
+  "posts/mounting-gu-domains/index.qmd": {
+    "index.html": "ae9c9ec2"
   }
 }

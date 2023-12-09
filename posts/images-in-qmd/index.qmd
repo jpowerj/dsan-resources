@@ -1,0 +1,43 @@
+---
+title: "Including Images in `.qmd` Files"
+image: "images/quarto_logo.svg"
+date: 2023-11-01
+author: "Jeff Jacobs"
+institute: "<a href='mailto:jj1088@georgetown.edu' target='_blank'>`jj1088@georgetown.edu`</a>"
+categories:
+  - "Quarto"
+---
+
+## If You Already Have The Image File Saved Locally
+
+If you already have an image file ready to be included in your `.qmd` file, you can include it in a `.qmd` file using the following syntax:
+
+```
+![Image caption](/path/to/image.jpg)
+```
+
+So, for example, if the image has the filename `my_image.png`, and it is saved in the **same folder** as the `.qmd` file you are trying to include it in, then the syntax would look like:
+
+```
+![Image caption](my_image.png)
+```
+
+### Using an `images` Subdirectory
+
+If you are trying to create a `.qmd` document which uses a lot of images, it is good practice to create an `images` subdirectory in the folder where your `.qmd` file exists, so that the main directory does not get cluttered by all of the image files.
+
+So, if we moved our `my_image.png` file into the `images` subdirectory, our syntax for including the image would now look like:
+
+```
+![Image caption](images/my_image.png)
+```
+
+## If You're Unsure How To Save The Image File Locally
+
+Sometimes, for example, students want to take a photo or scan of a written document, or a screenshot, and include that in a `.qmd` file. In that case, the difficult part is not knowing the above syntax but knowing how to get the image onto your drive in the first place.
+
+When I want to include **screenshots**, for example, I tend to use the Mac shortcut {{< kbd cmd+shift+F4 >}}, which lets me take a screenshot of some portion of the screen, and then I open the saved screenshot and choose "Add to Photos". Finally, I open up the Photos app and **export** the image to the `images` subdirectory mentioned above.
+
+When I want to include **photos taken from my phone**, there are a lot of different approaches based on different phone types and operating systems, but in general in my case I tend to export the photo to **Google Photos** or **Dropbox**, and then download the photo from `photos.google.com` or `dropbox.com` and include it in my `.qmd` file that way.
+
+
