@@ -1,5 +1,6 @@
 ---
 title: "Jeff's Big Bucket of Datasets for Visualization"
+image: "images/word-prob-joy.png"
 author: "Jeff Jacobs"
 institute: "<a href='mailto:jj1088@georgetown.edu' target='_blank'>`jj1088@georgetown.edu`</a>"
 format:
@@ -39,6 +40,7 @@ The <a href='https://www.gu.se/en/gendip/the-gendip-dataset-on-gender-and-diplom
 
 ![Joyplot of the association between phrases and numeric values, from <a href='https://github.com/zonination/perceptions' target='_blank'>GitHub repo</a> of reddit user zonination](images/word-prob-joy.png){#fig-perception fig-align="center"}
 
+* **Type**: Cross-sectional (one row per respondent)
 * Survey of 123 redditors, based on a set of charts from an earlier (since-declassified) CIA publication on "Words of Estimative Probability", data <a href='https://github.com/wadefagen/datasets/tree/master/Perception-of-Probability-Words' target='_blank'>here</a>
 * Visualization of a precursor to this dataset on <a href='https://d3-graph-gallery.com/graph/ridgeline_basic.html' target='_blank'>D3 Graph Gallery</a>
 * <a href='https://waf.cs.illinois.edu/visualizations/Perception-of-Probability-Words/' target='_blank'>Visualization of this data</a>, along with additional contextual details, from Illinois Computer Science professor Wade Fagen-Ulmschneider
