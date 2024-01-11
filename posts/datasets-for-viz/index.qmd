@@ -1,0 +1,47 @@
+---
+title: "Jeff's Big Bucket of Datasets for Visualization"
+author: "Jeff Jacobs"
+institute: "<a href='mailto:jj1088@georgetown.edu' target='_blank'>`jj1088@georgetown.edu`</a>"
+format:
+  html:
+    df-print: kable
+categories:
+  - "Datasets"
+---
+
+There are lots of datasets out there, to the point that it can be scary trawling through e.g. the (at time of writing) 1,780 datasets listed in the <a href='https://docs.google.com/spreadsheets/d/1wZhPLMCHKJvwOkP4juclhjFgqIY8fQFMemwKL2c64vk/edit#gid=0' target='_blank'>Data is Plural archive</a>. This point of this post, therefore, is to provide a "curated" collection of datasets specifically chosen for how well they lend themselves to various methods of **visualization**. For the section of DSAN 5200: Advanced Data Visualization that I'm teaching this semester (Section 03), I'll be drawing on these datasets for demonstrations of how we can produce visual representations from raw numeric or text data.
+
+## Life Expectancy By Country
+
+::: {#fig-expectancy}
+::: {layout="[1,1]"}
+
+![](images/04-male-versus-female-1.png)
+
+![](images/05-Comparing-two-years-1.png)
+
+:::
+
+**Left**: The life expectancy gap between males and females in 2015, by country. **Right**: The change in life expectancy between 2000 and 2015, by country. Both from Nathan Yau's <a href='https://flowingdata.com/2017/01/24/one-dataset-visualized-25-ways/' target='_blank'>*One Dataset, Visualized 25 Ways*</a>.
+:::
+
+<a href='http://www.who.int/gho/mortality_burden_disease/life_tables/situation_trends/en/'>The data</a>, from the World Health Organization's *Global Health Observatory*.
+
+* **Type**: Panel (Country x Year)
+
+This is the dataset behind Nathan Yau's blog post <a href='https://flowingdata.com/2017/01/24/one-dataset-visualized-25-ways/' target='_blank'>*One Dataset, Visualized 25 Ways*</a>. This post provides a great example of how data doesn't "speak for itself", and how visualization choices---what aspects to highlight and what aspects to exclude---can have a big impact on how underlying patterns in the data are extracted, communicated, and understood by an audience.
+
+<!-- ## Gender and Diplomatic Representation
+
+The <a href='https://www.gu.se/en/gendip/the-gendip-dataset-on-gender-and-diplomatic-representation' target='_blank'>GenDip</a> dataset on Gender and Diplomatic Representation  -->
+
+## Perception of Probability Words
+
+![Joyplot of the association between phrases and numeric values, from <a href='https://github.com/zonination/perceptions' target='_blank'>GitHub repo</a> of reddit user zonination](images/word-prob-joy.png){#fig-perception fig-align="center"}
+
+* Survey of 123 redditors, based on a set of charts from an earlier (since-declassified) CIA publication on "Words of Estimative Probability", data <a href='https://github.com/wadefagen/datasets/tree/master/Perception-of-Probability-Words' target='_blank'>here</a>
+* Visualization of a precursor to this dataset on <a href='https://d3-graph-gallery.com/graph/ridgeline_basic.html' target='_blank'>D3 Graph Gallery</a>
+* <a href='https://waf.cs.illinois.edu/visualizations/Perception-of-Probability-Words/' target='_blank'>Visualization of this data</a>, along with additional contextual details, from Illinois Computer Science professor Wade Fagen-Ulmschneider
+* Analysis from <a href='https://www.visualcapitalist.com/measuring-perceptions-of-uncertainty/' target='_blank'>*Visual Capitalist*</a>
+
+This is one of my favorite datasets for visualization, and just for pondering in general, because it brings out the tension between the "fuzziness" of human decision-making and the **numeric precision** which is required for the algorithmic decision-making carried out by computers. Thinking through the visualizations of the above data on <a href='https://waf.cs.illinois.edu/visualizations/Perception-of-Probability-Words/' target='_blank'>this page</a> "in reverse" can help us understand how *humans* perceive the outputs of probabilistic machine learning algorithms: there is a sense in which an "average" human (generalizing speculatively from this small-$N$ survey!) will interpret an algorithm's output of 0.95 as an "almost certain" result, while a result between 0.15 and 0.30 will be interpreted by ~50% of humans as a "probably not" result.

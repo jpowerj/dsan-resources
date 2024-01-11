@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/datasets-for-viz/index.html",
       "/posts/synthetic-data/index.html",
       "/posts/liwc/index.html",
       "/posts/rprofile-globals/index.html",

@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Jeff Jacobs">
 
-<title>DSAN Resources - Resources for DSAN Students</title>
+<title>DSAN Resources - Jeff’s Big Bucket of Datasets for Visualization</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +24,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -61,41 +60,12 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="./jjcustom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="../../jjcustom.js"></script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-sidebar floating">
@@ -107,7 +77,9 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><i class="bi bi-house pe-1"></i>Home</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      DSAN Resources
+      </li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -122,7 +94,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">DSAN Resources</a> 
+      <a href="../../">DSAN Resources</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -134,7 +106,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><i class="bi bi-house pe-1"></i>Home</span></a>
   </div>
 </li>
@@ -144,21 +116,44 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Datasets">Datasets <span class="quarto-category-count">(1)</span></div><div class="category" data-category="GU Domains">GU Domains <span class="quarto-category-count">(1)</span></div><div class="category" data-category="General">General <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Quarto">Quarto <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Text Analysis">Text Analysis <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#life-expectancy-by-country" id="toc-life-expectancy-by-country" class="nav-link active" data-scroll-target="#life-expectancy-by-country">Life Expectancy By Country</a></li>
+  <li><a href="#perception-of-probability-words" id="toc-perception-of-probability-words" class="nav-link" data-scroll-target="#perception-of-probability-words">Perception of Probability Words</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Resources for DSAN Students</h1>
-</div>
+<h1 class="title">Jeff’s Big Bucket of Datasets for Visualization</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Datasets</div>
+  </div>
+  </div>
 
 
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Jeff Jacobs </p>
+  </div>
+    <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="mailto:jj1088@georgetown.edu" target="_blank"><code>jj1088@georgetown.edu</code></a>
+          </p>
+      </div>
+    </div>
 
 <div class="quarto-title-meta">
 
-    
+      
   
     
   </div>
@@ -166,218 +161,53 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>This page contains some general resources for DSAN students, which I hope can be useful across multiple different DSAN courses and/or in your future careers! 🤩</p>
+<p>There are lots of datasets out there, to the point that it can be scary trawling through e.g.&nbsp;the (at time of writing) 1,780 datasets listed in the <a href="https://docs.google.com/spreadsheets/d/1wZhPLMCHKJvwOkP4juclhjFgqIY8fQFMemwKL2c64vk/edit#gid=0" target="_blank">Data is Plural archive</a>. This point of this post, therefore, is to provide a “curated” collection of datasets specifically chosen for how well they lend themselves to various methods of <strong>visualization</strong>. For the section of DSAN 5200: Advanced Data Visualization that I’m teaching this semester (Section 03), I’ll be drawing on these datasets for demonstrations of how we can produce visual representations from raw numeric or text data.</p>
+<section id="life-expectancy-by-country" class="level2">
+<h2 class="anchored" data-anchor-id="life-expectancy-by-country">Life Expectancy By Country</h2>
+<div id="fig-expectancy" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/04-male-versus-female-1.png" class="img-fluid figure-img"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/05-Comparing-two-years-1.png" class="img-fluid figure-img"></p>
+</div>
+</div>
+</div>
+<figcaption class="figure-caption">Figure&nbsp;1: <strong>Left</strong>: The life expectancy gap between males and females in 2015, by country. <strong>Right</strong>: The change in life expectancy between 2000 and 2015, by country. Both from Nathan Yau’s <a href="https://flowingdata.com/2017/01/24/one-dataset-visualized-25-ways/" target="_blank"><em>One Dataset, Visualized 25 Ways</em></a>.</figcaption>
+</figure>
+</div>
+<p><a href="http://www.who.int/gho/mortality_burden_disease/life_tables/situation_trends/en/">The data</a>, from the World Health Organization’s <em>Global Health Observatory</em>.</p>
+<ul>
+<li><strong>Type</strong>: Panel (Country x Year)</li>
+</ul>
+<p>This is the dataset behind Nathan Yau’s blog post <a href="https://flowingdata.com/2017/01/24/one-dataset-visualized-25-ways/" target="_blank"><em>One Dataset, Visualized 25 Ways</em></a>. This post provides a great example of how data doesn’t “speak for itself”, and how visualization choices—what aspects to highlight and what aspects to exclude—can have a big impact on how underlying patterns in the data are extracted, communicated, and understood by an audience.</p>
+<!-- ## Gender and Diplomatic Representation
+
+The <a href='https://www.gu.se/en/gendip/the-gendip-dataset-on-gender-and-diplomatic-representation' target='_blank'>GenDip</a> dataset on Gender and Diplomatic Representation  -->
+</section>
+<section id="perception-of-probability-words" class="level2">
+<h2 class="anchored" data-anchor-id="perception-of-probability-words">Perception of Probability Words</h2>
+<div id="fig-perception" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/word-prob-joy.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;2: Joyplot of the association between phrases and numeric values, from <a href="https://github.com/zonination/perceptions" target="_blank">GitHub repo</a> of reddit user zonination</figcaption>
+</figure>
+</div>
+<ul>
+<li>Survey of 123 redditors, based on a set of charts from an earlier (since-declassified) CIA publication on “Words of Estimative Probability”, data <a href="https://github.com/wadefagen/datasets/tree/master/Perception-of-Probability-Words" target="_blank">here</a></li>
+<li>Visualization of a precursor to this dataset on <a href="https://d3-graph-gallery.com/graph/ridgeline_basic.html" target="_blank">D3 Graph Gallery</a></li>
+<li><a href="https://waf.cs.illinois.edu/visualizations/Perception-of-Probability-Words/" target="_blank">Visualization of this data</a>, along with additional contextual details, from Illinois Computer Science professor Wade Fagen-Ulmschneider</li>
+<li>Analysis from <a href="https://www.visualcapitalist.com/measuring-perceptions-of-uncertainty/" target="_blank"><em>Visual Capitalist</em></a></li>
+</ul>
+<p>This is one of my favorite datasets for visualization, and just for pondering in general, because it brings out the tension between the “fuzziness” of human decision-making and the <strong>numeric precision</strong> which is required for the algorithmic decision-making carried out by computers. Thinking through the visualizations of the above data on <a href="https://waf.cs.illinois.edu/visualizations/Perception-of-Probability-Words/" target="_blank">this page</a> “in reverse” can help us understand how <em>humans</em> perceive the outputs of probabilistic machine learning algorithms: there is a sense in which an “average” human (generalizing speculatively from this small-<span class="math inline">\(N\)</span> survey!) will interpret an algorithm’s output of 0.95 as an “almost certain” result, while a result between 0.15 and 0.30 will be interpreted by ~50% of humans as a “probably not” result.</p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Datasets" data-listing-file-modified-sort="1704938212735" data-listing-reading-time-sort="3">
-<div class="thumbnail">
-<p><a href="./posts/datasets-for-viz/index.html"> <p class="card-img-top"><img src="posts/datasets-for-viz/images/04-male-versus-female-1.png"  class="thumbnail-image card-img"/></p> </a></p>
-</div>
-<div class="body">
-<a href="./posts/datasets-for-viz/index.html">
-<h3 class="no-anchor listing-title">
-Jeff’s Big Bucket of Datasets for Visualization
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Datasets'); return false;">
-Datasets
-</div>
-</div>
-<a href="./posts/datasets-for-viz/index.html">
-<div class="listing-description">
-There are lots of datasets out there, to the point that it can be scary trawling through e.g.&nbsp;the (at time of writing) 1,780 datasets listed in the Data is Plural archive. This point of this post, therefore, is to provide a “curated” collection of datasets specifically chosen for how well they lend themselves to various…<strong></strong>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/datasets-for-viz/index.html">
-<div class="listing-author">
-Jeff Jacobs
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="General" data-listing-date-sort="1701752400000" data-listing-file-modified-sort="1701914841957" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10">
-<div class="thumbnail">
-<p><a href="./posts/synthetic-data/index.html"> <img src="./posts/synthetic-data/images/synthetic-data-crop.jpeg" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/synthetic-data/index.html">
-<h3 class="no-anchor listing-title">
-Generating Synthetic Microdata from Aggregated Count Data
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('General'); return false;">
-General
-</div>
-</div>
-<a href="./posts/synthetic-data/index.html">
-<div class="listing-description">
-Before we…
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/synthetic-data/index.html">
-<div class="listing-date">
-Dec 5, 2023
-</div>
-<div class="listing-author">
-Jeff Jacobs
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="Text Analysis" data-listing-date-sort="1701666000000" data-listing-file-modified-sort="1701914285481" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
-<div class="thumbnail">
-<p><a href="./posts/liwc/index.html"> <img src="./posts/liwc/images/liwc.jpg" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/liwc/index.html">
-<h3 class="no-anchor listing-title">
-Using LIWC for Document-Level Sentiment Analysis
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Text Analysis'); return false;">
-Text Analysis
-</div>
-</div>
-<a href="./posts/liwc/index.html">
-<div class="listing-description">
-You…<sup></sup>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/liwc/index.html">
-<div class="listing-date">
-Dec 4, 2023
-</div>
-<div class="listing-author">
-Jeff Jacobs
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1698984000000" data-listing-file-modified-sort="1701914836960" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="./posts/rprofile-globals/index.html"> <img src="./posts/rprofile-globals/images/vscode.png" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/rprofile-globals/index.html">
-<h3 class="no-anchor listing-title">
-Establishing Global Settings for R in VSCode
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-Awesome student Kangheng Liu figured out the following, which…
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/rprofile-globals/index.html">
-<div class="listing-date">
-Nov 3, 2023
-</div>
-<div class="listing-author">
-Kangheng Liu, Jeff Jacobs
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="GU Domains" data-listing-date-sort="1698897600000" data-listing-file-modified-sort="1701914640554" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="./posts/mounting-gu-domains/index.html"> <img src="./posts/mounting-gu-domains/images/gtown_domains.png" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/mounting-gu-domains/index.html">
-<h3 class="no-anchor listing-title">
-Mounting Your GU Domains Space as a Local Drive
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('GU Domains'); return false;">
-GU Domains
-</div>
-</div>
-<a href="./posts/mounting-gu-domains/index.html">
-<div class="listing-description">
-You can use a Mac App called Mountain Duck to <strong>mount</strong> your GU Domains space as a disk on your local computer, so…
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/mounting-gu-domains/index.html">
-<div class="listing-date">
-Nov 2, 2023
-</div>
-<div class="listing-author">
-Jeff Jacobs
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="Quarto" data-listing-date-sort="1698811200000" data-listing-file-modified-sort="1702106641147" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
-<div class="thumbnail">
-<p><a href="./posts/images-in-qmd/index.html"> <img src="./posts/images-in-qmd/images/quarto_logo.svg" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/images-in-qmd/index.html">
-<h3 class="no-anchor listing-title">
-Including Images in <code>.qmd</code> Files
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Quarto'); return false;">
-Quarto
-</div>
-</div>
-<a href="./posts/images-in-qmd/index.html">
-<div class="listing-description">
-If you already have an image file ready to be included in your <code>.qmd</code> file, you can include it in a <code>.qmd</code> file using the following syntax:
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/images-in-qmd/index.html">
-<div class="listing-date">
-Nov 1, 2023
-</div>
-<div class="listing-author">
-Jeff Jacobs
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
