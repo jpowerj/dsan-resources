@@ -21,7 +21,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -123,6 +142,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#life-expectancy-by-country" id="toc-life-expectancy-by-country" class="nav-link active" data-scroll-target="#life-expectancy-by-country">Life Expectancy By Country</a></li>
   <li><a href="#perception-of-probability-words" id="toc-perception-of-probability-words" class="nav-link" data-scroll-target="#perception-of-probability-words">Perception of Probability Words</a></li>
   <li><a href="#banknote-faces" id="toc-banknote-faces" class="nav-link" data-scroll-target="#banknote-faces">Banknote Faces</a></li>
+  <li><a href="#the-global-flavor-map" id="toc-the-global-flavor-map" class="nav-link" data-scroll-target="#the-global-flavor-map">The Global Flavor Map</a></li>
   </ul>
 </nav>
     </div>
@@ -218,12 +238,52 @@ The <a href='https://www.gu.se/en/gendip/the-gendip-dataset-on-gender-and-diplom
 <li>Type: Cross-sectional (one row per person)</li>
 <li>Data available via the <a href="https://github.com/the-pudding/banknotes/tree/master/src/data" target="_blank">GitHub repo</a> for the article</li>
 </ul>
-<p><a href="https://pudding.cool" target="_blank">pudding.cool</a> is one of my favorite websites of all time, and has dozens and dozens of fascinating datasets and analyses, but this one I think is really straightforward yet lends itself to lots of different visualizations, like the one presented above plotting the gaps in time between when a person died and when their face was placed on a country’s banknotes. One of my favorite aspects about this plot is how it leads the viewer (and by the viewer I specifically mean me! But, I would guess that others may be intrigued by this aspect as well?) to want to know what the “corner cases” represent: who is the one person who died thousands of years before they were placed on a bill? Or, who are the 10 people who were still alive when their face was placed on a banknote? I guess you’ll have to go in and explore the data (or read the pudding.cool article) to find out!</p>
+<p><a href="https://pudding.cool" target="_blank">pudding.cool</a> is one of my favorite websites of all time, and has dozens and dozens of fascinating datasets and analyses, but this one I think is really straightforward yet lends itself to lots of different visualizations, like the one presented above plotting the gaps in time between when a person died and when their face was placed on a country’s banknotes. One of my favorite aspects about this plot is how it leads the viewer (and by the viewer I specifically mean me! But, I would guess that others may be intrigued by this aspect as well?) to want to know what the “corner cases” represent: who is the one person who died ~2000 years before they were placed on a bill? Or, who are the 10 people who were still alive when their face was placed on a banknote? I guess you’ll have to go in and explore the data (or read the pudding.cool article) to find out! (Or click the text below to reveal the answers, if you want to cheat 😜)</p>
+<details>
+<summary>
+(Click for the gist if you don’t want to read the article!)
+</summary>
+<ul>
+<li>The outlier in terms of dying ~2000 years before being placed on a bill is <a href="https://en.wikipedia.org/wiki/Hannibal" target="_blank">Hannibal</a>, who died around 182 BC and was placed on the 5 Tunisian Dinar bill <a href="https://www.leftovercurrency.com/exchange/tunisian-dinars/current-tunisian-dinar-banknotes/5-tunisian-dinars-banknote-hannibal/" target="_blank">in 2013</a>.</li>
+<li>The ten outliers who lived to see their own faces on a banknote are (in chronological order of banknote issue):
+<ol type="1">
+<li><a href="https://en.wikipedia.org/wiki/Mustafa_Kemal_Atat%C3%BCrk" target="_blank">Mustafa Kemal Atatürk</a>, placed on Turkish Lira note in 1927 and died in 1938</li>
+<li><a href="https://en.wikipedia.org/wiki/Sukarno" target="_blank">Sukarno</a>, placed on Indonesian Rupiah note in 1945 and died in 1970</li>
+<li><a href="https://en.wikipedia.org/wiki/Michael_Manley" target="_blank">Michael Manley</a> of Jamaica, placed on Jamaican Dollar note in 1970 and died in 1997</li>
+<li><a href="https://en.wikipedia.org/wiki/Hastings_Banda" target="_blank">Hastings Banda</a> of Malawi, placed on Malawian Kwacha note in 1971 and died in 1997</li>
+<li><a href="https://en.wikipedia.org/wiki/Sheikh_Mujibur_Rahman" target="_blank">Sheikh Mujibur Rahman</a>, placed on Bangladeshi Taka note in 1972 and died in 1975</li>
+<li><a href="https://en.wikipedia.org/wiki/Michael_Somare" target="_blank">Michael Somare</a>, placed on Papua New Guinean Kina note in 1989, died in 2021</li>
+<li><a href="https://en.wikipedia.org/wiki/Edmund_Hillary" target="_blank">Edmund Hillary</a>, placed on New Zealand Dollar note in 1992, died in 2008</li>
+<li><a href="https://en.wikipedia.org/wiki/Rose_Chibambo" target="_blank">Rose Chibambo</a>, placed on Malawian Kwacha note in 2012, died in 2016</li>
+<li><a href="https://en.wikipedia.org/wiki/Nelson_Mandela" target="_blank">Nelson Mandela</a>, placed on South African Rand note in 2012, died in 2013</li>
+<li><a href="https://en.wikipedia.org/wiki/Elizabeth_II" target="_blank">Queen Elizabth II</a> of England, placed on British Pound note in 1963, died in 2022</li>
+</ol></li>
+</ul>
+</details>
+</section>
+<section id="the-global-flavor-map" class="level2">
+<h2 class="anchored" data-anchor-id="the-global-flavor-map">The Global Flavor Map</h2>
+<div id="fig-flavor-network" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/flavor-network.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;4: A high-level view of the “global flavor network” developed and studied in <span class="citation" data-cites="ahn_flavor_2011">Ahn et al. (<a href="#ref-ahn_flavor_2011" role="doc-biblioref">2011</a>)</span></figcaption>
+</figure>
+</div>
+<ul>
+<li><strong>Type</strong>: Network data (Nodes are ingredients, edges between two nodes represent shared molecular properties)</li>
+<li>The data: available at the bottom of the <a href="https://www.nature.com/articles/srep00196" target="_blank">page for the paper</a>, as “Supplementary Dataset 1”</li>
+</ul>
+<p>It’s difficult to choose a good dataset to demonstrate visualization of network data, honestly, since sometimes “good” means that it is simple enough to capture using just a few nodes and a few edges, while other times “good” means that it is rich/complex enough to warrant generating a bunch of different visualizations showing different facets of the data. I think this dataset falls more into the latter case, but I like it in terms of generating the visualization reproduced above, since it shows how you could generate simple “summary” visualizations of the dataset, but (as done in the paper from which the figure is taken) you can also do a deep dive into the dataset—down into the molecular level, for example—to find other interesting patterns that too “fine grained” to be present in the above (high-level/coarse-grained) visualization.</p>
+
 
 
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-ahn_flavor_2011" class="csl-entry" role="listitem">
+Ahn, Yong-Yeol, Sebastian E. Ahnert, James P. Bagrow, and Albert-László Barabási. 2011. <span>“Flavor Network and the Principles of Food Pairing.”</span> <em>Scientific Reports</em> 1 (1): 196. <a href="https://doi.org/10.1038/srep00196">https://doi.org/10.1038/srep00196</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

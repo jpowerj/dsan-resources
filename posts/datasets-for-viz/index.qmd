@@ -8,6 +8,7 @@ format:
     df-print: kable
 categories:
   - "Datasets"
+bibliography: "../../_DSAN_Resources.bib"
 ---
 
 There are lots of datasets out there, to the point that it can be scary trawling through e.g. the (at time of writing) 1,780 datasets listed in the <a href='https://docs.google.com/spreadsheets/d/1wZhPLMCHKJvwOkP4juclhjFgqIY8fQFMemwKL2c64vk/edit#gid=0' target='_blank'>Data is Plural archive</a>. This point of this post, therefore, is to provide a "curated" collection of datasets specifically chosen for how well they lend themselves to various methods of **visualization**. For the section of DSAN 5200: Advanced Data Visualization that I'm teaching this semester (Section 03), I'll be drawing on these datasets for demonstrations of how we can produce visual representations from raw numeric or text data.
@@ -55,5 +56,30 @@ This is one of my favorite datasets for visualization, and just for pondering in
 * Type: Cross-sectional (one row per person)
 * Data available via the <a href='https://github.com/the-pudding/banknotes/tree/master/src/data' target='_blank'>GitHub repo</a> for the article
 
-<a href='https://pudding.cool' target='_blank'>pudding.cool</a> is one of my favorite websites of all time, and has dozens and dozens of fascinating datasets and analyses, but this one I think is really straightforward yet lends itself to lots of different visualizations, like the one presented above plotting the gaps in time between when a person died and when their face was placed on a country's banknotes. One of my favorite aspects about this plot is how it leads the viewer (and by the viewer I specifically mean me! But, I would guess that others may be intrigued by this aspect as well?) to want to know what the "corner cases" represent: who is the one person who died thousands of years before they were placed on a bill? Or, who are the 10 people who were still alive when their face was placed on a banknote? I guess you'll have to go in and explore the data (or read the pudding.cool article) to find out!
+<a href='https://pudding.cool' target='_blank'>pudding.cool</a> is one of my favorite websites of all time, and has dozens and dozens of fascinating datasets and analyses, but this one I think is really straightforward yet lends itself to lots of different visualizations, like the one presented above plotting the gaps in time between when a person died and when their face was placed on a country's banknotes. One of my favorite aspects about this plot is how it leads the viewer (and by the viewer I specifically mean me! But, I would guess that others may be intrigued by this aspect as well?) to want to know what the "corner cases" represent: who is the one person who died ~2000 years before they were placed on a bill? Or, who are the 10 people who were still alive when their face was placed on a banknote? I guess you'll have to go in and explore the data (or read the pudding.cool article) to find out! (Or click the text below to reveal the answers, if you want to cheat 😜)
+
+<details>
+<summary>(Click for the gist if you don't want to read the article!)</summary>
+* The outlier in terms of dying ~2000 years before being placed on a bill is <a href='https://en.wikipedia.org/wiki/Hannibal' target='_blank'>Hannibal</a>, who died around 182 BC and was placed on the 5 Tunisian Dinar bill <a href='https://www.leftovercurrency.com/exchange/tunisian-dinars/current-tunisian-dinar-banknotes/5-tunisian-dinars-banknote-hannibal/' target='_blank'>in 2013</a>.
+* The ten outliers who lived to see their own faces on a banknote are (in chronological order of banknote issue):
+  1. <a href='https://en.wikipedia.org/wiki/Mustafa_Kemal_Atat%C3%BCrk' target='_blank'>Mustafa Kemal Atatürk</a>, placed on Turkish Lira note in 1927 and died in 1938
+  2. <a href='https://en.wikipedia.org/wiki/Sukarno' target='_blank'>Sukarno</a>, placed on Indonesian Rupiah note in 1945 and died in 1970
+  3. <a href='https://en.wikipedia.org/wiki/Michael_Manley' target='_blank'>Michael Manley</a> of Jamaica, placed on Jamaican Dollar note in 1970 and died in 1997
+  4. <a href='https://en.wikipedia.org/wiki/Hastings_Banda' target='_blank'>Hastings Banda</a> of Malawi, placed on Malawian Kwacha note in 1971 and died in 1997
+  5. <a href='https://en.wikipedia.org/wiki/Sheikh_Mujibur_Rahman' target='_blank'>Sheikh Mujibur Rahman</a>, placed on Bangladeshi Taka note in 1972 and died in 1975
+  6. <a href='https://en.wikipedia.org/wiki/Michael_Somare' target='_blank'>Michael Somare</a>, placed on Papua New Guinean Kina note in 1989, died in 2021
+  7. <a href='https://en.wikipedia.org/wiki/Edmund_Hillary' target='_blank'>Edmund Hillary</a>, placed on New Zealand Dollar note in 1992, died in 2008
+  8. <a href='https://en.wikipedia.org/wiki/Rose_Chibambo' target='_blank'>Rose Chibambo</a>, placed on Malawian Kwacha note in 2012, died in 2016
+  9. <a href='https://en.wikipedia.org/wiki/Nelson_Mandela' target='_blank'>Nelson Mandela</a>, placed on South African Rand note in 2012, died in 2013
+  10. <a href='https://en.wikipedia.org/wiki/Elizabeth_II' target='_blank'>Queen Elizabth II</a> of England, placed on British Pound note in 1963, died in 2022
+</details>
+
+## The Global Flavor Map
+
+![A high-level view of the "global flavor network" developed and studied in @ahn_flavor_2011](images/flavor-network.jpg){#fig-flavor-network fig-align="center"}
+
+* **Type**: Network data (Nodes are ingredients, edges between two nodes represent shared molecular properties)
+* The data: available at the bottom of the <a href='https://www.nature.com/articles/srep00196' target='_blank'>page for the paper</a>, as "Supplementary Dataset 1"
+
+It's difficult to choose a good dataset to demonstrate visualization of network data, honestly, since sometimes "good" means that it is simple enough to capture using just a few nodes and a few edges, while other times "good" means that it is rich/complex enough to warrant generating a bunch of different visualizations showing different facets of the data. I think this dataset falls more into the latter case, but I like it in terms of generating the visualization reproduced above, since it shows how you could generate simple "summary" visualizations of the dataset, but (as done in the paper from which the figure is taken) you can also do a deep dive into the dataset---down into the molecular level, for example---to find other interesting patterns that too "fine grained" to be present in the above (high-level/coarse-grained) visualization.
 
