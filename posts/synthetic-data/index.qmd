@@ -265,7 +265,7 @@ And visualize this closeness:
 ```{r}
 ggplot(agg_df, aes(x=var, y=value, fill=Source)) +
   geom_bar(stat='identity', position='dodge') +
-  dsan_theme() +
+  theme_jjdsan() +
   theme(
     axis.text.x = element_text(angle = 45, vjust = 1, hjust=1)
   )

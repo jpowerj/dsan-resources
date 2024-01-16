@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/poverty-data/index.html",
       "/posts/datasets-for-viz/index.html",
       "/posts/synthetic-data/index.html",
       "/posts/liwc/index.html",

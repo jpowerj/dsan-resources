@@ -64,7 +64,7 @@ cbPalette <- c(
 )
 options(ggplot2.discrete.colour = cbPalette)
 # Theme generator, for given sizes
-dsan_theme <- function(plot_type = "full", base_size = 16) {
+theme_jjdsan <- function(plot_type = "full", base_size = 16) {
     if (plot_type == "full") {
         custom_base_size <- 16
     } else if (plot_type == "half") {

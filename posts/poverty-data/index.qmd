@@ -1,0 +1,180 @@
+---
+title: "Visualizing the World Bank's Poverty Indicators"
+author: "Jeff Jacobs"
+institute: "<a href='mailto:jj1088@georgetown.edu' target='_blank'>`jj1088@georgetown.edu`</a>"
+format:
+  html:
+    df-print: kable
+    code-fold: show
+categories:
+  - "Datasets"
+bibliography: "../../_DSAN_Resources.bib"
+---
+
+::: {.callout-tip title="Global Functions and Variables"}
+
+Here I'm just sourcing an R file which is available <a href='https://gist.github.com/jpowerj/a9cee4c7680c4374b98d8f902eb0a29f' target='_blank'>here</a>. It defines a custom color palette (a pastel-based colorblindness-friendly palette I try to use across all my notes and slides), as well as a custom `ggplot` theme (before a few additional helper functions). Students, you should feel free to take this and modify it to create your own custom palettes and/or `ggplot` themes!
+
+```{r}
+#| code-fold: true
+source("../../_globals.r")
+```
+
+:::
+
+GitHub user `@light-and-salt` has carried out some of the hard work in scraping and combining the World Bank's full collection of <a href='https://data.worldbank.org/indicator' target='_blank'>data on various indicators</a> into a smaller set of <a href='https://github.com/light-and-salt/World-Bank-Data-by-Indicators' target='_blank'>simplified, easy-to-use `.csv` files</a>, so that we can jump right into visualizing them! Here we'll open up their data on Poverty indicators, specifically.
+
+```{r}
+#| label: load-poverty-data
+#| warning: false
+library(tidyverse)
+poverty_df <- read_csv("https://raw.githubusercontent.com/light-and-salt/World-Bank-Data-by-Indicators/master/poverty/poverty.csv")
+poverty_df |> head()
+```
+
+So, although the rows don't seem to be in any particular order, we can see to our relief that this data is **tidy**:
+
+* Each **row** represents a **unit of observation** (in this case, a country-year pair),
+* Each **column** represents a **property** of the unit of observation, and
+* Each cell---for example, a cell in row $i$ and column $j$---represents the **value** of property $j$ for unit of observation $i$.
+
+We can look at the column headers to see how we can start visualizing the properties we have: aside from the id variables `Country Name`, `Country Code`, and `Year`, all of the columns have the form `average_value_<variable description>`, where `<variable description>` is the short description given for each variable within the original World Bank data.
+
+Although these variables represent a wide range of different ways to measure poverty (for example, it's difficult to choose *a priori* between $5.50, $3.20, and $1.90 as the "correct" threshold for poverty), the one that seems to require a relatively low amount of context is:
+
+`average_value_Proportion of people living below 50 percent of median income (%)`
+
+So, let's use the `rename()` function from tidyverse to make this long name a bit more manageable, then the `select()` function to extract just this variable (alongside the id variables):
+
+```{r}
+#| label: extract-below-median
+median_df <- poverty_df |> rename(
+    below_half_median = `average_value_Proportion of people living below 50 percent of median income (%)`,
+    country = `Country Name`
+) |> select(country, `Year`, below_half_median)
+median_df |> head()
+```
+
+Next, as one additional simplifying step, let's convert this country x year (panel) dataset into just a country (cross-sectional) dataset, by computing the mean value for a given country's measures across all of the years in which the country measure is available. I'll also make a column indicating how many years were used to compute this mean, so that we can drop countries with too few years, if we'd like:
+
+```{r}
+#| label: compute-country-means
+summ_df <- median_df |> group_by(country) |>
+  summarize(
+    below_half_med_avg = mean(below_half_median),
+    year_count = n()
+  ) |> drop_na()
+summ_df |> head()
+```
+
+Since it may be unwieldy to plot all ~200 countries in the world, let's make our visualizations a bit more digestible by focusing in on just the 10 countries with the highest poverty levels and the 10 with the lowest poverty levels. We'll start by extracting the 10 countries with the highest levels (adding a column named `category` to keep track of the fact that we've extracted these countries as having the highest poverty rates, for later when we'll plot the highest and lowest together):
+
+```{r}
+#| label: highest-table
+highest_df <- summ_df |>
+  arrange(desc(below_half_med_avg)) |>
+  head(10) |>
+  mutate(Category = "10 Highest")
+highest_df |> arrange(below_half_med_avg)
+```
+
+And now, finally, we have our first visualization choice: what is a reasonable way to visualize these data points, and why should we pick this way over **alternative** ways to visualize it? I would argue, first, that since the `country` variable is categorical and **non**-ordinal, but the `below_half_med_avg` variable is continuous, we should represent this using some sort of bar-chart-esque method.
+
+Here I just want to point out: when we use bar charts, one tricky consideration is the fact that these types of charts implicitly draw one's attention to the zero point (the "bottom" of the bar), since the lines are proportional to the distance of each number from zero. Later on we'll address this explicitly by plotting relative to the **global mean** instead of zero, but for now I will just draw your attention to this factor and use a "lollipop" plot instead of a bar chart, to draw the viewer's attention to the points themeslves and de-emphasize the bars (by narrowing them down to the size of lines):
+
+```{r}
+#| label: highest-plot
+# I'm also defining string variables that we can use
+# as titles/labels for the remainder of the analysis
+title <- "Poverty Rate by Country"
+cat_label <- "Country"
+rate_label <- "Percent Under 1/2 of Median Income"
+highest_df |>
+  mutate(country = fct_reorder(country, below_half_med_avg)) |>
+  ggplot(aes(y=below_half_med_avg, x=country)) +
+  geom_point() +
+  geom_segment(aes(xend=country, yend=0)) +
+  coord_flip() +
+  #theme_classic() +
+  theme_jjdsan() +
+  labs(title=title, y=rate_label, x=cat_label)
+```
+
+Now let's repeat these steps, but for the 10 countries with the **lowest** poverty rates:
+
+```{r}
+#| label: lowest-table
+lowest_df <- summ_df |>
+  arrange(below_half_med_avg) |>
+  head(10) |>
+  mutate(Category = "10 Lowest")
+lowest_df
+```
+
+```{r}
+#| label: lowest-plot
+lowest_df |>
+  mutate(country = fct_reorder(country, below_half_med_avg)) |>
+  ggplot(aes(y=below_half_med_avg, x=country)) +
+  geom_point() +
+  geom_segment(aes(xend=country, yend=0)) +
+  coord_flip() +
+  #theme_classic() +
+  theme_jjdsan() +
+  labs(title=title, y=rate_label, x=cat_label)
+```
+
+Notice how, if we just eyeball these two plots without paying close attention, they don't look very different. In fact, the hurried viewer may just look at the "curve" formed by the ends of the lines, conclude that they convey the same information, and move on. This happens, in large part, because the x-axis scales of the two plots are **different**, despite the fact that they are measuring the exact same variable. To ensure that it's clear to the viewer that these two plots are displaying values of the same variable (poverty rate) on their x-axes, let's plot the top 10 and bottom 10 **together** in the same figure:
+
+```{r}
+high_low_df <- bind_rows(highest_df, lowest_df)
+high_low_df |>
+  mutate(country = fct_reorder(country, below_half_med_avg)) |>
+  ggplot(aes(y=below_half_med_avg, x=country)) +
+  geom_point() +
+  geom_segment(aes(xend=country, yend=0)) +
+  coord_flip() +
+  #theme_classic() +
+  theme_jjdsan() +
+  labs(title=title, y=rate_label, x=cat_label)
+```
+
+In the figure we just generated, we already have a fairly extreme example of the dangers that can come from presenting charts without proper **context**: since the audience doesn't know that we've extracted *only* the top 10 and bottom 10 countries, they may reasonably look at the figure and infer (for example) that perhaps there is a large *drop* between the 10th-ranked and 11th-ranked countries in terms of poverty rate, for some reason.
+
+As a potential "quick fix", and to show how we can keep changing what the data "says" even in this simple example, let's plot the 10 countries with the highest poverty rate (on this measure) in a shade of red, and the 10 countries with the lowest rates in a shade of green, and plot all 20 relative to the median rate across all countries and years:
+
+```{r}
+high_low_df |>
+  mutate(country = fct_reorder(country, below_half_med_avg)) |>
+  ggplot(aes(y=below_half_med_avg, x=country, color=Category)) +
+  geom_point() +
+  geom_segment(aes(xend=country, yend=0)) +
+  coord_flip() +
+  #theme_classic() +
+  theme_jjdsan() +
+  labs(title=title, y=rate_label, x=cat_label)
+```
+
+Now, I still find this presentation fairly misleading in many ways, but especially in the sense that it makes the value of zero seem more relevant than it actually is. These countries, for example, were not selected on the basis of their difference from zero as such, but instead on the basis of how **extreme** they are relative to the **average** of all the countries. So, for plotting each country's poverty rate **relative** to this global mean, we can compute and save a `global_mean` variable from `summ_df`:
+
+```{r}
+#| label: compute-global-median
+(global_mean <- mean(summ_df$below_half_med_avg))
+```
+
+And now we can generate a new plot, where this comparison with the mean country (rather than the more arbitrary/unjustified comparison with the zero point) is made explicit via a dashed vertical line:
+
+```{r}
+high_low_df |>
+  mutate(country = fct_reorder(country, below_half_med_avg)) |>
+  ggplot(aes(y=below_half_med_avg, x=country, color=Category)) +
+  geom_point() +
+  geom_segment(aes(xend=country, yend=global_mean)) +
+  geom_hline(yintercept=global_mean, linetype="dashed") +
+  coord_flip() +
+  #theme_classic() +
+  theme_jjdsan() +
+  labs(title=title, y=rate_label, x=cat_label)
+```
+
+There is a **lot** more we can do with this dataset! So you can keep it in mind as we discuss more and learn more advanced visualization techniques. For now, and for inspiration/examples, you can check out Nathan Yau's blog post <a href='https://flowingdata.com/2017/01/24/one-dataset-visualized-25-ways/' target='_blank'>*One Dataset, Visualized 25 Ways*</a>, which is what I had in the back of my mind when making this demo!
