@@ -2,6 +2,7 @@
 title: "Visualizing the World Bank's Poverty Indicators"
 author: "Jeff Jacobs"
 institute: "<a href='mailto:jj1088@georgetown.edu' target='_blank'>`jj1088@georgetown.edu`</a>"
+date: 2024-01-15
 format:
   html:
     df-print: kable

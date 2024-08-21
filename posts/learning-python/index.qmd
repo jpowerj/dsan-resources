@@ -1,0 +1,145 @@
+---
+title: "So You've Decided to Learn Python..."
+subtitle: "(Opinionated) Foundations and Resources"
+author: "Jeff Jacobs"
+institute: "[`jj1088@georgetown.edu`](mailto:jj1088@georgetown.edu){target='_blank'}"
+date: 2024-05-07
+image: "images/snek.jpg"
+format:
+  html:
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+::: {layout-ncol=2}
+::: {#intro-text}
+
+**Congratulations on starting your Python journey! You can do this, I promise, no matter your background / learning style / strengths / weaknesses / fears / hopes!**
+
+:::
+::: {#intro-pic}
+
+![The future you, no longer scared of snek after learning Python](images/snek.jpg){#fig-snek width="70%" fig-align="center"}
+
+:::
+:::
+
+## Foundations
+
+My introductory spiel is just to beg you to consider the following three general points about learning computer science, **before** you dive head-first into your journey!
+
+### The Neuroscience of Learning: Focus on the *Why*, not the *What*
+
+* Fancy marketing agencies may have convinced you that the key to learning how to code is to have some sort of incredible (and expensive) **resource** like an app, textbook, or online class. However...
+* Cutting-edge neuroscientific studies of [how we learn](https://www.dropbox.com/s/tjzoau5uuca3ktx/Stanislas%20Dehaene%20-%20How%20We%20Learn.pdf?dl=0){target='_blank'} have shown that what really matters is the **motivational** aspect of your journey---meaning, try your best to focus your energy on **why** you're learning to code, rather than trying to optimize **how** (obsessing over the "best" resource to use) or **what** particular topics you're studying.
+
+The ultimate way to implement this point is to just have an idea of something you think would be fun to create using Python---don't worry about how difficult it may be, just have it in your head so that as you learn you can take mental notes like "Oh! So that's how [thing] works!". When I was learning how to code, these were things like:
+
+* "Wow, it'd be so cool if I could understand how exactly Instagram, TikTok, or WhatsApp work, by coding my own simplified version in Python"
+* "This [math explainer video](https://www.youtube.com/watch?v=WUvTyaaNkzM){target='_blank'} is awesome, and it looks like they [used Python to make it](https://www.manim.community/){target='_blank'}!?! How does that work? I should try to make my own video like this, as my motivation for learning Python"
+
+### Jeff's Opinion Corner: Learn *How to Code*, not *How to Code Python*
+
+It's difficult to find truly reliable and transparent statistics on the rise and fall of various programming languages, but take a look at the following plot I put together for my [Data Structures, Objects, and Algorithms course (DSAN 5500)](https://jjacobs.me/dsan5000){target='_blank'} at Georgetown:
+
+```{python}
+#| label: langs-over-time
+#| code-fold: true
+import pandas as pd
+import numpy as np
+import plotly.express as px
+import plotly.io as pio
+pio.renderers.default = "notebook"
+lang_df = pd.read_csv("assets/gh_issues.csv")
+# The data for 2022 is essentially useless
+lang_df = lang_df[lang_df['year'] <= 2021].copy()
+lang_df['time'] = lang_df['year'].astype(str) + "_" + lang_df['quarter'].astype(str)
+lang_df['prop'] = lang_df['count'] / lang_df.groupby('time')['count'].transform('sum')
+lang_df.head()
+#sns.lineplot(data=lang_df, x='year', y='count', color='name')
+# Keep only most popular languages
+keep_langs = ['Python','JavaScript','C','C++','C#','Java','Ruby']
+pop_df = lang_df[lang_df['name'].isin(keep_langs)].copy()
+fig = px.line(pop_df,
+  x='time', y='prop', color='name',
+  template='simple_white', title='Programming Language Popularity Since 2012',
+  labels = {
+    'time': 'Year',
+    'prop': 'Proportion of GitHub Issues'
+  }
+)
+fig.update_layout(
+  xaxis = dict(
+    tickmode = 'array',
+    tickvals = [f"{year}_1" for year in range(2012,2022)],
+    ticktext = [f"{year}" for year in range(2012,2022)]
+  )
+)
+fig.show()
+```
+
+Note how, for example:
+
+* The most popular programming language at the beginning of 2012 was **Ruby**, and then
+* The most popular programming language from mid-2012 until early 2020 was **JavaScript**, meaning that
+* Python has only been the most popular programming language since early 2020
+
+And, if this plot could be extended back before 2012, into the 2000s and late 1990s, I think you'd see that **Java**^[It's a good thing to know now rather than later: Java has almost... no relationship whatsoever to JavaScript, despite the names 😵‍💫] was the most popular, and **C++** before that, and **C** before that...
+
+Which is all to say, **please don't put all your eggs in the Python basket!** Instead of focusing on syntax that might be specific to Python, try your best to develop an understanding of the **underlying logic** and **ways of thinking** that apply across **all** programming languages, not just Python!
+
+Since I studied music before math or computer science, I think of it like:
+
+| Programming | Music | Coolness Level |
+| - | - | - |
+| Learning how to code in Python | Learning how to play the French Horn 📯 | Medium 🙂‍↕️ |
+| Learning how to **code** | Learning how to play **music** 🎶🥁🎵🎤 | HIGH! 🥳 |
+
+I like this metaphor because it highlights how, although you need to learn how to play **some** musical instrument in order to play music, **you don't have to restrict yourself to only making music with that instrument!**
+
+### Programming Languages are *Tools* for Building Things, not Cults of Gatekeeping
+
+Imagine you're walking down the street when suddenly you encounter a bunch of horrifically pretentious people having a big argument:
+
+> **Person A:** No! You're stupid! The **hammer** is clearly the best tool!
+> 
+> **Person B:** Smh, Person A. Someday you'll pull your head out of your ass and realize that the **wrench** is far superior to the hammer.
+> 
+> **Person C:** Why do I spend all my time with you two dummies... Anyone with a brain can tell that the **screwdriver** absolutely shits on both the hammer and the wrench, in every way.
+
+This would be pretty weird, right? And yet, that's exactly what every argument about which programming languages were "better" sounded like to me, throughout the entire six years of my BS and MS in Computer Science (just being honest!).
+
+Hopefully, given this metaphor, my rant in the first half of [this video](https://www.instagram.com/p/C6bal6-PY_m/){target='_blank'} (recorded for my department's IG page) will click with you!
+
+## Resources
+
+Now that you've internalized those three lessons, you're ready to explore the **beautiful, verdant garden of resources** that are available out there to help you learn Python---most are totally free, and for the rest you can try pirating!
+
+### Interactive Web Things
+
+* [freeCodeCamp](https://www.freecodecamp.org/){target='_blank'}: Given everything I've said above, hopefully it makes sense that I think this is **totally all you need** to get started on your Python journey! Rather than spending lots of money on a fancier thing (like the next few resources), try this and see how well it clicks with you!
+* [CS & Programming at Brilliant.org](https://brilliant.org/courses/#computer-science){target='blank'}: I really really hate recommending things that cost money^[Like, to the extent that I made a [whole website](https://freealternatives.github.io/){target='_blank'} to try and dissuade people from paying for STEM things.], but I have to include this because
+    * I think it's really good, it has a Duolingo-style interface that does the ultra-helpful thing of showing the "pathway" of previously-learned, current, and next-up skills. But also
+    * If it gets popular enough hopefully someone will make a free open-source knockoff using, e.g., [Zoonk](https://github.com/zoonk/zoonk){target='_blank'} 😜
+* [Datacamp](https://www.datacamp.com/){target='_blank'}: I highlight this one because, although it's another non-free resource, it can be very helpful if you know in advance that you want to focus in particular on using Python for **data science** (like, for example, if you find yourself as a new student in some sort of Data Science and Analytics program at Georgetown).
+
+    To this end, they offer following four-course sequence of Python-based courses:
+    1. <a href='https://www.datacamp.com/courses/intro-to-python-for-data-science' target='_blank'>Introduction to Python for Data Science</a>
+    2. <a href='https://www.datacamp.com/courses/python-data-science-toolbox-part-1' target='_blank'>Python Data Science Toolbox (Part 1)</a>
+    3. <a href='https://www.datacamp.com/courses/python-data-science-toolbox-part-2' target='_blank'>Python Data Science Toolbox (Part 2)</a>
+    4. <a href='https://www.datacamp.com/courses/object-oriented-programming-in-python' target='_blank'>Object-Oriented Programming in Python</a>
+
+### Old-Timey Paper Things
+
+For me, since I care more about **algorithms** (the general study of how to get computers to do things for us) than I do about Python syntax, the holy grail of computer science textbooks is just this really simple, fun book with lots of pictures and metaphors and just beautiful keep-it-simple aesthetics:
+
+* Aditya Y. Bhargava, [Grokking Algorithms](https://edu.anarcho-copy.org/Algorithm/grokking-algorithms-illustrated-programmers-curious.pdf){target='_blank'}
+
+Then, the following two textbooks were helpful when I was preparing the DSAN 5500 (Data Structures, Objects, and Algorithms in Python) course mentioned above, though target audience for these tends to be software engineers, who have slightly different needs from us data scientists!
+
+* Goodrich, Michael T., Roberto Tamassia, and Michael H. Goldwasser. 2013. *Data Structures and Algorithms in Python*. [<a href='https://www.dropbox.com/scl/fi/y7w4at9q4alw7isgz1k41/Data-Structures-and-Algorithms-in-Python.pdf?rlkey=y87xdgfa6es0zlf42fpd3xffx&dl=1' target='_blank'>PDF</a>] [<a href='https://www.dropbox.com/scl/fi/r5edxs4cmy8ioqk2r59n3/Data-Structures-and-Algorithms-in-Python.epub?rlkey=ap5fm5kccw1tgcoly6eqv1gpv&dl=1' target='_blank'>EPUB</a>]
+* Lee, Kent D., and Steve Hubbard. 2015. *Data Structures and Algorithms with Python*. [<a href='https://www.dropbox.com/scl/fi/2m560ys212krcj6eb6pve/Data-Structures-and-Algorithms-with-Python.pdf?rlkey=83stlforw6h1s1ykavgoooahd&dl=1' target='_blank'>PDF</a>] [<a href='https://www.dropbox.com/s/v5msmc0cs415l54/Data%20Structures%20and%20Algorithms%20with%20Python.epub?dl=1' target='_blank'>EPUB</a>]
+
+Finally, for much of DSAN 5500 we focused on a "standard" collection of algorithms that all computer scientists (including data scientists!) should know; the most famous book collecting all of these algorithms into one place is known as "CLRS", which is an abbreviation for the family names of the four authors (**C**ormen, **L**eiserson, **R**ivest, and **S**tein). The authors just released a <a href='http://mitpress.mit.edu/9780262046305/introduction-to-algorithms/' target='_blank'>Fourth Edition</a> of the book in 2022, but the Third Edition is much easier to obtain, and honestly any edition should be fine for introductory learning!
+
+* Cormen, Thomas H., Charles E. Leiserson, Ronald R. Rivest, and Clifford Stein. 2022. *Introduction to Algorithms, Fourth Edition*. [<a href='https://www.dropbox.com/scl/fi/478fp94zxliolzwnffonx/Thomas-H.-Cormen-Charles-E.-Leiserson-Ronald-L.-Rivest-Clifford-Stein-Introduction-to-Algorithms.pdf?rlkey=fvjjgtdf2eqd0q88z98tv1ypj&dl=1' target='_blank'>PDF</a>] [<a href='https://www.dropbox.com/scl/fi/sriymo3ps9fc9c8nrzt0o/Thomas-H.-Cormen-Charles-E.-Leiserson-Ronald-L.-Rivest-Clifford-Stein-Introduction-to-Algorithms.epub?rlkey=586adstobfust3xy4m1az9qgw&dl=1' target='_blank'>EPUB</a>]

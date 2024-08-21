@@ -4,7 +4,11 @@ a.disabled {
     color: gray;
     /* And disable the pointer events */
     pointer-events: none;
-  }
+}
+
+.caption {
+  text-align: center !important;
+}
 
 .subtitle {
     font-size: 12pt !important;
