@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/large-files/index.html",
       "/posts/learning-python/index.html",
       "/posts/poverty-data/index.html",
       "/posts/datasets-for-viz/index.html",

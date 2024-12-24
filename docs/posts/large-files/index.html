@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Jeff Jacobs">
-<meta name="dcterms.date" content="2023-12-04">
+<meta name="dcterms.date" content="2024-12-16">
 
-<title>Using LIWC for Document-Level Sentiment Analysis – DSAN Resources</title>
+<title>Handling Large Files in Projects – DSAN Resources</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,44 +22,10 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -102,9 +68,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
-
-<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="../../jjcustom.js"></script>
 
 
@@ -163,10 +126,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#the-text-files" id="toc-the-text-files" class="nav-link active" data-scroll-target="#the-text-files">The Text Files</a></li>
-  <li><a href="#converting-into-python-regular-expressions" id="toc-converting-into-python-regular-expressions" class="nav-link" data-scroll-target="#converting-into-python-regular-expressions">Converting Into Python Regular Expressions</a></li>
-  <li><a href="#using-the-regular-expressions-to-generate-sentiment-scores" id="toc-using-the-regular-expressions-to-generate-sentiment-scores" class="nav-link" data-scroll-target="#using-the-regular-expressions-to-generate-sentiment-scores">Using the Regular Expressions to Generate Sentiment Scores</a></li>
-  <li><a href="#computing-sentiment-scores-for-a-dataframe-column" id="toc-computing-sentiment-scores-for-a-dataframe-column" class="nav-link" data-scroll-target="#computing-sentiment-scores-for-a-dataframe-column">Computing Sentiment Scores for a DataFrame Column</a></li>
+  <li><a href="#the-problem" id="toc-the-problem" class="nav-link active" data-scroll-target="#the-problem">The Problem</a></li>
+  <li><a href="#uploading-files-and-setting-permissions" id="toc-uploading-files-and-setting-permissions" class="nav-link" data-scroll-target="#uploading-files-and-setting-permissions">Uploading Files and Setting Permissions</a></li>
+  <li><a href="#converting-to-a-direct-download-link" id="toc-converting-to-a-direct-download-link" class="nav-link" data-scroll-target="#converting-to-a-direct-download-link">Converting to a Direct-Download Link</a></li>
+  <li><a href="#bypassing-the-large-file-warning-with-gdown" id="toc-bypassing-the-large-file-warning-with-gdown" class="nav-link" data-scroll-target="#bypassing-the-large-file-warning-with-gdown">Bypassing the Large-File Warning with <code>gdown</code></a></li>
   </ul>
 </nav>
     </div>
@@ -175,9 +138,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Using LIWC for Document-Level Sentiment Analysis</h1>
+<h1 class="title">Handling Large Files in Projects</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">Text Analysis</div>
+    <div class="quarto-category">Quarto</div>
   </div>
   </div>
 
@@ -191,7 +154,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
   <div class="quarto-title-meta-contents">
         <p class="affiliation">
-            <a href="mailto:jj1088@georgetown.edu" target="_blank"><code>jj1088@georgetown.edu</code></a>
+            <a href="mailto:jj1088@georgetown.edu"><code>jj1088@georgetown.edu</code></a>
           </p>
       </div>
   </div>
@@ -202,7 +165,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">December 4, 2023</p>
+      <p class="date">December 16, 2024</p>
     </div>
   </div>
   
@@ -214,205 +177,42 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="the-text-files" class="level2">
-<h2 class="anchored" data-anchor-id="the-text-files">The Text Files</h2>
-<p>You can download the .txt files for positive and negative sentiment at the following links (click them to view the contents, or right click and choose “Save Link As…” to download)<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>:</p>
+<section id="the-problem" class="level2">
+<h2 class="anchored" data-anchor-id="the-problem">The Problem</h2>
+<p>Since final projects in DSAN span a wide set of domains/application areas, and therefore a wide range of dataset structures, it’s common to have files larger than the 50 MB recommended maximum (and 100 MB absolute maximum) imposed by GitHub!</p>
+<p>In these cases, at least in the research domains I’ve worked in, the most common approach is to:</p>
 <ul>
-<li><a href="assets/liwc/031-posemo.txt" target="_blank"><code>031-posemo.txt</code></a></li>
-<li><a href="assets/liwc/032-negemo.txt" target="_blank"><code>032-negemo.txt</code></a></li>
+<li>Store your <strong>code</strong> and <strong>small data files</strong> on GitHub, but</li>
+<li>Store your <strong>large data files</strong> in a cloud storage service like Google Drive</li>
 </ul>
+<p><strong>Integrating</strong> the larger data files into your code, then, becomes the hard part. Since Georgetown students have a large Google Drive allocation built into your <span class="citation" data-cites="georgetown.edu">@georgetown.edu</span> accounts, here I will show how to store large data files in Google Drive and then load them into your code, in both R and Python.</p>
 </section>
-<section id="converting-into-python-regular-expressions" class="level2">
-<h2 class="anchored" data-anchor-id="converting-into-python-regular-expressions">Converting Into Python Regular Expressions</h2>
-<p>Using them in this raw format is a bit tricky, however, since they are formatted not as individual words but as <em>regular expressions</em>, which will match entire <em>families</em> of positive and negative words. For example, <code>032-negemo.txt</code> contains the entry <code>troubl*</code>, which will therefore match the words <code>trouble</code>, <code>troubles</code>, <code>troubling</code>, and so on.</p>
-<p>So, to work with these files in Python, we’ll need to load the .txt files but then convert each entry into a <strong>regular expression object</strong>. This can be done using the following collection of functions:</p>
-<div id="sentiment-on-strings" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> re</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> load_liwc_list(filepath):</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">    :return: A list of words loaded from the file at `fpath`</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">with</span> <span class="bu">open</span>(filepath, <span class="st">'r'</span>, encoding<span class="op">=</span><span class="st">'utf-8'</span>) <span class="im">as</span> infile:</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>        words <span class="op">=</span> infile.read().split()</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> words</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> liwc_to_regex(liwc_list):</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">    Converts LIWC expression list into Python regular expression</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    wildcard_reg <span class="op">=</span> [w.replace(<span class="st">'*'</span>, <span class="vs">r'[^\s]*'</span>) <span class="cf">for</span> w <span class="kw">in</span> liwc_list]</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    reg_str <span class="op">=</span> <span class="vs">r'\b('</span> <span class="op">+</span> <span class="st">'|'</span>.join(wildcard_reg) <span class="op">+</span> <span class="vs">r')\b'</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> reg_str</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> num_matches(reg_str, test_str):</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    num_matches <span class="op">=</span> <span class="bu">len</span>(re.findall(reg_str,test_str))</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> num_matches</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> file_to_regex(filepath):</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    liwc_list <span class="op">=</span> load_liwc_list(filepath)</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    liwc_regex_list <span class="op">=</span> liwc_to_regex(liwc_list)</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> liwc_regex_list</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="co"># You can call the following helper function if</span></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="co"># you'd like to see the full regular expression</span></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> print_regex(regex_str, wrap_col<span class="op">=</span><span class="dv">70</span>):</span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    <span class="im">import</span> textwrap</span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(textwrap.fill(regex_str, wrap_col))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>We can use these functions to load the .txt files and create lists of regex (Regular Expression) objects from them:</p>
-<div id="disp-regex" class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>pos_fpath <span class="op">=</span> <span class="st">"./assets/liwc/031-posemo.txt"</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>pos_regex <span class="op">=</span> file_to_regex(pos_fpath)</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>neg_fpath <span class="op">=</span> <span class="st">"./assets/liwc/032-negemo.txt"</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>neg_regex <span class="op">=</span> file_to_regex(neg_fpath)</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Uncomment this line to see the full regular expression</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co">#print_regex(neg_regex)</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>print_regex(neg_regex[:<span class="dv">140</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>\b(dismay[^\s]*|ignorant|poorest|tragic|disreput[^\s]*|ignore|poorly|t
-rauma[^\s]*|abandon[^\s]*|diss|ignored|poorness[^\s]*|trembl[^\s]*|abu</code></pre>
-</div>
-</div>
+<section id="uploading-files-and-setting-permissions" class="level2">
+<h2 class="anchored" data-anchor-id="uploading-files-and-setting-permissions">Uploading Files and Setting Permissions</h2>
+<p>The first step is to upload your large data file(s) to a folder in Google Drive, then right-click on the file(s) you’d like to incorporate into your code and click “Share”, then set permissions to “Anyone with the link”.</p>
+<p>The example I’m using here is a US county-level dataset on outcomes from the <a href="https://www.opportunityatlas.org/">Opportunity Atlas</a>. It contains 10827 attributes for 3219 counties, hence taking up about 184 MB and putting it over GitHub’s 100 MB limit.</p>
+<p>So, once I set the permissions as described, I am given the following sharing link:</p>
+<p><a href="https://drive.google.com/file/d/1q8LHQ8Etdd1aYYChLZ94ujJ4GAOd6s2g/view?usp=drive_link">https://drive.google.com/file/d/1q8LHQ8Etdd1aYYChLZ94ujJ4GAOd6s2g/view?usp=drive_link</a></p>
 </section>
-<section id="using-the-regular-expressions-to-generate-sentiment-scores" class="level2">
-<h2 class="anchored" data-anchor-id="using-the-regular-expressions-to-generate-sentiment-scores">Using the Regular Expressions to Generate Sentiment Scores</h2>
-<p>And now we can use these generated regular expressions to count the number of times “positive” and “negative” words appear in our string! Here we provide two final helper functions for accomplishing this:</p>
-<div id="count-pos-neg" class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> extract_sentiment_data(text):</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># First compute positive sentiment using pos_reg</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    pos_count <span class="op">=</span> num_matches(pos_regex, text)</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Then negative sentiment using neg_reg</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    neg_count <span class="op">=</span> num_matches(neg_regex, text)</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="co"># And finally the overall sentiment score as the difference</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    sentiment <span class="op">=</span> pos_count <span class="op">-</span> neg_count</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> {</span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>        <span class="st">'pos'</span>: pos_count,</span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>        <span class="st">'neg'</span>: neg_count,</span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>        <span class="st">'sentiment'</span>: sentiment</span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> compute_sentiment(text):</span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>    full_results <span class="op">=</span> extract_sentiment_data(text)</span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Return just the overall sentiment score</span></span>
-<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> full_results[<span class="st">'sentiment'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>And here we test these helper functions out by creating positive, negative, and neutral <em>test strings</em> and checking the results for these strings:</p>
-<div id="test-strings" class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>neg_test_str <span class="op">=</span> <span class="st">"Python is terrible, I hate Python, I despise Python"</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>neg_str_results <span class="op">=</span> extract_sentiment_data(neg_test_str)</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>neg_test_str<span class="sc">}</span><span class="ch">\n</span><span class="sc">{</span>neg_str_results<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>pos_test_str <span class="op">=</span> <span class="st">"Python is wonderful, I love Python, I adore Python"</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>pos_str_results <span class="op">=</span> extract_sentiment_data(pos_test_str)</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>pos_test_str<span class="sc">}</span><span class="ch">\n</span><span class="sc">{</span>pos_str_results<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>neutral_test_str <span class="op">=</span> <span class="st">"Python is ok, Python is mid, I guess I can do Python maybe"</span></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>neutral_str_results <span class="op">=</span> extract_sentiment_data(neutral_test_str)</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>neutral_test_str<span class="sc">}</span><span class="ch">\n</span><span class="sc">{</span>neutral_str_results<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Python is terrible, I hate Python, I despise Python
-{'pos': 0, 'neg': 3, 'sentiment': -3}
-Python is wonderful, I love Python, I adore Python
-{'pos': 3, 'neg': 0, 'sentiment': 3}
-Python is ok, Python is mid, I guess I can do Python maybe
-{'pos': 1, 'neg': 0, 'sentiment': 1}</code></pre>
-</div>
-</div>
+<section id="converting-to-a-direct-download-link" class="level2">
+<h2 class="anchored" data-anchor-id="converting-to-a-direct-download-link">Converting to a Direct-Download Link</h2>
+<p>If you click that link, however, you’ll see that it is <strong>not</strong> a direct link to the <code>county_outcomes.csv</code> file itself, but a link to a “wrapper” page showing info about the file, with a link you can manually click to then download the file itself. This link as-is, therefore, will not be very helpful for us in terms of writing code to load this dataset the same way we’d load a local data file.</p>
+<p>A not-very-well-known (but crucially important for our purposes!) aspect of Google Drive is that you can <strong>convert</strong> this “viewing” link <a href="https://sites.google.com/site/gdocs2direct/">into a direct-download link</a>! If our files were <strong>less than 100 MB</strong>, we could use this direct-download link as-is, plugging it into <code>pd.read_csv()</code> (in Python) or <code>read_csv()</code> in R’s <code>tidyverse</code>.</p>
 </section>
-<section id="computing-sentiment-scores-for-a-dataframe-column" class="level2">
-<h2 class="anchored" data-anchor-id="computing-sentiment-scores-for-a-dataframe-column">Computing Sentiment Scores for a DataFrame Column</h2>
-<p>Even though above we printed out the full results of each sentiment computation (by calling <code>extract_sentiment_data()</code>, which returns a dictionary containing the results), if you have a <strong>DataFrame</strong> with a text column that you’d like to perform sentiment analysis on, you can just use the simpler <code>compute_sentiment()</code> function to obtain a single number, like in the following code:</p>
-<div id="cell-create-df" class="cell" data-execution_count="5">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>text_df <span class="op">=</span> pd.DataFrame({</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">'text_id'</span>: [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>],</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">'text'</span>: [neg_test_str, pos_test_str, neutral_test_str]</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>})</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>text_df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div id="create-df" class="cell-output cell-output-display" data-execution_count="5">
-<div>
-
-
-<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">text_id</th>
-<th data-quarto-table-cell-role="th">text</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">0</td>
-<td>1</td>
-<td>Python is terrible, I hate Python, I despise P...</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">1</td>
-<td>2</td>
-<td>Python is wonderful, I love Python, I adore Py...</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2</td>
-<td>3</td>
-<td>Python is ok, Python is mid, I guess I can do ...</td>
-</tr>
-</tbody>
-</table>
-
-</div>
-</div>
-</div>
-<div id="cell-sentiment-on-df" class="cell" data-execution_count="6">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>text_df[<span class="st">'sentiment'</span>] <span class="op">=</span> text_df[<span class="st">'text'</span>].<span class="bu">apply</span>(compute_sentiment)</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>text_df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div id="sentiment-on-df" class="cell-output cell-output-display" data-execution_count="6">
-<div>
-
-
-<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">text_id</th>
-<th data-quarto-table-cell-role="th">text</th>
-<th data-quarto-table-cell-role="th">sentiment</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">0</td>
-<td>1</td>
-<td>Python is terrible, I hate Python, I despise P...</td>
-<td>-3</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">1</td>
-<td>2</td>
-<td>Python is wonderful, I love Python, I adore Py...</td>
-<td>3</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2</td>
-<td>3</td>
-<td>Python is ok, Python is mid, I guess I can do ...</td>
-<td>1</td>
-</tr>
-</tbody>
-</table>
-
-</div>
-</div>
-</div>
+<section id="bypassing-the-large-file-warning-with-gdown" class="level2">
+<h2 class="anchored" data-anchor-id="bypassing-the-large-file-warning-with-gdown">Bypassing the Large-File Warning with <code>gdown</code></h2>
+<p>Unfortunately for us, however, when files are <strong>over 100 MB</strong> the direct-download link comes with a “warning screen”, telling users that the file is “too big to scan for viruses”, and asking if they would like to proceed. You can see this warning screen if you click the following direct-download link for the file we’re looking at:</p>
+<p><a href="https://drive.google.com/uc?export=download&amp;id=1q8LHQ8Etdd1aYYChLZ94ujJ4GAOd6s2g">https://drive.google.com/uc?export=download&amp;id=1q8LHQ8Etdd1aYYChLZ94ujJ4GAOd6s2g</a></p>
+<p>So, the final missing piece to bypass this warning screen and actually direct-download the file into Python or R comes from the <code>gdown</code> library! I’ve made the following Colab notebooks to walk you through how to use this library in either language to directly incorporate this large <code>.csv</code> file! (In Python we can use it directly, since it’s written in Python and installable using <code>pip</code>. In R, we can still use it by programmatically executing the <code>gdown</code> terminal command using R’s <code>system()</code> function. See the notebooks for more!)</p>
+<ul>
+<li><a href="https://colab.research.google.com/drive/16KtoLcJTpNPRQtltPSiaOv-XZt_UcYRJ?usp=sharing">Colab Notebook: Large Files in Python</a></li>
+<li><a href="https://colab.research.google.com/drive/1SmgtqDT_P_vFjF1LxR9HP-lSbRzFrImC?usp=drive_link">Colab Notebook: Large Files in R</a></li>
+</ul>
 
 
 </section>
 
-
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>And, in case you want to use it in the future, you can download the entire set of word lists as a zip file <a href="assets/liwc.zip" target="_blank" class="pe-1">here</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -519,6 +319,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         if (link.dataset.originalHref !== undefined) {
           link.href = link.dataset.originalHref;
         }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+          // default icon
+          link.classList.add("external");
       }
     }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {

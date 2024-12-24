@@ -1,0 +1,52 @@
+---
+title: "Handling Large Files in Projects"
+image: "images/github.png"
+date: 2024-12-16
+author: "Jeff Jacobs"
+institute: "[`jj1088@georgetown.edu`](mailto:jj1088@georgetown.edu)"
+categories:
+  - "Quarto"
+format:
+  html:
+    df-print: kable
+    link-external-newwindow: true
+    link-external-icon: true
+---
+
+## The Problem
+
+Since final projects in DSAN span a wide set of domains/application areas, and therefore a wide range of dataset structures, it's common to have files larger than the 50 MB recommended maximum (and 100 MB absolute maximum) imposed by GitHub!
+
+In these cases, at least in the research domains I've worked in, the most common approach is to:
+
+* Store your **code** and **small data files** on GitHub, but
+* Store your **large data files** in a cloud storage service like Google Drive
+
+**Integrating** the larger data files into your code, then, becomes the hard part. Since Georgetown students have a large Google Drive allocation built into your @georgetown.edu accounts, here I will show how to store large data files in Google Drive and then load them into your code, in both R and Python.
+
+## Uploading Files and Setting Permissions
+
+The first step is to upload your large data file(s) to a folder in Google Drive, then right-click on the file(s) you'd like to incorporate into your code and click "Share", then set permissions to "Anyone with the link".
+
+The example I'm using here is a US county-level dataset on outcomes from the [Opportunity Atlas](https://www.opportunityatlas.org/). It contains 10827 attributes for 3219 counties, hence taking up about 184 MB and putting it over GitHub's 100 MB limit.
+
+So, once I set the permissions as described, I am given the following sharing link:
+
+[https://drive.google.com/file/d/1q8LHQ8Etdd1aYYChLZ94ujJ4GAOd6s2g/view?usp=drive_link](https://drive.google.com/file/d/1q8LHQ8Etdd1aYYChLZ94ujJ4GAOd6s2g/view?usp=drive_link)
+
+## Converting to a Direct-Download Link
+
+If you click that link, however, you'll see that it is **not** a direct link to the `county_outcomes.csv` file itself, but a link to a "wrapper" page showing info about the file, with a link you can manually click to then download the file itself. This link as-is, therefore, will not be very helpful for us in terms of writing code to load this dataset the same way we'd load a local data file.
+
+A not-very-well-known (but crucially important for our purposes!) aspect of Google Drive is that you can **convert** this "viewing" link [into a direct-download link](https://sites.google.com/site/gdocs2direct/)! If our files were **less than 100 MB**, we could use this direct-download link as-is, plugging it into `pd.read_csv()` (in Python) or `read_csv()` in R's `tidyverse`.
+
+## Bypassing the Large-File Warning with `gdown`
+
+Unfortunately for us, however, when files are **over 100 MB** the direct-download link comes with a "warning screen", telling users that the file is "too big to scan for viruses", and asking if they would like to proceed. You can see this warning screen if you click the following direct-download link for the file we're looking at:
+
+[https://drive.google.com/uc?export=download&id=1q8LHQ8Etdd1aYYChLZ94ujJ4GAOd6s2g](https://drive.google.com/uc?export=download&id=1q8LHQ8Etdd1aYYChLZ94ujJ4GAOd6s2g)
+
+So, the final missing piece to bypass this warning screen and actually direct-download the file into Python or R comes from the `gdown` library! I've made the following Colab notebooks to walk you through how to use this library in either language to directly incorporate this large `.csv` file! (In Python we can use it directly, since it's written in Python and installable using `pip`. In R, we can still use it by programmatically executing the `gdown` terminal command using R's `system()` function. See the notebooks for more!)
+
+* [Colab Notebook: Large Files in Python](https://colab.research.google.com/drive/16KtoLcJTpNPRQtltPSiaOv-XZt_UcYRJ?usp=sharing)
+* [Colab Notebook: Large Files in R](https://colab.research.google.com/drive/1SmgtqDT_P_vFjF1LxR9HP-lSbRzFrImC?usp=drive_link)
