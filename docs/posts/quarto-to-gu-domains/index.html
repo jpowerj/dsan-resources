@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Jeff Jacobs">
-<meta name="dcterms.date" content="2024-12-16">
+<meta name="dcterms.date" content="2025-09-08">
 
-<title>Handling Large Files in Projects – DSAN Resources</title>
+<title>Getting Quarto Websites Online Quickly with GU Domains – DSAN Resources</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,6 +21,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -127,10 +162,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#the-problem" id="toc-the-problem" class="nav-link active" data-scroll-target="#the-problem">The Problem</a></li>
-  <li><a href="#uploading-files-and-setting-permissions" id="toc-uploading-files-and-setting-permissions" class="nav-link" data-scroll-target="#uploading-files-and-setting-permissions">Uploading Files and Setting Permissions</a></li>
-  <li><a href="#converting-to-a-direct-download-link" id="toc-converting-to-a-direct-download-link" class="nav-link" data-scroll-target="#converting-to-a-direct-download-link">Converting to a Direct-Download Link</a></li>
-  <li><a href="#bypassing-the-large-file-warning-with-gdown" id="toc-bypassing-the-large-file-warning-with-gdown" class="nav-link" data-scroll-target="#bypassing-the-large-file-warning-with-gdown">Bypassing the Large-File Warning with <code>gdown</code></a></li>
+  <li><a href="#step-1-open-the-website-in-vscode" id="toc-step-1-open-the-website-in-vscode" class="nav-link active" data-scroll-target="#step-1-open-the-website-in-vscode">Step 1: Open the Website in VSCode</a></li>
+  <li><a href="#step-2-update-output-directory" id="toc-step-2-update-output-directory" class="nav-link" data-scroll-target="#step-2-update-output-directory">Step 2: Update Output Directory</a></li>
+  <li><a href="#step-3-rendering-to-the-new-output-directory" id="toc-step-3-rendering-to-the-new-output-directory" class="nav-link" data-scroll-target="#step-3-rendering-to-the-new-output-directory">Step 3: Rendering to the New Output Directory</a></li>
+  <li><a href="#step-4-deploying-the-rendered-site-to-gu-domains" id="toc-step-4-deploying-the-rendered-site-to-gu-domains" class="nav-link" data-scroll-target="#step-4-deploying-the-rendered-site-to-gu-domains">Step 4: Deploying the Rendered Site to GU Domains</a>
+  <ul class="collapse">
+  <li><a href="#option-1-for-quickstart-uploading-via-gu-domains-web-interface" id="toc-option-1-for-quickstart-uploading-via-gu-domains-web-interface" class="nav-link" data-scroll-target="#option-1-for-quickstart-uploading-via-gu-domains-web-interface">Option 1 [For Quickstart]: Uploading via GU Domains Web Interface</a></li>
+  <li><a href="#option-2-for-regularly-updated-sites" id="toc-option-2-for-regularly-updated-sites" class="nav-link" data-scroll-target="#option-2-for-regularly-updated-sites">Option 2 [For Regularly-Updated Sites]</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -139,11 +178,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Handling Large Files in Projects</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">Quarto</div>
-  </div>
-  </div>
+<h1 class="title">Getting Quarto Websites Online Quickly with GU Domains</h1>
+</div>
 
 
 <div class="quarto-title-meta-author">
@@ -155,7 +191,7 @@ ul.task-list li input[type="checkbox"] {
   </div>
   <div class="quarto-title-meta-contents">
         <p class="affiliation">
-            <a href="mailto:jj1088@georgetown.edu"><code>jj1088@georgetown.edu</code></a>
+            <a href="mailto:jj1088@georgetown.edu" target="_blank"><code>jj1088@georgetown.edu</code></a>
           </p>
       </div>
   </div>
@@ -166,7 +202,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">December 16, 2024</p>
+      <p class="date">September 8, 2025</p>
     </div>
   </div>
   
@@ -178,39 +214,109 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="the-problem" class="level2">
-<h2 class="anchored" data-anchor-id="the-problem">The Problem</h2>
-<p>Since final projects in DSAN span a wide set of domains/application areas, and therefore a wide range of dataset structures, it’s common to have files larger than the 50 MB recommended maximum (and 100 MB absolute maximum) imposed by GitHub!</p>
-<p>In these cases, at least in the research domains I’ve worked in, the most common approach is to:</p>
+<p>This guide assumes you have a <strong><a href="https://quarto.org/docs/websites/">Quarto website</a></strong> that you’ve created within a folder on your local computer (using VSCode with the Quarto extension), and walks you through how to quickly <strong>deploy</strong> that website to the web using the <a href="https://georgetown.domains/">Georgetown Domains</a> service available to Georgetown affiliates.</p>
+<section id="step-1-open-the-website-in-vscode" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-open-the-website-in-vscode">Step 1: Open the Website in VSCode</h2>
+<p>Within the VSCode interface, you can use the top menubar to open the folder containing your website by clicking <strong>File → Open Folder…</strong>.</p>
+<p>After loading the main folder containing your website, the VSCode interface should update so that you can see the various files and subfolders in the Explorer Panel on the left side of the interface:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/quarto_start.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="step-2-update-output-directory" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-update-output-directory">Step 2: Update Output Directory</h2>
+<p>By default, if you run the <code>quarto render</code> command in a terminal here, Quarto will render the content of your website to a subfolder named <code>_site</code>. (So, in this case, it would render to <code>my-quarto-website/_site</code>).</p>
+<p>This default setting can get very confusing very quickly when working with GU Domains, however, since you may want to have several different sites hosted on your GU Domains space. For example, you might want to:</p>
 <ul>
-<li>Store your <strong>code</strong> and <strong>small data files</strong> on GitHub, but</li>
-<li>Store your <strong>large data files</strong> in a cloud storage service like Google Drive</li>
+<li>Have your DSAN 5600 project available at <code>https://myname.georgetown.domains/dsan5600-project</code>, but</li>
+<li>Have your DSAN 5000 project available separately at <code>https://myname.georgetown.domains/dsan5000-project</code>.</li>
 </ul>
-<p><strong>Integrating</strong> the larger data files into your code, then, becomes the hard part. Since Georgetown students have a large Google Drive allocation built into your <span class="citation" data-cites="georgetown.edu">@georgetown.edu</span> accounts, here I will show how to store large data files in Google Drive and then load them into your code, in both R and Python.</p>
+<p>To make your life easier, therefore, I recommend <strong>changing the default output directory</strong> used by Quarto from <code>_site</code> to something more descriptive of what your site is about. In this case, I’ll change it to <code>quarto-demo</code>, by <strong>opening the <code>_quarto.yml</code> file</strong> which contains the “global settings” for the website, and adding the option <code>output-dir: quarto-demo</code> to the <code>project</code> section near the top of the file. That is, by changing these first few lines which the default Quarto website setup creates:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">project</span><span class="kw">:</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> website</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>To now look like:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">project</span><span class="kw">:</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> website</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">output-dir</span><span class="kw">:</span><span class="at"> quarto-demo</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="uploading-files-and-setting-permissions" class="level2">
-<h2 class="anchored" data-anchor-id="uploading-files-and-setting-permissions">Uploading Files and Setting Permissions</h2>
-<p>The first step is to upload your large data file(s) to a folder in Google Drive, then right-click on the file(s) you’d like to incorporate into your code and click “Share”, then set permissions to “Anyone with the link”.</p>
-<p>The example I’m using here is a US county-level dataset on outcomes from the <a href="https://www.opportunityatlas.org/">Opportunity Atlas</a>. It contains 10827 attributes for 3219 counties, hence taking up about 184 MB and putting it over GitHub’s 100 MB limit.</p>
-<p>So, once I set the permissions as described, I am given the following sharing link:</p>
-<p><a href="https://drive.google.com/file/d/1q8LHQ8Etdd1aYYChLZ94ujJ4GAOd6s2g/view?usp=drive_link">https://drive.google.com/file/d/1q8LHQ8Etdd1aYYChLZ94ujJ4GAOd6s2g/view?usp=drive_link</a></p>
+<section id="step-3-rendering-to-the-new-output-directory" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-rendering-to-the-new-output-directory">Step 3: Rendering to the New Output Directory</h2>
+<p>Now that we’ve set the custom output directory using the <code>output-dir</code> option, start a new Terminal within VSCode. You can either click <strong>Terminal → New Terminal</strong> in the VSCode menubar or right click somewhere in the Explorer pane and select the <strong>“Open in Integrated Terminal”</strong> option.</p>
+<p>Once the Terminal opens in the bottom pane of the VSCode interface, make sure it is running from within the <strong>main directory</strong> of your website. In the following screenshot, for example, I can verify that my Terminal is in the correct working directory by executing the <code>pwd</code> command and checking that the <strong>working directory</strong> produced by this command matches the directory that contains my entire website project:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pwd.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>Once you’ve confirmed that the Terminal is running in the correct working directory, execute the command <code>quarto render</code>. You should see the different pages of your website being <strong>rendered</strong> to a subfolder whose name is whatever you set the <code>output-dir</code> option to in the previous step!</p>
+<p>In this case, since we set <code>output-dir: quarto-demo</code>, the site renders to a subdirectory named <code>quarto-demo</code>:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/rendered.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
 </section>
-<section id="converting-to-a-direct-download-link" class="level2">
-<h2 class="anchored" data-anchor-id="converting-to-a-direct-download-link">Converting to a Direct-Download Link</h2>
-<p>If you click that link, however, you’ll see that it is <strong>not</strong> a direct link to the <code>county_outcomes.csv</code> file itself, but a link to a “wrapper” page showing info about the file, with a link you can manually click to then download the file itself. This link as-is, therefore, will not be very helpful for us in terms of writing code to load this dataset the same way we’d load a local data file.</p>
-<p>A not-very-well-known (but crucially important for our purposes!) aspect of Google Drive is that you can <strong>convert</strong> this “viewing” link <a href="https://sites.google.com/site/gdocs2direct/">into a direct-download link</a>! If our files were <strong>less than 100 MB</strong>, we could use this direct-download link as-is, plugging it into <code>pd.read_csv()</code> (in Python) or <code>read_csv()</code> in R’s <code>tidyverse</code>.</p>
-</section>
-<section id="bypassing-the-large-file-warning-with-gdown" class="level2">
-<h2 class="anchored" data-anchor-id="bypassing-the-large-file-warning-with-gdown">Bypassing the Large-File Warning with <code>gdown</code></h2>
-<p>Unfortunately for us, however, when files are <strong>over 100 MB</strong> the direct-download link comes with a “warning screen”, telling users that the file is “too big to scan for viruses”, and asking if they would like to proceed. You can see this warning screen if you click the following direct-download link for the file we’re looking at:</p>
-<p><a href="https://drive.google.com/uc?export=download&amp;id=1q8LHQ8Etdd1aYYChLZ94ujJ4GAOd6s2g">https://drive.google.com/uc?export=download&amp;id=1q8LHQ8Etdd1aYYChLZ94ujJ4GAOd6s2g</a></p>
-<p>So, the final missing piece to bypass this warning screen and actually direct-download the file into Python or R comes from the <code>gdown</code> library! I’ve made the following Colab notebooks to walk you through how to use this library in either language to directly incorporate this large <code>.csv</code> file! (In Python we can use it directly, since it’s written in Python and installable using <code>pip</code>. In R, we can still use it by programmatically executing the <code>gdown</code> terminal command using R’s <code>system()</code> function. See the notebooks for more!)</p>
+<section id="step-4-deploying-the-rendered-site-to-gu-domains" class="level2">
+<h2 class="anchored" data-anchor-id="step-4-deploying-the-rendered-site-to-gu-domains">Step 4: Deploying the Rendered Site to GU Domains</h2>
+<p>The key thing to note about this newly-generated output directory (the <code>quarto-demo</code> directory, in this case) is that it contains <strong>the entirety of what you need to copy onto GU Domains</strong> to make your site accessible on the web.</p>
+<p>In other words, you do <strong>not</strong> need to copy the <strong>entire website project</strong> onto GU Domains – your GU Domains space does <strong>not</strong> need the code files used to <strong>generate</strong> the website (like <code>index.qmd</code> or <code>_quarto.yml</code>), it only needs the <strong>rendered HTML files</strong> which are contained in <code>quarto-demo</code> in this case.</p>
+<p>This is a important point because, in more complex data science projects, your code may do things like loading and analyzing <strong>sensitive data</strong> in order to produce a plot illustrating your results. There are many scenarios like this, therefore, where you would <strong>not</strong> want to expose the full dataset to the web, only the generated results. And that’s why we’re making a big deal here about the difference between the <strong>full project folder</strong> (<code>quarto-website-project</code> in this case) and the <strong>subfolder</strong> containing just the <strong>rendered results</strong> (<code>quarto-demo</code>)!</p>
+<p>With this in mind, you can now proceed in one of two ways…</p>
+<section id="option-1-for-quickstart-uploading-via-gu-domains-web-interface" class="level3">
+<h3 class="anchored" data-anchor-id="option-1-for-quickstart-uploading-via-gu-domains-web-interface">Option 1 [For Quickstart]: Uploading via GU Domains Web Interface</h3>
+<p>If you just want to post your website as quickly as possible, with minimal hassle – for example, if it’s just an informational website that you don’t think you’ll need to update very often – you can use the GU Domains web interface to quickly upload the contents of <code>quarto-demo</code> (or whatever you called your rendered-files subdirectory).</p>
+<p>To do this, first go into the Finder (on Mac) or Windows Explorer (on Windows) and <strong>compress</strong> the rendered directory to a <code>.zip</code> file. So, in this case, I’ve compressed the <code>quarto-demo</code> folder to create <code>quarto-demo.zip</code>:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/compress.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>Next, open your browser and navigate to the GU Domains Dashboard at <a href="https://georgetown.domains/dashboard"><code>https://georgetown.domains/dashboard</code></a>, then scroll down until you find the <strong>File Manager</strong>:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/file_manager.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>Click on this icon to open the GU Domains <strong>web interface</strong>, which allows you to view and edit the pages on your GU Domains space:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/manager_home.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>There is a special folder called <strong><code>public_html</code></strong> among the folders displayed here, however, with a <strong>globe icon</strong> next to it to indicate its special-ness.</p>
+<p>Double-click on this <code>public_html</code> folder to open it. This folder is special because it is the <strong>folder from which your <code>myname.georgetown.domains</code> account serves files onto the internet!</strong></p>
+<p>For example:</p>
 <ul>
-<li><a href="https://colab.research.google.com/drive/16KtoLcJTpNPRQtltPSiaOv-XZt_UcYRJ?usp=sharing">Colab Notebook: Large Files in Python</a></li>
-<li><a href="https://colab.research.google.com/drive/1SmgtqDT_P_vFjF1LxR9HP-lSbRzFrImC?usp=drive_link">Colab Notebook: Large Files in R</a></li>
+<li>If you added a new <strong>file</strong> called <code>hello.html</code> to this <code>public_html</code> folder, anyone navigating to <code>https://myname.georgetown.domains/hello.html</code> would see its contents</li>
+<li>If you added a new <strong>folder</strong> named <code>my-cool-site</code> within <code>public_html</code>, then added an <code>index.html</code> file within this <code>my-cool-site</code> subfolder, anyone navigating to <code>https://myname.georgetown.domains/my-cool-site</code> would see the contents of this <code>index.html</code> file (since <code>index.html</code> is the “default” file that web servers send to the browser if no specific file within the folder is specified in the URL).</li>
 </ul>
+<p>So, given this, what’s left for you is to <strong>upload the compressed <code>.zip</code> file</strong> you created at the beginning of this section to the <code>public_html</code> folder. Here it can be useful to check “Overwrite existing files” since this ensures that any previously-uploaded version of the website is updated to the new version you’re uploading now:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/upload.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>Once this upload has completed, you can return to the file manager interface, right-click on the <code>.zip</code> file, and choose the <strong>Extract</strong> option. By leaving the default setting (of extracting to the <code>public_html</code> folder), you should now see the unzipped version of your site listed as a <strong>folder</strong> within the interface (so, with the <code>.zip</code> extension gone, and the ability to double-click on it to view its contents):</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/extracted.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>You should now be able to open your browser and navigate to the URL <code>https://yourname.georgetown.domains/quarto-demo</code> to see the rendered homepage of your website! Here is what it looks like in my case, when I navigate to <a href="https://jpj.georgetown.domains/quarto-demo"><code>https://jpj.georgetown.domains/quarto-demo</code></a>:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/on_web.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="option-2-for-regularly-updated-sites" class="level3">
+<h3 class="anchored" data-anchor-id="option-2-for-regularly-updated-sites">Option 2 [For Regularly-Updated Sites]</h3>
+<p>If you plan to update your website more than once, this is the more recommended option, where instead of the earlier <em>ad hoc</em> uploading of a <code>.zip</code> file, we’ll use the <code>scp</code> command in Terminal to copy the rendered website directory onto GU Domains directly.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

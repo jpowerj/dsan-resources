@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/quarto-to-gu-domains/index.html",
       "/posts/large-files/index.html",
       "/posts/learning-python/index.html",
       "/posts/poverty-data/index.html",

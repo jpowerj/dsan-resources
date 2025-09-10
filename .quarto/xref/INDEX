@@ -37,5 +37,8 @@
   },
   "posts/large-files/index.qmd": {
     "index.html": "8e0cf07f"
+  },
+  "posts/quarto-to-gu-domains/index.qmd": {
+    "index.html": "012cec39"
   }
 }
